@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../../../_GITHERE_/DST-scripts"
+		},
+		{
+			"path": "../../../../../../Library/Application Support/Steam/steamapps/common/Don't Starve Together/dontstarve_steam.app/Contents"
 		}
 	],
 	"settings": {
