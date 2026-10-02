@@ -54,7 +54,11 @@ M.colors = {
     {zh="金黄",en="Gold",rgb={1,.85,.4}},
 }
 function M.IsBag(inst) return inst ~= nil and (inst.prefab == "bigbag" or inst.prefab == M.PREFAB) end
-function M.Label(role, lang) return M.roles[role][lang == 1 and "zh" or "en"] end
+-- Short labels stay legible without shrinking text to fit a narrow slot.
+local shortlabels = {weapon="Arms",head="Head",body="Body",thermal="Temp.",medicine="Meds",material="Mats",general="Any"}
+function M.Label(role, lang)
+    return lang == 1 and M.roles[role].zh or shortlabels[role] or M.roles[role].en
+end
 function M.Hint(role, lang) return M.roles[role][lang == 1 and "zhhint" or "enhint"] end
 local function EquipSlot(item)
     local replica = item.replica and item.replica.equippable
