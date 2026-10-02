@@ -4,6 +4,8 @@ local Image = G.require("widgets/image")
 local ImageButton = G.require("widgets/imagebutton")
 local drag = G.require("bigbag_ui_drag")
 local naming = G.require("bigbag_naming_ui")
+local bags = G.require("expedition_data")
+local expedition_ui = G.require("expedition_ui")
 
 -- Local console recovery, including when no backpack is currently open.
 G.d_resetbigbagui = drag.Reset
@@ -12,7 +14,7 @@ local function OtherContainerOpen(owner)
     if not config.AUTOHIDE or owner.HUD == nil then return false end
     if owner.HUD.cookbookscreen ~= nil then return true end
     for inst, widget in pairs(owner.HUD.controls.containers) do
-        if inst.prefab ~= "bigbag" and widget.isopen
+        if not bags.IsBag(inst) and widget.isopen
             and inst.replica.container ~= nil and not inst.replica.container:IsSideWidget() then
             return true
         end
@@ -33,7 +35,7 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
     self.Open = function(self, container, ...)
         -- Avoid leaving a previous panel registered when reopening the same bag.
         open(self, container, ...)
-        if container.prefab ~= "bigbag" then return end
+        if not bags.IsBag(container) then return end
         self:SetScale(.6 * config.UI_SCALE)
         -- Preserve the original texture's feathered border outside the slots.
         -- Include the name and footer; a 560-square puts almost all visible
@@ -63,6 +65,7 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
         self.bigbag_reset:SetHoverText(config.LANG == 1 and "恢复默认位置并展开背包。" or "Restore the default position and expand the bag.")
         self.bigbag_reset:SetOnClick(drag.Reset)
         naming.Attach(self, config)
+        if container.prefab == bags.PREFAB then expedition_ui.Attach(self, config) end
         drag.Attach(self, config)
         self:UpdateBigBagDragLabel()
         self:StartUpdating()
@@ -70,11 +73,12 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
         self:UpdateBigBagVisibility()
     end
     self.UpdateBigBagVisibility = function(self)
-        if self.container == nil or self.container.prefab ~= "bigbag" then return end
+        if self.container == nil or not bags.IsBag(self.container) then return end
         naming.Update(self, config)
         local otheropen = OtherContainerOpen(self.owner)
         if not otheropen then self.owner._bigbag_autoexpanded = nil end
         local collapsed = self.owner._bigbag_collapsed or (otheropen and not self.owner._bigbag_autoexpanded)
+        expedition_ui.Update(self, config, collapsed)
         if self._bigbag_hidden ~= collapsed then
             self._bigbag_hidden = collapsed
             for _, slot in ipairs(self.inv) do
@@ -92,13 +96,13 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
     local update = self.OnUpdate
     self.OnUpdate = function(self, dt, ...)
         if update ~= nil then update(self, dt, ...) end
-        if self.isopen and self.container ~= nil and self.container.prefab == "bigbag" then
+        if self.isopen and self.container ~= nil and bags.IsBag(self.container) then
             drag.Update(self, config)
         end
     end
     local control = self.OnControl
     self.OnControl = function(self, action, down, ...)
-        if self.isopen and self.container ~= nil and self.container.prefab == "bigbag"
+        if self.isopen and self.container ~= nil and bags.IsBag(self.container)
             and (action == G.CONTROL_PRIMARY or action == G.CONTROL_ACCEPT)
             and (self._bigbag_dragclick or (self.focus and drag.KeyHeld(config))) then
             -- Also accept F-key + left-drag without clicking inventory slots.
@@ -110,6 +114,7 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
     local close = self.Close
     self.Close = function(self, ...)
         naming.Close(self)
+        expedition_ui.Close(self)
         if self.bigbag_name ~= nil then self.bigbag_name:Kill() self.bigbag_name = nil end
         if self.bigbag_dragkey ~= nil then
             drag.Detach(self)
@@ -141,16 +146,23 @@ AddClassPostConstruct("widgets/inventorybar", function(self)
     self.Rebuild = function(self, ...)
         rebuild(self, ...)
         self.bigbag_gridbg = nil
+        self.expedition_gridheaders = nil
         self._bigbag_gridhidden = nil
-        if self.backpack == nil or self.backpack.prefab ~= "bigbag" or #self.backpackinv == 0 then return end
-        local columns, spacing = 16, 70
-        for i, slot in ipairs(self.backpackinv) do
-            local column, row = (i - 1) % columns, math.floor((i - 1) / columns)
-            slot:SetPosition((column - 7.5) * spacing, 120 + (3 - row) * spacing, 0)
-        end
+        if self.backpack == nil or not bags.IsBag(self.backpack) or #self.backpackinv == 0 then return end
         self.bigbag_gridbg = self.bottomrow:AddChild(Image("images/bigbagbg.xml", "bigbagbg.tex"))
-        self.bigbag_gridbg:SetSize(columns * spacing + 25, 4 * spacing + 25)
-        self.bigbag_gridbg:SetPosition(0, 225, 0)
+        if self.backpack.prefab == bags.PREFAB then
+            self.expedition_gridheaders = expedition_ui.Decorate(self.bottomrow,self.backpackinv,config.LANG,true)
+            self.bigbag_gridbg:SetSize(1110,440)
+            self.bigbag_gridbg:SetPosition(0,305,0)
+        else
+            local columns, spacing = 16, 70
+            for i, slot in ipairs(self.backpackinv) do
+                local column, row = (i - 1) % columns, math.floor((i - 1) / columns)
+                slot:SetPosition((column - 7.5) * spacing, 120 + (3 - row) * spacing, 0)
+            end
+            self.bigbag_gridbg:SetSize(columns * spacing + 25, 4 * spacing + 25)
+            self.bigbag_gridbg:SetPosition(0, 225, 0)
+        end
         self.bigbag_gridbg:MoveToBack()
         if self.integrated_arrow ~= nil then self.integrated_arrow:Hide() end
     end
@@ -180,6 +192,9 @@ AddClassPostConstruct("widgets/inventorybar", function(self)
                     if hidden then slot:Hide() else slot:Show() end
                 end
                 if hidden then self.bigbag_gridbg:Hide() else self.bigbag_gridbg:Show() end
+                for _,label in ipairs(self.expedition_gridheaders or {}) do
+                    if hidden then label:Hide() else label:Show() end
+                end
             end
         end
     end
@@ -189,7 +204,7 @@ end)
 AddClassPostConstruct("screens/playerhud", function(self)
     local open = self.OpenContainer
     self.OpenContainer = function(self, container, ...)
-        if container ~= nil and container.prefab == "bigbag" then
+        if container ~= nil and bags.IsBag(container) then
             local previous = self.controls.containers[container]
             if previous ~= nil then
                 previous:Close()

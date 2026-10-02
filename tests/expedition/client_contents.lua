@@ -1,0 +1,15 @@
+-- LOCAL isolated client. Server fixture: spear in 1, goldenaxe in 7,
+-- minerhat in 13, lightbulb in 27; leave 2 empty.
+local bag=assert(ThePlayer.replica.inventory:GetOverflowContainer())
+local widget=assert(ThePlayer.HUD.controls.containers[bag.inst])
+local spear=assert(bag:GetItemInSlot(1))
+local axe=assert(bag:GetItemInSlot(7))
+local hat=assert(bag:GetItemInSlot(13))
+local bulb=assert(bag:GetItemInSlot(27))
+assert(bag:CanTakeItemInSlot(spear,2))
+assert(not bag:CanTakeItemInSlot(axe,3))
+assert(bag:CanTakeItemInSlot(hat,3) and bag:CanTakeItemInSlot(hat,14))
+assert(bag:GetSpecificSlotForItem(axe)==8)
+assert(bag:GetSpecificSlotForItem(bulb)==27)
+assert(not widget.inv[1].bgimage2:IsVisible() and widget.inv[2].bgimage2:IsVisible())
+print("EXPEDITION_CLIENT_PASS: replicated admission, automatic routing, filled/empty slot icons")

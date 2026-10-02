@@ -40,3 +40,13 @@ end
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
+
+if GLOBAL.TUNING.ROOMCAR_BIGBAG.LANG == 1 then
+    STRINGS.NAMES.ROOMCAR_EXPEDITIONBAG = "远行包"
+    STRINGS.RECIPE_DESC.ROOMCAR_EXPEDITIONBAG = "分门别类，整装出发。"
+    STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROOMCAR_EXPEDITIONBAG = "灯、食物、工具……这次应该没落下什么。"
+else
+    STRINGS.NAMES.ROOMCAR_EXPEDITIONBAG = "Expedition Bag"
+    STRINGS.RECIPE_DESC.ROOMCAR_EXPEDITIONBAG = "A place for every journey's essentials."
+    STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROOMCAR_EXPEDITIONBAG = "Light, food, tools... I think I'm ready."
+end

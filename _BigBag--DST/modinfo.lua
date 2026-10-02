@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------------------------------------------------
 name = " A Big Bag (大背包) 1.6"
 author = "Roomcar"
-version = "1.6.0-dev"
-description = "64-slot backpack with compact UI, sorting and controller layout. Optional item duplication, preservation and crafting supplies.\n64格大背包：紧凑界面、整理、手柄布局。可选复制物品、持续保鲜、制造补料。\n堆满+保鲜同时开启时，配方额外需要1个紫宝石。"
+version = "1.7.0-dev"
+description = "64-slot Big Bag plus a 32-slot classified Expedition Bag. Optional item duplication, preservation and crafting supplies.\n64格大背包与32格分类远行包：命名、拖拽、分区装备槽。大背包可选复制物品、持续保鲜、制造补料；远行包按正常规则运行。\n堆满+保鲜同时开启时，配方额外需要1个紫宝石。"
 
 api_version = 10
 dst_compatible = true

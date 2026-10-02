@@ -1,8 +1,8 @@
 # A Big Bag 大背包 · DST
 
-适用于《饥荒联机版》（Don't Starve Together）的 64 格背包 Mod，支持可选的复制补满、保鲜回鲜和制造补料功能。
+适用于《饥荒联机版》（Don't Starve Together）的背包 Mod，提供 64 格大背包与 32 格分类远行包。大背包支持可选的复制补满、保鲜回鲜和制造补料功能。
 
-仓库开发版本：**1.6.0-dev**。测试基线：DST **756039**（Steam build 25643519）。
+仓库开发版本：**1.7.0-dev**。测试基线：DST **756039**（Steam build 25643519）。
 仓库开发版本与 Steam 创意工坊发布版本可能不同。
 
 ## 使用
@@ -24,7 +24,30 @@
 容量固定为 64 格，支持携带多个，但大背包之间不能套娃。默认移速为 0.75 倍，可配置。
 装备栏优先使用其他模组提供的 `BACK`，否则使用原版 `BODY`；原版没有独立背包栏。
 
-## 配置与界面
+## 远行包（32 格）
+
+远行包是独立物品，可与原有大背包同时存在。搜索「远行包 / Expedition Bag」制作，需要二本科技、猪皮 ×4、蜘蛛丝 ×8、绳子 ×4。
+
+| 分区 | 槽位安排 |
+|---|---|
+| 战斗与换装（6） | 武器 ×2、头部装备 ×3、身体装备 ×1 |
+| 工具与行装（6） | 工具 ×4、手杖/雨伞等行装 ×2 |
+| 照明与维护（4） | 照明 ×2、暖石 ×1、修补用品 ×1 |
+| 食物与急救（4） | 食物 ×3、药品 ×1 |
+| 材料与燃料（8） | 基础制作材料 ×6、燃料 ×2 |
+| 机动侧袋（4） | 通用 ×4 |
+
+空槽显示类别文字、物品轮廓与悬停说明。材料六格互通，不强制分别存草、树枝或石头。自动存入会优先选择专用槽，再使用可兼容的类别和通用槽；例如矿工帽优先进入照明格，荧光果优先进入燃料格。手动放入时矿工帽也可放头部格。工具不会挤入武器格。
+
+远行包保持 **1 倍移速、正常腐败与耐久**，不继承大背包的复制、保鲜、修复、制造补料或微光选项。格子只是收纳位置，不会自动装备、治疗、修理或补充燃料；原版装备栏限制仍生效。不能套娃背包。
+
+满包时，火腿棒或荧光果腐烂后的物品保留在原格，存档重载也不会因分类变化弹出内容。取出后重新存入，按新物品类别判断。切换手部或头部装备时，若没有位置放回当前装备，会提示并拒绝此次替换。
+
+共享命名、收起和防越界拖拽。鼠标侧栏的「标记」按钮循环切换原色、青绿、赭红、靛蓝、金黄，颜色跟随这只背包同步与保存。整合背包使用三列、两排分区；命名和换色入口暂位于鼠标侧栏。背包外观与图标沿用原大背包资源，外观增加颜色区分。
+
+其他 Mod 可在物品联网初始化阶段添加 `roomcar_expedition_<类别>` 标签以支持专用槽，例如 `roomcar_expedition_repair`。可用类别见 [`expedition_data.lua`](scripts/expedition_data.lua)；客户端与服务器需要一致的标签。
+
+## 大背包配置与共享界面
 
 - **复制补满（默认关）**：物品放入、开关或装备背包时复制至该物品的堆叠上限。不是合并已有物品。关闭不会撤回已经生成的数量，且永远不会把高于上限的现有数量减小。无限上限使用原有限定上限；没有有效有限上限时不复制。
 - **保鲜回鲜（默认关）**：放入后恢复新鲜，留在包内时停止自然腐烂。不会把已经变成腐烂物的物品变回原食物，也不会抵消敌人直接替换物品的效果。关闭时保留旧版的冰箱标签行为。
@@ -55,7 +78,7 @@
 - 位置与按键保存在客户端，换包或重新进入游戏后仍保留，不写入背包物品或世界存档。
 - 拖动时整个面板（包括底部按钮）会限制在屏幕内；重新打开、改变分辨率或 HUD 缩放时重新校正。屏幕空间不足时自动缩小。
 - 点击「复位」恢复配置中的默认位置并展开背包。也可按 `~` 打开控制台，确认显示 **本地 / Local**，输入 `d_resetbigbagui()` 后回车。复位保留所选拖动键。
-- 拖动适用于鼠标侧栏；手柄与整合背包仍使用底部 16×4 布局。
+- 拖动适用于鼠标侧栏；手柄与整合背包使用各自的底部布局。
 
 部分键盘需同时按住 `Fn` 才会向游戏发送 F1～F9；与其他 Mod 快捷键冲突时，可在面板切换按键。
 
@@ -92,6 +115,9 @@ lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 界面测试另外覆盖屏幕边界、缩放、保存位置、延迟读取与复位冲突、按键切换及面板清理。
 此外提供以下游戏内测试脚本，仅用于独立测试世界；具体前置条件见脚本注释：
 
+- [`expedition/engine.lua`](../tests/expedition/engine.lua)：验证远行包分类、正常属性、存档往返、满包腐烂、自动选槽、堆叠、原版制作、改名权限及满包装备替换。
+- [`expedition/client.lua`](../tests/expedition/client.lua)：验证远行包分区、轮廓、命名/换色 RPC、收起和整合布局选格。
+- [`expedition/client_contents.lua`](../tests/expedition/client_contents.lua)：验证远程客户端的分类准入、自动选槽及空槽/已占用槽轮廓；所需测试物品见脚本注释。
 - [`engine.lua`](../tests/bigbag/engine.lua)：在服务器控制台执行，会生成测试物品和测试角色。
 - [`client.lua`](../tests/bigbag/client.lua)：在远程客户端的本地控制台执行，验证面板、整理 RPC 和制造 RPC。
 - [`client_naming.lua`](../tests/bigbag/client_naming.lua)：验证命名对话框回调、取消、清空复原、中文命名 RPC 和标题同步；会将测试背包命名为「矿石与工具」，供重启存档检查。
@@ -105,6 +131,10 @@ lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 | 检查 | 结果 |
 |---|---|
 | Lua 5.1 语法、9 项功能回归、6 项界面位置回归、4 项命名回归 | 通过 |
+| 远行包服务器：32 格、自动选槽、堆叠、满包腐烂、装备替换、制作与权限 | 通过 |
+| 远行包保存记录往返：32 格内容、999 堆叠、名称、颜色、新鲜度 | 通过 |
+| 远行包远程客户端：类别预览、轮廓、命名/换色同步、收起、六分区整合选格 | 通过；选格使用真实 Widget，尚无实体手柄输入实测 |
+| 远行包拖拽：四边约束、HUD 缩放、点击拦截、手动展开 | 通过；模拟按键/指针 |
 | 客户端拖动：四边约束、实际 HUD 缩放、点击拦截、手动展开 | 通过；使用真实 Widget 与模拟按键/指针 |
 | 客户端按钮切换拖动键、本地偏好写入 | 通过 |
 | 命名：真实窗口英文输入/回车，中文 RPC、取消、清空复原与标题同步 | 通过；中文流程使用对话框回调测试 |
@@ -123,6 +153,8 @@ lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 反馈问题时，请提供游戏与 Mod 版本、Mod 配置、其他已启用的 Mod、复现步骤，以及相关的客户端或服务器日志。发布日志前，请检查并移除账号标识、服务器密码、令牌等私人信息。下载或订阅异常需与游戏内功能问题区分排查。
 
 ## English
+
+The separate Expedition Bag has 32 categorized slots across combat, tools/travel, light/maintenance, food/medicine, materials/fuel and general pockets. Craft with 4 Pig Skins, 8 Silk and 4 Rope at Science Two. It has normal movement, spoilage and durability and does not inherit Big Bag power options. Names and five colour markers are saved per bag. Empty slots show category hints; automatic insertion prefers dedicated slots. Spoiled contents stay in place, and unsafe equipment swaps are rejected when no suitable return slot is available.
 
 64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Point at the side panel and hold F1 while moving the mouse to reposition it. Cycle F1–F9/Off using the panel button; preferences are saved locally. The panel stays within the screen and adapts to smaller displays. Use Reset or the local console command `d_resetbigbagui()` to restore its position. Click the side panel title to name each bag (up to 20 Unicode characters); leave it blank to reset. Names sync to other players and are saved with the item. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
 

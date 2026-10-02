@@ -1,7 +1,7 @@
 local G = GLOBAL
 local containers = G.require("containers")
 
-PrefabFiles = { "bigbag" }
+PrefabFiles = { "bigbag", "roomcar_expeditionbag" }
 Assets = {
     Asset("ANIM", "anim/swap_bigbag.zip"),
     Asset("ATLAS", "images/inventoryimages/bigbag.xml"),
@@ -78,6 +78,28 @@ for column = 0, 7 do
 end
 containers.params.bigbag = params
 containers.MAXITEMSLOTS = math.max(containers.MAXITEMSLOTS, 64)
+
+local expedition = G.require("expedition_data")
+containers.params[expedition.PREFAB] = {
+    widget = expedition.MakeWidget(-170 + config.UI_X, -40 + config.UI_Y),
+    issidewidget = true, type = "pack", openlimit = 1, usespecificslotsforitems = true,
+    itemtestfn = expedition.ItemTest, GetSpecificSlotForItem = expedition.FindSlot,
+}
+AddRecipe2(expedition.PREFAB, {
+    Ingredient("pigskin", 4), Ingredient("silk", 8), Ingredient("rope", 4),
+}, G.TECH.SCIENCE_TWO, {
+    atlas = "images/inventoryimages/bigbag.xml", image = "bigbag.tex",
+}, { "CLOTHING", "CONTAINERS" })
+AddComponentPostInit("inventory", function(self)
+    G.require("expedition_container").GuardEquipment(self)
+end)
+AddModRPCHandler("roomcar_bigbag", "color", function(player, inst)
+    if not G.require("bigbag_naming").CanEdit(player, inst) or inst.prefab ~= expedition.PREFAB then return end
+    local now = G.GetTime()
+    if inst._lastcolor ~= nil and now - inst._lastcolor < .3 then return end
+    inst._lastcolor = now
+    inst:SetBagColor(inst.roomcar_bagcolor:value() % #expedition.colors + 1)
+end)
 
 AddModRPCHandler("roomcar_bigbag", "sort", function(player, inst)
     if player == nil or player:HasTag("playerghost") or player:HasTag("busy")
