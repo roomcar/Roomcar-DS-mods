@@ -1,78 +1,83 @@
----
-title: A Big Bag (大背包) [DST]
-author: Roomcar
-version: 1.5.0
----
+# A Big Bag 大背包 · DST
 
-## A Big Bag (大背包) \[DST]
+开发版本：**1.6.0-dev**。基于本机 DST **756039**（Steam build 25643519）适配。
+工坊正式版仍是 1.5.0；开发修改尚未发布。
 
-`version: 1.5.0`
+## 使用
 
-`game: Don't Starve Together `
+在制造菜单的「容器」「服装」或「模组」分类中找到大背包，也可搜索名称。
+默认普通配方为金块 ×10、猪皮 ×10，需要二本科技。
 
-![mod_publish_preview](SteamWorkshop/mod_publish_preview.png)
+| 难度 | 材料 | 科技 |
+|---|---|---|
+| 最易 | 草 ×1 | 无 |
+| 容易 | 猪皮 ×5 | 一本 |
+| 普通 | 金块 ×10、猪皮 ×10 | 二本 |
+| 较难 | 金块 ×20、猪皮 ×10、噩梦燃料 ×5 | 一本魔法 |
+| 更难 | 金块 ×40、猪皮 ×10、噩梦燃料 ×20 | 二本魔法 |
 
-[TOC]
+**复制补满与保鲜回鲜同时开启时，任何难度都额外需要紫宝石 ×1。**
+配方难度在世界的服务器模组配置中选择。
 
-### 简介
+容量固定为 64 格，支持携带多个，但大背包之间不能套娃。默认移速为 0.75 倍，可配置。
+装备栏优先使用其他模组提供的 `BACK`，否则使用原版 `BODY`；原版没有独立背包栏。
 
-- 这是一个为游戏 饥荒（联机版）（Don't Starve Together）制作的 MOD。
-- 为游戏添加一个8x8的大背包。
-- 独立的贴图，独立的UI，不会影响原版背包。
-- 可以随身携带，也可以同时携带多个。
-- 与「堆叠999」等MOD可能有冲突。
-- 多种可配置的特殊功能。
-  - 自动堆满：让物品自动堆叠至最大。
-  - 恢复新鲜：让物品和食物恢复新鲜。
-  - 改变移速：改变行动速度。
-  - 保命微光：发出微弱的光，在夜晚不至于暴毙。
-  - 获得物品（仅限服务器端）：建造缺少物品时自动获取。
-- 在「精炼」中制造，可选择制造难度。
-  - 最易：草x1。
-  - 容易：猪皮x5 + 一本科技。
-  - 正常：金矿x10 + 猪皮x10 + 二本科技。
-  - 较难：金矿x20 + 猪皮x10 + 暗夜燃料x5 + 一本魔法。
-  - 更难：金矿x40+ 猪皮x10 + 暗夜燃料x20 + 二本魔法。
-  - 补充：如果同时开启了「自动堆满」和「恢复新鲜」，则额外需要紫宝石x1。
+## 配置与界面
 
+- **复制补满（默认关）**：物品放入、开关或装备背包时复制至该物品的堆叠上限。不是合并已有物品。关闭不会撤回已经生成的数量，且永远不会把高于上限的现有数量减小。无限上限使用原有限定上限；没有有效有限上限时不复制。
+- **保鲜回鲜（默认关）**：放入后恢复新鲜，留在包内时停止自然腐烂。不会把已经变成腐烂物的物品变回原食物，也不会抵消敌人直接替换物品的效果。关闭时保留旧版的冰箱标签行为。
+- **修复耐久（默认开）**：需同时开启保鲜回鲜；恢复工具、护甲和燃料。可单独关闭，保留纯保鲜。
+- **制造补料（默认关）**：装备背包时点击制造，服务器补齐缺少的普通材料，之后走原版制造流程。支持独立服务器与远程客户端的请求；科技、角色、技能、生命/理智等消耗仍按原版检查。只补缺额，不发放已有材料的完整一份。
+- **微光（默认关）**：装备时发光，卸下或掉落时关闭。
+- **侧栏大小/位置**：鼠标侧栏默认缩至旧版 80%，可改大小与横纵偏移；不改变存储槽数。
+- **收起/展开**：只折叠面板，不关闭网络容器，包内材料仍可用于制造。原版右键开关仍是真正的容器开关。
+- **自动收起（默认开）**：打开其他容器或食谱时暂时隐藏内容，关闭后恢复。
+- **整理**：按物品 prefab 分组，稳定排列同类物品；不合并堆叠，不修改耐久、皮肤或身份。通过服务器验证操作者，避免客户端直接改物品。
+- **手柄/整合背包**：将原版 64 格单行改成 16×4 网格，沿用原版选格与物品操作。
 
+旧版 `bigbag` 标识、64 个槽位和原版容器保存结构保持不变。新增漂浮支持，补全 `backpack` 标签、落地/入袋/装备模型时的关闭逻辑。原版动画来自作者原工坊 810443397 的本机缓存。
 
-### Introduction
+## 开发与部署
 
-- This is a MOD for game *Don't Starve Together*.
-- Adding a 8x8 big bag into the game.
-- Standalone textures and UI.
-- Can be putted into the inventory bar.
-- May have conflicting BUGs with mod *stack 999* etc.
-- Several configurable functions:
-  - Full stack: Get full stack when reopen the bag.
-  - ReFresh: ReFresh food and tools when reopen the bag.
-  - Walk speed: Change walk speed while taking this bag.
-  - Light: Let the bag give off light to survive in the night.
-  - Give Items: Give Items Directly If Can't Build Something. !!! SEVER ONLY !!!
-- Make it in REFINE menu. Configurable Recipe Options:
-  - Very Cheap: cutgrass x1
-  - Cheap: pigskin x5
-  - Normal: goldnugget x10 + pigskin x10
-  - Expensive: goldnugget x20 + pigskin x10 + nightmarefuel x5
-  - More Expensive: goldnugget x40 + pigskin x10 + nightmarefuel x20
-  - Additional: require purplegem x1 while using Full stack and ReFresh at the same time.
+官方 Lua 源码只用于对照，不改动游戏本体脚本。
 
+```sh
+python3 tools/deploy_bigbag.py
+```
 
+从仓库同步到本地 `mods/roomcar_bigbag_dev`，保留现有 `[DEV]` 名称；覆盖前在系统临时目录备份，写入后逐文件校验。测试时只启用开发版，不与原版或其他大背包变体同时启用。
 
-### 开源( Open Source )
+```sh
+lua5.1 tests/bigbag/run.lua /path/to/DST-scripts
+```
 
-- Github：[gitforziio](https://github.com/gitforziio)/[Roomcar-DS-mods/_BigBag[DST]](https://github.com/gitforziio/Roomcar-DS-mods/tree/master/_BigBag%5BDST%5D)。
-- 协议( License )：暂时定为[GNU General Public License v3.0](https://github.com/gitforziio/Roomcar-DS-mods/blob/master/_BigBag%5BDST%5D/LICENSE)。
-- 创意工坊( SteamWorkshop )：[A Big Bag (大背包)  [DST]](https://steamcommunity.com/sharedfiles/filedetails/?id=810443397)。
-- 作者( Author )：[Roomcar](https://steamcommunity.com/id/roomcar/)。
+回归测试直接使用官方 `Container`、`Stackable` 实现，验证数量不减少、无限上限、关闭功能、独立修复、64 格整理与存储、补料缺额和权限条件。
+`tests/bigbag/engine.lua` 用于隔离测试世界的服务器控制台；会生成测试物品和测试角色，不在正常游玩世界执行。
+`tests/bigbag/client.lua` 在已装备测试包的远程客户端本地控制台执行，验证面板、整理 RPC 和制造 RPC；`tests/bigbag/layout.lua` 临时检查整合布局并恢复原设置。
 
+本机验证结果（2026-10-02）：
 
+| 检查 | 结果 |
+|---|---|
+| Lua 5.1 语法、9 项回归测试 | 通过 |
+| 真实独立服务器：64 格整理、物品身份、保鲜、换包/卸包关闭 | 通过 |
+| 真实存盘并重启：第 64 格的 999 个草 | 数量和槽位保留 |
+| 真实独立服务器：补缺少材料、建筑预制作 | 通过 |
+| 独立客户端：64 格同步、收起后仍可读制造材料、食谱自动收起/恢复 | 通过 |
+| 独立客户端：整理 RPC、制造 RPC 补料并产出火把 | 通过 |
+| 客户端整合布局：16×4 格、跨行方向选格 | 通过；尚无实体手柄输入实测 |
 
-### Media
+## 验证边界
 
-(unofficial)
+独立服务器测试使用临时离线世界。地表与洞穴之间的实际往返、手柄真实输入、第三方堆叠/装备栏模组组合，以及玩家评论中未提供日志的黑屏、吞包等，需要对应环境复现后才能逐项确认。现有检查不能等同于这些情况已全部解决。下载/订阅异常不属于 Mod Lua 能直接修复的问题。
 
-- https://www.bilibili.com/video/av15660244
+## English
 
+64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
 
+## Links
+
+- [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=810443397)
+- [Source repository](https://github.com/gitforziio/Roomcar-DS-mods)
+- Author: Roomcar
+- License: GPL-3.0, see [LICENSE](LICENSE).

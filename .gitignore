@@ -6,6 +6,7 @@ luac.out
 # luarocks build files
 *.src.rock
 *.zip
+!_BigBag--DST/anim/swap_bigbag.zip
 *.tar.gz
 
 # Object files
@@ -40,4 +41,3 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
-
