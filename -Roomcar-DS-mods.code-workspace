@@ -1,13 +1,24 @@
 {
 	"folders": [
 		{
+			"name": "Roomcar-DS-mods",
 			"path": "."
 		},
 		{
+			"name": "roomcar_bigbag_dev",
+			"path": "../../../../../../Library/Application Support/Steam/steamapps/common/Don't Starve Together/dontstarve_steam.app/Contents/mods/roomcar_bigbag_dev"
+		},
+		{
+			"name": "DST-scripts",
 			"path": "../../../../_GITHERE_/DST-scripts"
 		},
 		{
+			"name": "Contents",
 			"path": "../../../../../../Library/Application Support/Steam/steamapps/common/Don't Starve Together/dontstarve_steam.app/Contents"
+		},
+		{
+			"name": "Klei",
+			"path": "../../../../../../Documents/Klei"
 		}
 	],
 	"settings": {
