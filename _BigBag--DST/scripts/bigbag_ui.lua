@@ -35,7 +35,11 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
         open(self, container, ...)
         if container.prefab ~= "bigbag" then return end
         self:SetScale(.6 * config.UI_SCALE)
-        self.bgimage:SetSize(560, 560)
+        -- Preserve the original texture's feathered border outside the slots.
+        -- Include the name and footer; a 560-square puts almost all visible
+        -- background underneath the 526-square grid.
+        self.bgimage:SetSize(596, 820)
+        self.bgimage:SetPosition(0, -25, 0)
         self.bigbag_toggle = self:AddChild(ImageButton("images/ui.xml", "button_small.tex", "button_small_over.tex", "button_small_disabled.tex"))
         self.bigbag_toggle:SetPosition(110, -310, 0)
         self.bigbag_toggle:SetTextSize(30)
