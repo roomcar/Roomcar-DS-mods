@@ -3,6 +3,7 @@ local config = G.TUNING.ROOMCAR_BIGBAG
 local Image = G.require("widgets/image")
 local ImageButton = G.require("widgets/imagebutton")
 local drag = G.require("bigbag_ui_drag")
+local naming = G.require("bigbag_naming_ui")
 
 -- Local console recovery, including when no backpack is currently open.
 G.d_resetbigbagui = drag.Reset
@@ -57,6 +58,7 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
         self.bigbag_reset:SetText(config.LANG == 1 and "复位" or "Reset")
         self.bigbag_reset:SetHoverText(config.LANG == 1 and "恢复默认位置并展开背包。" or "Restore the default position and expand the bag.")
         self.bigbag_reset:SetOnClick(drag.Reset)
+        naming.Attach(self, config)
         drag.Attach(self, config)
         self:UpdateBigBagDragLabel()
         self:StartUpdating()
@@ -65,6 +67,7 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
     end
     self.UpdateBigBagVisibility = function(self)
         if self.container == nil or self.container.prefab ~= "bigbag" then return end
+        naming.Update(self, config)
         local otheropen = OtherContainerOpen(self.owner)
         if not otheropen then self.owner._bigbag_autoexpanded = nil end
         local collapsed = self.owner._bigbag_collapsed or (otheropen and not self.owner._bigbag_autoexpanded)
@@ -102,6 +105,8 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
     end
     local close = self.Close
     self.Close = function(self, ...)
+        naming.Close(self)
+        if self.bigbag_name ~= nil then self.bigbag_name:Kill() self.bigbag_name = nil end
         if self.bigbag_dragkey ~= nil then
             drag.Detach(self)
             if update == nil then self:StopUpdating() end
@@ -118,6 +123,7 @@ AddClassPostConstruct("widgets/containerwidget", function(self)
     end
     local kill = self.Kill
     self.Kill = function(self, ...)
+        naming.Close(self)
         -- Controls can destroy a widget directly, without first closing it.
         drag.Detach(self)
         return kill(self, ...)

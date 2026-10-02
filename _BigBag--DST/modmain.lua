@@ -91,6 +91,10 @@ AddModRPCHandler("roomcar_bigbag", "sort", function(player, inst)
     G.require("bigbag_util").Sort(inst)
 end)
 
+AddModRPCHandler("roomcar_bigbag", "rename", function(player, inst, text)
+    G.require("bigbag_naming").Rename(player, inst, text)
+end)
+
 modimport("scripts/bigbag_crafting.lua")
 if not G.TheNet:IsDedicated() then
     modimport("scripts/bigbag_ui.lua")

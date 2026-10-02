@@ -79,6 +79,7 @@ local function fn()
     if not TheWorld.ismastersim then return inst end
 
     inst:AddComponent("inspectable")
+    inst:AddComponent("named")
     inst:AddComponent("inventoryitem")
     inst.components.inventoryitem.atlasname = "images/inventoryimages/bigbag.xml"
     inst.components.inventoryitem.cangoincontainer = true

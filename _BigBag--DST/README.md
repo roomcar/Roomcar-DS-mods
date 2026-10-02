@@ -39,6 +39,14 @@
 
 保留旧版 `bigbag` 标识、64 个槽位和游戏原版容器保存结构，以兼容已有背包存档。支持掉落漂浮，并完善换包、卸下和掉落时的容器关闭逻辑。背包动画沿用本 Mod 原版资源。
 
+## 给背包命名
+
+装备背包后，点击鼠标侧栏顶部的「名称 [命名]」，输入新名字并保存，也可按回车确认。支持中文，最多 20 个 Unicode 字符；清空输入后保存恢复默认名称，取消不修改名称。
+
+每只背包独立命名，名称显示在侧栏标题和原版物品提示中，并随背包同步、存档和转交。只有当前持有并打开背包的玩家可以改名，不能远程修改其他玩家持有的包。旧存档中的未命名背包继续显示默认名称。
+
+命名入口目前在鼠标侧栏；使用整合背包或手柄布局时，可先切回侧栏命名，名称仍会保留。
+
 ## 拖动背包界面
 
 鼠标移到背包侧栏上，**按住 F1 并移动鼠标**即可拖动，松开后自动保存位置，无需点击物品。
@@ -75,6 +83,7 @@ python3 tools/deploy_bigbag.py --destination "/path/to/Don't Starve Together/mod
 ```sh
 lua5.1 tests/bigbag/run.lua /path/to/DST-scripts
 lua5.1 tests/bigbag/ui_position.lua /path/to/DST-scripts
+lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 ```
 
 将 `/path/to/DST-scripts` 替换为游戏 Lua 源码目录，其下应包含 `class.lua` 和 `components/`。Lua 可执行文件在部分环境中名为 `lua`，请确认使用的是 5.1 版本。
@@ -85,6 +94,7 @@ lua5.1 tests/bigbag/ui_position.lua /path/to/DST-scripts
 
 - [`engine.lua`](../tests/bigbag/engine.lua)：在服务器控制台执行，会生成测试物品和测试角色。
 - [`client.lua`](../tests/bigbag/client.lua)：在远程客户端的本地控制台执行，验证面板、整理 RPC 和制造 RPC。
+- [`client_naming.lua`](../tests/bigbag/client_naming.lua)：验证命名对话框回调、取消、清空复原、中文命名 RPC 和标题同步；会将测试背包命名为「矿石与工具」，供重启存档检查。
 - [`client_drag.lua`](../tests/bigbag/client_drag.lua)：在本地控制台执行，使用真实 Widget 坐标与模拟按键/鼠标检查拖动、四边约束、HUD 缩放、点击拦截与手动展开。执行前后会复位位置。
 - [`layout.lua`](../tests/bigbag/layout.lua)：临时检查整合布局与方向选格，并恢复原设置。
 
@@ -94,9 +104,11 @@ lua5.1 tests/bigbag/ui_position.lua /path/to/DST-scripts
 
 | 检查 | 结果 |
 |---|---|
-| Lua 5.1 语法、9 项功能回归、6 项界面位置回归 | 通过 |
+| Lua 5.1 语法、9 项功能回归、6 项界面位置回归、4 项命名回归 | 通过 |
 | 客户端拖动：四边约束、实际 HUD 缩放、点击拦截、手动展开 | 通过；使用真实 Widget 与模拟按键/指针 |
 | 客户端按钮切换拖动键、本地偏好写入 | 通过 |
+| 命名：真实窗口英文输入/回车，中文 RPC、取消、清空复原与标题同步 | 通过；中文流程使用对话框回调测试 |
+| 命名：服务器及客户端重启后恢复中文名称 | 通过 |
 | 独立服务器：64 格整理、物品身份、保鲜、换包/卸包关闭 | 通过 |
 | 存盘并重启：第 64 格的 999 个草 | 数量和槽位保留 |
 | 独立服务器：补缺少材料、建筑预制作 | 通过 |
@@ -112,7 +124,7 @@ lua5.1 tests/bigbag/ui_position.lua /path/to/DST-scripts
 
 ## English
 
-64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Point at the side panel and hold F1 while moving the mouse to reposition it. Cycle F1–F9/Off using the panel button; preferences are saved locally. The panel stays within the screen and adapts to smaller displays. Use Reset or the local console command `d_resetbigbagui()` to restore its position. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
+64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Point at the side panel and hold F1 while moving the mouse to reposition it. Cycle F1–F9/Off using the panel button; preferences are saved locally. The panel stays within the screen and adapts to smaller displays. Use Reset or the local console command `d_resetbigbagui()` to restore its position. Click the side panel title to name each bag (up to 20 Unicode characters); leave it blank to reset. Names sync to other players and are saved with the item. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
 
 ## Links
 

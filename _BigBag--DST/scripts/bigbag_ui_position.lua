@@ -1,5 +1,5 @@
 -- Screen-space geometry, including both rows of buttons below the slots.
-local M = { LEFT = -285, RIGHT = 285, BOTTOM = -395, TOP = 285, MARGIN = 12 }
+local M = { LEFT = -285, RIGHT = 285, BOTTOM = -395, TOP = 345, MARGIN = 12 }
 
 function M.IsFinite(value)
     return type(value) == "number" and value == value and math.abs(value) < math.huge
