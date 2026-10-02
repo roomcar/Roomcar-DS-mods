@@ -15,7 +15,7 @@ Assets = {
 local defaults = {
     LANG = 0, GIVE = false, STACK = false, FRESH = false, REPAIR = true,
     LIGHT = false, RECIPE = 3, WALKSPEED = .75, UI_SCALE = .8,
-    UI_X = 0, UI_Y = 0, AUTOHIDE = true,
+    UI_X = 0, UI_Y = 0, AUTOHIDE = true, UI_DRAG_KEY = 1,
 }
 local config = {}
 for key, default in pairs(defaults) do

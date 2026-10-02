@@ -33,11 +33,23 @@
 - **微光（默认关）**：装备时发光，卸下或掉落时关闭。
 - **侧栏大小/位置**：鼠标侧栏默认缩至旧版 80%，可改大小与横纵偏移；不改变存储槽数。
 - **收起/展开**：只折叠面板，不关闭网络容器，包内材料仍可用于制造。原版右键开关仍是真正的容器开关。
-- **自动收起（默认开）**：打开其他容器或食谱时暂时隐藏内容，关闭后恢复。
+- **自动收起（默认开）**：打开其他容器或食谱时暂时隐藏内容，关闭后恢复；期间手动展开会保持展开，直到本次其他容器/食谱操作结束。
 - **整理**：按物品 prefab 分组，稳定排列同类物品；不合并堆叠，不修改耐久、皮肤或身份。通过服务器验证操作者，避免客户端直接改物品。
 - **手柄/整合背包**：将原版 64 格单行改成 16×4 网格，沿用原版选格与物品操作。
 
 保留旧版 `bigbag` 标识、64 个槽位和游戏原版容器保存结构，以兼容已有背包存档。支持掉落漂浮，并完善换包、卸下和掉落时的容器关闭逻辑。背包动画沿用本 Mod 原版资源。
+
+## 拖动背包界面
+
+鼠标移到背包侧栏上，**按住 F1 并移动鼠标**即可拖动，松开后自动保存位置，无需点击物品。
+
+- 点击面板下方的「拖动 F1」按钮，可依次切换 **F1～F9 / 关闭**。世界配置提供初始按键，面板上的选择优先，仅影响本机玩家。
+- 位置与按键保存在客户端，换包或重新进入游戏后仍保留，不写入背包物品或世界存档。
+- 拖动时整个面板（包括底部按钮）会限制在屏幕内；重新打开、改变分辨率或 HUD 缩放时重新校正。屏幕空间不足时自动缩小。
+- 点击「复位」恢复配置中的默认位置并展开背包。也可按 `~` 打开控制台，确认显示 **本地 / Local**，输入 `d_resetbigbagui()` 后回车。复位保留所选拖动键。
+- 拖动适用于鼠标侧栏；手柄与整合背包仍使用底部 16×4 布局。
+
+部分键盘需同时按住 `Fn` 才会向游戏发送 F1～F9；与其他 Mod 快捷键冲突时，可在面板切换按键。
 
 ## 开发与部署
 
@@ -62,15 +74,18 @@ python3 tools/deploy_bigbag.py --destination "/path/to/Don't Starve Together/mod
 
 ```sh
 lua5.1 tests/bigbag/run.lua /path/to/DST-scripts
+lua5.1 tests/bigbag/ui_position.lua /path/to/DST-scripts
 ```
 
 将 `/path/to/DST-scripts` 替换为游戏 Lua 源码目录，其下应包含 `class.lua` 和 `components/`。Lua 可执行文件在部分环境中名为 `lua`，请确认使用的是 5.1 版本。
 
 回归测试使用官方 `Container`、`Stackable` 实现，验证数量不减少、无限上限、关闭可选功能、独立修复、64 格整理与存储、补料缺额和权限条件。
+界面测试另外覆盖屏幕边界、缩放、保存位置、延迟读取与复位冲突、按键切换及面板清理。
 此外提供以下游戏内测试脚本，仅用于独立测试世界；具体前置条件见脚本注释：
 
 - [`engine.lua`](../tests/bigbag/engine.lua)：在服务器控制台执行，会生成测试物品和测试角色。
 - [`client.lua`](../tests/bigbag/client.lua)：在远程客户端的本地控制台执行，验证面板、整理 RPC 和制造 RPC。
+- [`client_drag.lua`](../tests/bigbag/client_drag.lua)：在本地控制台执行，使用真实 Widget 坐标与模拟按键/鼠标检查拖动、四边约束、HUD 缩放、点击拦截与手动展开。执行前后会复位位置。
 - [`layout.lua`](../tests/bigbag/layout.lua)：临时检查整合布局与方向选格，并恢复原设置。
 
 ### 测试状态
@@ -79,7 +94,9 @@ lua5.1 tests/bigbag/run.lua /path/to/DST-scripts
 
 | 检查 | 结果 |
 |---|---|
-| Lua 5.1 语法、9 项回归测试 | 通过 |
+| Lua 5.1 语法、9 项功能回归、6 项界面位置回归 | 通过 |
+| 客户端拖动：四边约束、实际 HUD 缩放、点击拦截、手动展开 | 通过；使用真实 Widget 与模拟按键/指针 |
+| 客户端按钮切换拖动键、本地偏好写入 | 通过 |
 | 独立服务器：64 格整理、物品身份、保鲜、换包/卸包关闭 | 通过 |
 | 存盘并重启：第 64 格的 999 个草 | 数量和槽位保留 |
 | 独立服务器：补缺少材料、建筑预制作 | 通过 |
@@ -95,7 +112,7 @@ lua5.1 tests/bigbag/run.lua /path/to/DST-scripts
 
 ## English
 
-64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
+64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Point at the side panel and hold F1 while moving the mouse to reposition it. Cycle F1–F9/Off using the panel button; preferences are saved locally. The panel stays within the screen and adapts to smaller displays. Use Reset or the local console command `d_resetbigbagui()` to restore its position. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
 
 ## Links
 

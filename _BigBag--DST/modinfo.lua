@@ -101,6 +101,20 @@ configuration_options = {
         default = true,
     },
     {
+        name = "UI_DRAG_KEY",
+        label = "Drag Key (默认拖动键)",
+        hover = "Point at the side panel, hold this key and move the mouse. Each player can change it on the panel. / 鼠标移到背包侧栏，按住此键移动即可拖动；每位玩家可在面板上单独改键。",
+        options = {
+            {description = "Off / 关", data = 0},
+            {description = "F1", data = 1}, {description = "F2", data = 2},
+            {description = "F3", data = 3}, {description = "F4", data = 4},
+            {description = "F5", data = 5}, {description = "F6", data = 6},
+            {description = "F7", data = 7}, {description = "F8", data = 8},
+            {description = "F9", data = 9},
+        },
+        default = 1,
+    },
+    {
         name = "UI_SCALE",
         label = "Panel Size (侧栏大小)",
         hover = "Mouse side panel only. Storage stays at 64 slots. / 调整鼠标侧栏大小，容量始终64格。",
