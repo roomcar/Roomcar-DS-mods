@@ -1,0 +1,74 @@
+<style>
+#expedition-preview {padding:18px 8px;box-sizing:border-box}
+#expedition-preview .eb {--eb-paper:light-dark(#eee0c3,#352c23);--eb-slot:light-dark(#dac7a4,#514334);--eb-ink:light-dark(#352718,#efe0bc);--eb-edge:light-dark(#8a7251,#9b835c);--eb-accent:#ad6f47;max-width:440px;margin:0 auto;padding:18px;box-sizing:border-box;color:var(--eb-ink);background:var(--eb-paper);border:3px solid var(--eb-edge);border-radius:18px 9px 15px 8px;font:14px/1.5 Georgia,'Songti SC',serif;box-shadow:inset 0 0 0 4px var(--eb-paper),inset 0 0 0 5px var(--eb-edge)}
+#expedition-preview .eb-header{display:flex;gap:10px;align-items:center;padding:0 0 12px;border-bottom:1px dashed var(--eb-edge)}
+#expedition-preview .eb-header h3{font:500 22px/1.4 Georgia,'Songti SC',serif;margin:0}
+#expedition-preview .eb-mark{width:13px;height:28px;background:var(--eb-accent);border-radius:0 0 4px 4px}
+#expedition-preview .eb-kind{font:12px/1.4 sans-serif;opacity:.8}
+#expedition-preview .eb-groups{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 20px;padding:14px 0}
+#expedition-preview .eb-label{display:flex;justify-content:space-between;align-items:baseline;gap:4px;margin-bottom:6px;font-weight:500}
+#expedition-preview .eb-label small{font:12px/1.4 sans-serif;opacity:.8}
+#expedition-preview .eb-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+#expedition-preview .eb-slots.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+#expedition-preview .eb-slot{appearance:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;min-height:54px;min-width:0;padding:5px 1px;background:var(--eb-slot);color:var(--eb-ink);border:1px solid var(--eb-edge);border-radius:3px;box-shadow:inset 0 0 0 2px var(--eb-paper);font:12px/1.3 sans-serif}
+#expedition-preview .eb-slot[aria-pressed=true]{outline:2px solid var(--eb-accent);outline-offset:1px}
+#expedition-preview .eb-slot:focus-visible{outline:3px solid var(--eb-ink);outline-offset:2px}
+#expedition-preview .eb-slot .eb-icon{display:flex;opacity:.45;min-height:19px}
+#expedition-preview .eb-slot.filled .eb-icon{opacity:1}
+#expedition-preview .eb-detail{border-top:1px dashed var(--eb-edge);padding-top:12px;min-height:102px;font:13px/1.6 sans-serif;overflow-wrap:anywhere}
+#expedition-preview .eb-detail strong{font-weight:500}
+#expedition-preview .eb-detail p{margin:5px 0 0}
+@media(max-width:380px){#expedition-preview{padding:8px 0}#expedition-preview .eb{padding:12px}#expedition-preview .eb-groups{gap:12px 10px}#expedition-preview .eb-slot{min-height:54px;font-size:11px}#expedition-preview .eb-detail{min-height:125px}}
+</style>
+<div id="expedition-preview" class="viz-dotted-background">
+ <div class="eb" aria-label="远行包分类槽位概念">
+  <div class="eb-header"><span class="eb-mark" aria-hidden="true"></span><div><h3>远行包</h3><span class="eb-kind">分类槽位 · 设计草案</span></div></div>
+  <div class="eb-groups"></div>
+  <div class="eb-detail" aria-live="polite"></div>
+ </div>
+</div>
+<script>
+(function(){
+const root=document.getElementById('expedition-preview');
+const bag=root.querySelector('.eb');
+const groups=[
+ {name:'战斗与换装',count:6,why:'武器、头部、身体各两格：一套主用，一套备用或应对天气。头部和身体槽允许季节服装，不只收护甲。',slots:[['武器','swords','长矛','手持战斗武器'],['武器','swords','火腿棒','手持战斗武器'],['头部','hard-hat','橄榄球帽','头部装备，含防具与季节帽'],['头部','hard-hat','牛角帽','头部装备，含防具与季节帽'],['身体','shirt','木甲','身体防具与服装；不收背包'],['身体','shirt','保暖衣物','身体防具与服装；不收背包']]},
+ {name:'工具与行动',count:6,why:'四格工具覆盖砍、挖、铲、锤，也能换成其他工具。两格行装放手杖、雨伞等出行用品。组合工具可以腾出余位。',slots:[['工具','axe','斧头','采集、开采、拆除或捕捞工具'],['工具','pickaxe','镐子','采集、开采、拆除或捕捞工具'],['工具','shovel','铲子','采集、开采、拆除或捕捞工具'],['工具','hammer','锤子','采集、开采、拆除或捕捞工具'],['行装','footprints','步行手杖','手持出行装备，如手杖、雨伞'],['行装','umbrella','雨伞','手持出行装备，如手杖、雨伞']]},
+ {name:'照明与维护',count:4,why:'两格照明为主灯和应急灯留位置；另留一格温控、一格修补。灯的燃料放材料袋，不挤占灯具槽。',slots:[['照明','lamp','提灯','照明装备，如提灯、火炬、矿工帽'],['照明','flame','火炬','照明装备，如提灯、火炬、矿工帽'],['温控','thermometer','暖石','暖石等专用温控物品'],['修补','scissors','针线包','装备修补用品，如针线包、胶带']]},
+ {name:'食物与急救',count:6,why:'四格食物容纳主食、回血食物、理智补给和备用餐；两格独立药品，避免急救全押在会腐烂的食物上。食物不按具体菜品限制。',slots:[['食物','utensils','肉丸','食物；依角色食性自行搭配'],['食物','utensils','饺子','食物；依角色食性自行搭配'],['食物','utensils','太妃糖','食物；依角色食性自行搭配'],['食物','utensils','肉干','食物；依角色食性自行搭配'],['药品','cross','治疗药膏','直接治疗的非食物药品'],['药品','cross','蜂蜜药膏','直接治疗的非食物药品']]},
+ {name:'材料与燃料',count:6,why:'六格用于生火、临时制作与补充燃料。按材料类别收纳，不把每格写死为草、树枝；示例里的石头可以换成燧石等。',slots:[['材料','sprout','干草','基础制作材料与燃料'],['材料','git-branch','树枝','基础制作材料与燃料'],['材料','logs','木头','基础制作材料与燃料'],['材料','mountain','石头','基础制作材料与燃料'],['材料','gem','金块','基础制作材料与燃料'],['燃料','lightbulb','荧光果','基础制作材料与燃料']]},
+ {name:'机动侧袋',count:4,why:'四格通用空间保留给角色专属物品、弹药、魔法道具或战利品。为不同玩法留余地，也给多用途模组物品一个落脚点。',slots:[['通用','pocket','专属物品','任何可收纳物品，禁止背包套娃'],['通用','pocket','弹药','任何可收纳物品，禁止背包套娃'],['通用','pocket','魔法道具','任何可收纳物品，禁止背包套娃'],['通用','pocket','战利品','任何可收纳物品，禁止背包套娃']]}
+];
+const saved=window.openai?.widgetState?.privateContent;
+const state={filled:saved?.filled===true,accent:'#ad6f47',selected:Number.isInteger(saved?.selected)?saved.selected:0};
+const slots=[];
+for(const group of groups){
+ const section=document.createElement('section');
+ const header=document.createElement('div');header.className='eb-label';
+ const label=document.createElement('span');label.textContent=group.name;
+ const count=document.createElement('small');count.textContent=group.count+' 格';header.append(label,count);
+ const grid=document.createElement('div');grid.className='eb-slots'+(group.count===4?' four':'');
+ for(const item of group.slots){
+  const index=slots.length;const button=document.createElement('button');button.type='button';button.className='eb-slot cursor-interaction';
+  const icon=document.createElement('span');icon.className='eb-icon';const glyph=document.createElement('i');glyph.dataset.lucide=item[1];glyph.setAttribute('aria-hidden','true');icon.append(glyph);
+  const text=document.createElement('span');button.append(icon,text);grid.append(button);
+  slots.push({button,text,item,group});button.addEventListener('click',()=>{state.selected=index;render();persist();});
+ }
+ section.append(header,grid);root.querySelector('.eb-groups').append(section);
+}
+if(state.selected<0||state.selected>=slots.length)state.selected=0;
+function persist(){window.openai?.setWidgetState?.({modelContent:{concept:'32格远行包',selected:slots[state.selected].item[0],sampleLoadout:state.filled},privateContent:{selected:state.selected,filled:state.filled}})?.catch(()=>{});}
+function render(){
+ bag.style.setProperty('--eb-accent',state.accent);
+ slots.forEach((slot,index)=>{slot.text.textContent=state.filled?slot.item[2]:slot.item[0];slot.button.classList.toggle('filled',state.filled);slot.button.setAttribute('aria-pressed',String(index===state.selected));slot.button.setAttribute('aria-label',slot.group.name+'，'+slot.item[0]+'槽：'+slot.item[3]);});
+ const slot=slots[state.selected];const detail=root.querySelector('.eb-detail');detail.replaceChildren();
+ const title=document.createElement('strong');title.textContent=slot.item[0]+'槽 · '+slot.group.name;
+ const accepted=document.createElement('p');accepted.textContent='可放：'+slot.item[3]+'。';
+ const why=document.createElement('p');why.textContent=slot.group.why;detail.append(title,accepted,why);
+}
+render();
+if(globalThis.lucide)lucide.createIcons({attrs:{width:19,height:19}});
+if(globalThis.Tweak){const tweak=new Tweak({container:bag,onChange:()=>{render();persist();}});tweak.addToggle(state,'filled',{label:'显示装包示例'});tweak.addColorPicker(state,'accent',{label:'背包标记色'});}
+window.addEventListener('openai:set_globals',event=>{const p=event.detail?.globals?.widgetState?.privateContent;if(!p)return;if(typeof p.filled==='boolean')state.filled=p.filled;if(Number.isInteger(p.selected)&&p.selected>=0&&p.selected<slots.length)state.selected=p.selected;render();});
+})();
+</script>
