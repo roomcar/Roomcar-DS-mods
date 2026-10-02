@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../../_GITHERE_/DST-scripts"
 		}
 	],
 	"settings": {
