@@ -7,6 +7,8 @@ luac.out
 *.src.rock
 *.zip
 !_BigBag--DST/anim/swap_bigbag.zip
+!_BigBag--DST/anim/swap_roomcar_expeditionbag.zip
+!_BigBag--DST/anim/swap_roomcar_expeditionbag_gray.zip
 *.tar.gz
 
 # Object files

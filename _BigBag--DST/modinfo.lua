@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------------------------------------------------
-name = " A Big Bag (大背包) 1.6"
+name = " A Big Bag 大背包 · 64 + 32"
 author = "Roomcar"
-version = "1.7.0-dev"
-description = "64-slot Big Bag plus a 32-slot classified Expedition Bag. Optional item duplication, preservation and crafting supplies.\n64格大背包与32格分类远行包：命名、拖拽、分区装备槽。大背包可选复制物品、持续保鲜、制造补料；远行包按正常规则运行。\n堆满+保鲜同时开启时，配方额外需要1个紫宝石。"
+version = "1.7.1"
+description = "64-slot Big Bags with Classic and New UI variants, exchangeable through crafting, plus a 32-slot classified Expedition Bag. Hold F1 to move side panels. Improved integrated layouts with controller support. Big Bags offer optional duplication, preservation and crafting supplies; Expedition Bag follows normal rules.\n64格大背包，经典与新版界面任选，可通过制作互换；另有32格分类远行包。支持F1移动侧栏，优化整合模式界面，支持手柄。大背包可选复制补满、保鲜回鲜和制造补料；远行包保持正常规则。"
 
 api_version = 10
 dst_compatible = true
@@ -86,7 +86,7 @@ configuration_options = {
 	{
 		name = "GIVE",
 		label = "Crafting Supplies (制造补料)",
-		hover = "While equipped, crafting generates missing ordinary materials. Works for remote players and caves. Tech and character costs still apply. / 装备时制造自动补齐普通材料，支持客机和洞穴，不绕过科技和角色消耗。",
+		hover = "While equipped, crafting generates missing ordinary materials. Supports remote clients. Tech and character costs still apply. / 装备时制造自动补齐普通材料，支持远程客户端，不绕过科技和角色消耗。",
 		options = {
 			{ description = "Off", data = false, },
 			{ description = "On", data = true, },
@@ -102,8 +102,8 @@ configuration_options = {
     },
     {
         name = "UI_DRAG_KEY",
-        label = "Drag Key (默认拖动键)",
-        hover = "Point at the side panel, hold this key and move the mouse. Each player can change it on the panel. / 鼠标移到背包侧栏，按住此键移动即可拖动；每位玩家可在面板上单独改键。",
+        label = "Modern Drag Key (新版拖动键)",
+        hover = "Point at the side panel, hold this key and move the mouse. New UI / Expedition only; classic always uses F1. / 仅新版大背包与远行包可改键；经典大背包固定F1。",
         options = {
             {description = "Off / 关", data = 0},
             {description = "F1", data = 1}, {description = "F2", data = 2},
@@ -115,28 +115,21 @@ configuration_options = {
         default = 1,
     },
     {
-        name = "UI_SCALE",
-        label = "Panel Size (侧栏大小)",
-        hover = "Mouse side panel only. Storage stays at 64 slots. / 调整鼠标侧栏大小，容量始终64格。",
-        options = {{description = "60%", data = .6}, {description = "80%", data = .8}, {description = "100%", data = 1}},
-        default = .8,
-    },
-    {
         name = "UI_X",
-        label = "Panel X (侧栏左右)",
+        label = "Modern Panel X (新版侧栏左右)",
         options = {{description = "Left / 左", data = -100}, {description = "Default / 默认", data = 0}, {description = "Right / 右", data = 60}},
         default = 0,
     },
     {
         name = "UI_Y",
-        label = "Panel Y (侧栏上下)",
+        label = "Modern Panel Y (新版侧栏上下)",
         options = {{description = "Down / 下", data = -80}, {description = "Default / 默认", data = 0}, {description = "Up / 上", data = 80}},
         default = 0,
     },
     {
         name = "AUTOHIDE",
-        label = "Auto Hide Panel (自动收起)",
-        hover = "Hide the bag panel while another container or cookbook is open. Contents remain available for crafting. / 打开其他容器或食谱时暂时收起，材料仍可用于制造。",
+        label = "Modern Auto Hide (新版自动收起)",
+        hover = "New UI / Expedition: auto-hide for other containers or cookbook; New UI also detects crafting. Stays open while a cooking pot is open. / 仅新版大背包与远行包；其他容器、烹饪书触发，新版额外识别制作菜单。打开锅具时保持展开，便于连续取食材。",
         options = {{description = "Off / 关", data = false}, {description = "On / 开", data = true}},
         default = true,
     },

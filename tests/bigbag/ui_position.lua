@@ -11,6 +11,7 @@ end
 local function near(a,b) assert(math.abs(a-b)<.01, tostring(a).." ~= "..tostring(b)) end
 
 test("whole panel, including footer, fits at every edge and supported screen size", function()
+    for _, geometry in ipairs({geometry, require("bigbag_new_position"), require("expedition_position")}) do
     for _, size in ipairs({{320,200},{640,480},{1280,720},{1920,1080},{3440,1440}}) do
         for _, scale in ipairs({.24,.48,1,2,4}) do
             local w,h=size[1],size[2]
@@ -21,6 +22,7 @@ test("whole panel, including footer, fits at every edge and supported screen siz
                 assert(y+geometry.BOTTOM*s >= 11.99 and y+geometry.TOP*s <= h-11.99)
             end
         end
+    end
     end
 end)
 test("invalid saved coordinates are rejected and legacy offscreen values are bounded", function()

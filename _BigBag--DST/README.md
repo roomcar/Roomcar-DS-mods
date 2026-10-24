@@ -1,9 +1,29 @@
 # A Big Bag 大背包 · DST
 
-适用于《饥荒联机版》（Don't Starve Together）的背包 Mod，提供 64 格大背包与 32 格分类远行包。大背包支持可选的复制补满、保鲜回鲜和制造补料功能。
+适用于《饥荒联机版》（Don't Starve Together）的背包 Mod，提供经典 / 新版两种 64 格大背包与 32 格分类远行包。大背包支持可选的复制补满、保鲜回鲜和制造补料功能。
 
-仓库开发版本：**1.7.0-dev**。测试基线：DST **756039**（Steam build 25643519）。
-仓库开发版本与 Steam 创意工坊发布版本可能不同。
+当前版本：**1.7.1**（待作者游戏内验收，未发布）。测试基线：DST **756039**（Steam build 25643519）。
+本目录为1.7.1正式发布源。
+
+## 1.7.1 界面分流
+
+| 物品 | 鼠标侧栏 | 手柄 / 整合背包 |
+|---|---|---|
+| 大背包 `bigbag` | 保留 Git `2457c55`（1.5.0）的0.6缩放、原始位置与8×8格；原底板九宫格切片，可见544×544、缩紧留白；无额外按钮，固定F1拖动 | 上方20+20、下方24，背包格子80%；人物栏/装备栏不缩放 |
+| 大背包-新版 `roomcar_bigbag_new` | 原尺寸8×8格，九宫格背板544×632覆盖名称与底部五按钮；可命名、整理、收起、颜色标记、改键与复位 | 与经典相同，上方40、下方24 |
+| 远行包 `roomcar_expeditionbag` | 原尺寸4×8格，六色整区边框，九宫格背板288×696覆盖名称与两排按钮 | 上方12、下方20，背包格子80%，保留六色边框 |
+
+已有的 1.5 / 1.7 大背包都保持 `bigbag` 身份，自动显示经典 UI；物品世界位置、内容、槽位、超量堆叠和已有自定义名字无需转换。名字继续出现在物品提示中，经典版不再提供命名按钮。喜欢 1.7 UI 的玩家可按相同配方另做「大背包-新版」。两款 64 格背包共用原有功能配置，服务端行为不随 UI 回退。
+
+经典版位置独立保存在本机；不继承 1.7 的隐藏状态、位置或拖动键。正常屏幕 / HUD 缩放下格子与 1.5 尺寸一致，r13缩紧背板边距，极小屏幕仍会等比适配并防止出界。F1 拖动只用于鼠标侧栏，手柄 / 整合布局不使用侧栏拖动。经典版没有增加自动收起，保留原生容器开关行为。
+
+每次打开新版或远行包都先展开，不继承旧折叠标记；若制作菜单或箱子已打开，先保持展开，关闭后下一次打开菜单/箱子才自动收起。打开锅具时保持可见。手动收起后仅剩展开按钮，背板、名称及其余按钮全部隐藏。
+
+新版大背包采用此前制作的远行包包体、背带、侧身、落地与图标，提供原色/青绿/赭红/靛蓝/金黄五种独立颜色标记，背负与落地外观同步着色并存档。远行包使用灰白圆顶、前置拉链袋的新造型，没有标签或商标，按原版普通背包结构分成6张非交叉背带与6张包体帧；使用独立build和图标，不覆盖新版或经典外观。已有远行包颜色记录保留，新做的远行包默认原色。
+
+三个包背板从完整原版bigbagbg.tex切成九块，保留四角和透明羽化；原贴图文件不改。中段延展，角区等比，尺寸计算将透明外沿留在可见面板之外，不再裁掉角区，也未替换其他样式的底板。
+
+本轮发布检查通过64项自动回归与41个Lua语法检查，使用原生ContainerWidget/NineSlice/Container/Named/InventoryBar导航代码与模拟渲染、实体和输入；包含旧存档结构往返、颜色保存/恢复及64格内容保留。新远行包编译保留普通背包12帧的编号、时长和锚点，并以原生动画矩阵离线核对穿戴与落地。实际游戏画面、物理手柄与多人未在本轮实测。
 
 ## 使用
 
@@ -21,7 +41,7 @@
 **复制补满与保鲜回鲜同时开启时，任何难度都额外需要紫宝石 ×1。**
 配方难度在世界的服务器模组配置中选择。
 
-容量固定为 64 格，支持携带多个，但大背包之间不能套娃。默认移速为 0.75 倍，可配置。
+容量固定为 64 格，支持携带多个，但大背包之间不能套娃。远行包可存入人物随身栏，使用原生pocket-only规则禁止放进箱子及其他容器；这与其内部收纳规则分开。默认移速为 0.75 倍，可配置。
 装备栏优先使用其他模组提供的 `BACK`，否则使用原版 `BODY`；原版没有独立背包栏。
 
 ## 远行包（32 格）
@@ -37,7 +57,7 @@
 | 材料与燃料（8） | 基础制作材料 ×6、燃料 ×2 |
 | 机动侧袋（4） | 通用 ×4 |
 
-空槽显示类别文字、物品轮廓与悬停说明。材料六格互通，不强制分别存草、树枝或石头。自动存入会优先选择专用槽，再使用可兼容的类别和通用槽；例如矿工帽优先进入照明格，荧光果优先进入燃料格。手动放入时矿工帽也可放头部格。工具不会挤入武器格。
+空槽显示物品轮廓，分类说明移到悬停提示，不再常驻小字；六个整区使用不同颜色边框。侧栏为4列×8行，两个6格区各为2×3，三个4格区各为4×1，材料区为4×2；槽位编号不变。材料六格互通，不强制分别存草、树枝或石头。自动存入会优先选择专用槽，再使用可兼容的类别和通用槽；例如矿工帽优先进入照明格，荧光果优先进入燃料格。手动放入时矿工帽也可放头部格。工具不会挤入武器格。
 
 远行包保持 **1 倍移速、正常腐败与耐久**，不继承大背包的复制、保鲜、修复、制造补料或微光选项。格子只是收纳位置，不会自动装备、治疗、修理或补充燃料；原版装备栏限制仍生效。不能套娃背包。
 
@@ -47,24 +67,24 @@
 
 其他 Mod 可在物品联网初始化阶段添加 `roomcar_expedition_<类别>` 标签以支持专用槽，例如 `roomcar_expedition_repair`。可用类别见 [`expedition_data.lua`](scripts/expedition_data.lua)；客户端与服务器需要一致的标签。
 
-## 大背包配置与共享界面
+## 大背包功能配置与新版界面
 
 - **复制补满（默认关）**：物品放入、开关或装备背包时复制至该物品的堆叠上限。不是合并已有物品。关闭不会撤回已经生成的数量，且永远不会把高于上限的现有数量减小。无限上限使用原有限定上限；没有有效有限上限时不复制。
 - **保鲜回鲜（默认关）**：放入后恢复新鲜，留在包内时停止自然腐烂。不会把已经变成腐烂物的物品变回原食物，也不会抵消敌人直接替换物品的效果。关闭时保留旧版的冰箱标签行为。
 - **修复耐久（默认开）**：需同时开启保鲜回鲜；恢复工具、护甲和燃料。可单独关闭，保留纯保鲜。
 - **制造补料（默认关）**：装备背包时点击制造，服务器补齐缺少的普通材料，之后走原版制造流程。支持独立服务器与远程客户端的请求；科技、角色、技能、生命/理智等消耗仍按原版检查。只补缺额，不发放已有材料的完整一份。
 - **微光（默认关）**：装备时发光，卸下或掉落时关闭。
-- **侧栏大小/位置**：鼠标侧栏默认缩至旧版 80%，可改大小与横纵偏移；不改变存储槽数。
+- **侧栏大小/位置**：三款背包都保持原版格子尺寸；旧的侧栏缩放选项已撤下。横纵偏移仍用于新版大背包和远行包；不改变存储槽数。
 - **收起/展开**：只折叠面板，不关闭网络容器，包内材料仍可用于制造。原版右键开关仍是真正的容器开关。
 - **自动收起（默认开）**：打开其他容器或食谱时暂时隐藏内容，关闭后恢复；期间手动展开会保持展开，直到本次其他容器/食谱操作结束。
 - **整理**：按物品 prefab 分组，稳定排列同类物品；不合并堆叠，不修改耐久、皮肤或身份。通过服务器验证操作者，避免客户端直接改物品。
-- **手柄/整合背包**：将原版 64 格单行改成 16×4 网格，沿用原版选格与物品操作。
+- **手柄/整合背包**：第1–20格和21–40格在人物栏上方各排一行，第41–64格回到原生第二行。左右选择锁定当前排，上下沿用原版空间搜索；小屏幕或HUD/手柄放大时等比适配防止裁切。仅重新摆放客户端原生槽位，不改变存档索引。
 
 保留旧版 `bigbag` 标识、64 个槽位和游戏原版容器保存结构，以兼容已有背包存档。支持掉落漂浮，并完善换包、卸下和掉落时的容器关闭逻辑。背包动画沿用本 Mod 原版资源。
 
 ## 给背包命名
 
-装备背包后，点击鼠标侧栏顶部的「名称 [命名]」，输入新名字并保存，也可按回车确认。支持中文，最多 20 个 Unicode 字符；清空输入后保存恢复默认名称，取消不修改名称。
+装备新版大背包或远行包后，鼠标移到侧栏名称上会高亮并提示“点击重命名背包”；名称后不再附加文字。点击名称输入新名字并保存，也可按回车确认。支持中文，最多20个Unicode字符；清空保存恢复默认名称，取消不修改名称。
 
 每只背包独立命名，名称显示在侧栏标题和原版物品提示中，并随背包同步、存档和转交。只有当前持有并打开背包的玩家可以改名，不能远程修改其他玩家持有的包。旧存档中的未命名背包继续显示默认名称。
 
@@ -126,7 +146,7 @@ lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 
 ### 测试状态
 
-以下结果对应上述开发版本与游戏测试基线，测试环境为 macOS、离线独立服务器及独立客户端：
+以下为此前开发阶段的测试记录，游戏基线为 DST 756039，测试环境为 macOS、离线独立服务器及独立客户端；不能视为 1.7.0 最终包的全部重新验收结果：
 
 | 检查 | 结果 |
 |---|---|
@@ -146,6 +166,12 @@ lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 | 独立客户端：整理 RPC、制造 RPC 补料并产出火把 | 通过 |
 | 客户端整合布局：16×4 格、跨行方向选格 | 通过；尚无实体手柄输入实测 |
 
+## 1.7.0 发布候选检查
+
+2026-10-22 在 Windows 使用 Lua 5.1 与本机 DST 756039 官方脚本重跑：功能回归 9 项、界面位置回归 6 项、命名回归 4 项均通过。发布候选目录与逐文件哈希在发布材料中提供。
+
+本轮按作者要求跳过不便开展的多人联机实测。地表/洞穴往返、真实远程客户端流程、实体手柄及第三方模组组合不作为本次已验证项目；保留为已知未测范围。
+
 ## 兼容性与问题反馈
 
 地表与洞穴之间的实际往返、实体手柄输入，以及第三方堆叠或装备栏 Mod 组合仍待验证。已有的物品丢失、黑屏和断线反馈尚未全部复现，当前测试结果不代表这些情况已全部解决。
@@ -156,7 +182,7 @@ lua5.1 tests/bigbag/naming.lua /path/to/DST-scripts
 
 The separate Expedition Bag has 32 categorized slots across combat, tools/travel, light/maintenance, food/medicine, materials/fuel and general pockets. Craft with 4 Pig Skins, 8 Silk and 4 Rope at Science Two. It has normal movement, spoilage and durability and does not inherit Big Bag power options. Names and five colour markers are saved per bag. Empty slots show category hints; automatic insertion prefers dedicated slots. Spoiled contents stay in place, and unsafe equipment swaps are rejected when no suitable return slot is available.
 
-64-slot backpack with a compact, collapsible side panel, stable sorting and a 16×4 integrated/controller layout. Point at the side panel and hold F1 while moving the mouse to reposition it. Cycle F1–F9/Off using the panel button; preferences are saved locally. The panel stays within the screen and adapts to smaller displays. Use Reset or the local console command `d_resetbigbagui()` to restore its position. Click the side panel title to name each bag (up to 20 Unicode characters); leave it blank to reset. Names sync to other players and are saved with the item. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
+Classic Big Bag keeps the 1.5 full-size square grid with a tighter original-texture panel and a compact integrated layout, with fixed F1 dragging and no extra buttons. Existing bigbag saves retain their contents and names. Craft the separate Big Bag - New UI for the 1.7 collapsible panel, naming, stable sorting and a split integrated/controller layout: slots 1-40 in two rows above the player inventory and slots 41-64 on the native backpack row. Left/right stay in the current row; up/down use native navigation. UI scale, offsets, auto-hide and configurable drag keys apply only to the New UI bag and Expedition Bag. Point at the side panel and hold F1 while moving the mouse to reposition it. Cycle F1–F9/Off using the panel button; preferences are saved locally. The panel stays within the screen and adapts to smaller displays. Use Reset or the local console command `d_resetbigbagui()` to restore its position. Click the side panel title to name each bag (up to 20 Unicode characters); leave it blank to reset. Names sync to other players and are saved with the item. Find it under Containers, Clothing or Mods. Duplication, preservation and crafting supplies are optional and disabled by default. Repair is separately configurable when preservation is enabled. Duplication never reduces existing stacks. Both duplication and preservation enabled add one purple gem to the selected recipe.
 
 ## Links
 
@@ -164,3 +190,11 @@ The separate Expedition Bag has 32 categorized slots across combat, tools/travel
 - [Source repository](https://github.com/roomcar/Roomcar-DS-mods)
 - Author: Roomcar
 - License: GPL-3.0, see [LICENSE](LICENSE).
+
+### r13 显示验收
+
+三个包统一缩紧背板边距，格子保持原尺寸；远行包分区交界留出窄缝，边框位于格子下层、背板上层，正常可见，选中放大不遮挡格子和物品。新版大背包背负图保留上盖和肩部位置，下半深色部分压短30%；两种新版包落地帧分别放大20%/28%，保留原有接触阴影及落地点。色条仍在切色按钮上。重启游戏后检查现有背包，无需重新制作。
+
+### 经典与新版互换
+
+制作栏提供“大背包：改为新版”和“大背包：改为经典”，1个旧款式换1个目标款式，无额外材料、无需科技，基础材料配方仍然保留。先卸下并放入随身物品栏；若包内有东西，游戏会将其丢到脚边，再消耗旧包。新包不继承名称与颜色。制造补料不会提供交换用包。打开/关闭操作保持不变，远行包不参与互换。

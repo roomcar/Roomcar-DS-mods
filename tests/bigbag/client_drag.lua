@@ -1,10 +1,11 @@
--- LOCAL client console, isolated test world, equipped bigbag in side-panel mode.
+-- LOCAL client console, isolated test world, equipped roomcar_bigbag_new in side-panel mode.
 -- Exercises real Widget transforms with synthetic key/pointer input. Resets UI
 -- position before and after; does not change any server or inventory contents.
 local player = assert(ThePlayer)
 local bag = assert(player.replica.inventory:GetOverflowContainer()).inst
+assert(bag.prefab == "roomcar_bigbag_new", "this script tests modern controls; test classic fixed F1 manually")
 local widget = assert(player.HUD.controls.containers[bag], "side panel must be open")
-local drag, geometry = require("bigbag_ui_drag"), require("bigbag_ui_position")
+local drag, geometry = require("bigbag_ui_drag"), require("bigbag_new_position")
 local config = TUNING.ROOMCAR_BIGBAG
 local oldkey, oldmouse = TheInput.IsKeyDown, TheInput.GetScreenPosition
 local oldscreen = TheFrontEnd.GetActiveScreen
@@ -52,8 +53,8 @@ local ok,err = pcall(function()
     bounded()
     config.AUTOHIDE = true
     player.HUD.cookbookscreen = {}
-    player._bigbag_collapsed = false
-    player._bigbag_autoexpanded = nil
+    widget._bigbag_visibilitystate._bigbag_collapsed = false
+    widget._bigbag_visibilitystate._bigbag_autoexpanded = nil
     widget:UpdateBigBagVisibility()
     assert(widget._bigbag_hidden)
     widget.bigbag_toggle.onclick()

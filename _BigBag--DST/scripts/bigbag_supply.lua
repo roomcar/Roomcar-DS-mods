@@ -3,6 +3,8 @@ local M = {}
 
 function M.SpecialCostsAvailable(builder, recipe)
     if recipe == nil or recipe.is_deconstruction_recipe then return false end
+    -- Exchanging UI variants must consume a real bag, never one supplied free.
+    if recipe.name == "roomcar_bigbag_to_new" or recipe.name == "roomcar_bigbag_to_classic" then return false end
     if recipe.getlimitedrecipecount ~= nil and recipe:getlimitedrecipecount(builder.inst) <= 0 then return false end
     for _, cost in ipairs(recipe.character_ingredients or {}) do
         if not builder:HasCharacterIngredient(cost) then return false end

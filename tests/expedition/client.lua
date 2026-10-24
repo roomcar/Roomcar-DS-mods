@@ -13,7 +13,7 @@ local function step(delay,fn)
 end
 assert(#widget.inv==32 and #widget.expedition_headers==6)
 for slot,role in ipairs(data.slots) do
-    assert(widget.inv[slot].label:GetString()==data.Label(role,TUNING.ROOMCAR_BIGBAG.LANG))
+    assert(widget.inv[slot].label==nil or not widget.inv[slot].label:IsVisible())
     if data.roles[role].icon and not widget.inv[slot].tile then assert(widget.inv[slot].bgimage2:IsVisible()) end
 end
 local before=bag.roomcar_bagcolor:value()
@@ -39,7 +39,7 @@ step(1,function()
         assert(#inv.backpackinv==32 and #inv.expedition_gridheaders==6)
         local position=inv.backpackinv[1]:GetWorldPosition()
         local nextslot,list=inv:GetClosestWidget({inv.backpackinv},position,Vector3(0,-1,0))
-        assert(nextslot==inv.backpackinv[4] and list==inv.backpackinv,"directional selection")
+        assert(nextslot==inv.backpackinv[17] and list==inv.backpackinv,"12+20 directional selection")
         print("EXPEDITION_CLIENT_PASS: integrated six-group layout and directional selection")
     end)
     Profile.GetIntegratedBackpack=original

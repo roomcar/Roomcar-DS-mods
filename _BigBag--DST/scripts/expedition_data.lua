@@ -39,12 +39,12 @@ for _, entry in ipairs({{"weapon",2},{"head",3},{"body",1},{"tool",4},{"travel",
     for _ = 1, entry[2] do M.slots[#M.slots+1] = entry[1] end
 end
 M.groups = {
-    {first=1,last=6,x=-142,y=270,cols=3,spacing=66,zh="战斗与换装",en="Combat & clothing"},
-    {first=7,last=12,x=142,y=270,cols=3,spacing=66,zh="工具与行装",en="Tools & travel"},
-    {first=13,last=16,x=-142,y=75,cols=2,spacing=74,zh="照明与维护",en="Light & maintenance"},
-    {first=17,last=20,x=142,y=75,cols=2,spacing=74,zh="食物与急救",en="Food & medicine"},
-    {first=21,last=28,x=-142,y=-120,cols=4,spacing=58,zh="材料与燃料",en="Materials & fuel"},
-    {first=29,last=32,x=142,y=-120,cols=2,spacing=74,zh="机动侧袋",en="General pockets"},
+    {first=1,last=6,x=-66,y=239,cols=2,spacing=66,zh="战斗与换装",en="Combat & clothing",border={.95,.37,.32}},
+    {first=7,last=12,x=66,y=239,cols=2,spacing=66,zh="工具与行装",en="Tools & travel",border={.98,.73,.25}},
+    {first=13,last=16,x=0,y=35,cols=4,spacing=66,zh="照明与维护",en="Light & maintenance",border={.36,.75,.96}},
+    {first=17,last=20,x=0,y=-37,cols=4,spacing=66,zh="食物与急救",en="Food & medicine",border={.45,.85,.44}},
+    {first=21,last=28,x=0,y=-109,cols=4,spacing=66,zh="材料与燃料",en="Materials & fuel",border={.78,.55,.95}},
+    {first=29,last=32,x=0,y=-247,cols=4,spacing=66,zh="机动侧袋",en="General pockets",border={.35,.88,.78}},
 }
 M.colors = {
     {zh="原色",en="Natural",rgb={1,1,1}},
@@ -53,7 +53,7 @@ M.colors = {
     {zh="靛蓝",en="Blue",rgb={.55,.7,1}},
     {zh="金黄",en="Gold",rgb={1,.85,.4}},
 }
-function M.IsBag(inst) return inst ~= nil and (inst.prefab == "bigbag" or inst.prefab == M.PREFAB) end
+function M.IsBag(inst) return inst ~= nil and (inst.prefab == "bigbag" or inst.prefab == "roomcar_bigbag_new" or inst.prefab == M.PREFAB) end
 -- Short labels stay legible without shrinking text to fit a narrow slot.
 local shortlabels = {weapon="Arms",head="Head",body="Body",thermal="Temp.",medicine="Meds",material="Mats",general="Any"}
 function M.Label(role, lang)
@@ -127,8 +127,11 @@ function M.MakeWidget(x, y)
     for _, group in ipairs(M.groups) do
         for slot=group.first,group.last do
             local i=slot-group.first
-            widget.slotpos[slot]=Vector3(group.x+(i%group.cols-(group.cols-1)/2)*group.spacing,
-                group.y-55-math.floor(i/group.cols)*82,0)
+            local sx=group.x+(i%group.cols-(group.cols-1)/2)*group.spacing
+            -- Four columns, with a four-pixel opening at section boundaries.
+            -- Slots keep their native size; only the gaps between groups grow.
+            sx=sx+(sx<0 and -3 or 3)
+            widget.slotpos[slot]=Vector3(sx,group.y-math.floor(i/group.cols)*group.spacing,0)
         end
     end
     return widget

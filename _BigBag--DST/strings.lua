@@ -50,3 +50,29 @@ else
     STRINGS.RECIPE_DESC.ROOMCAR_EXPEDITIONBAG = "A place for every journey's essentials."
     STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROOMCAR_EXPEDITIONBAG = "Light, food, tools... I think I'm ready."
 end
+
+if TUNING.ROOMCAR_BIGBAG_LANG == 1 then
+    STRINGS.NAMES.ROOMCAR_BIGBAG_NEW = "大背包-新版"
+    STRINGS.RECIPE_DESC.ROOMCAR_BIGBAG_NEW = "64格大背包，使用新版界面。"
+else
+    STRINGS.NAMES.ROOMCAR_BIGBAG_NEW = "Big Bag - New UI"
+    STRINGS.RECIPE_DESC.ROOMCAR_BIGBAG_NEW = "64 slots with the modern interface."
+end
+for _, character in pairs(STRINGS.CHARACTERS) do
+    if character.DESCRIBE ~= nil then
+        character.DESCRIBE.ROOMCAR_BIGBAG_NEW = character.DESCRIBE.BIGBAG
+            or STRINGS.CHARACTERS.GENERIC.DESCRIBE.BIGBAG
+    end
+end
+
+if TUNING.ROOMCAR_BIGBAG_LANG == 1 then
+    STRINGS.NAMES.ROOMCAR_BIGBAG_TO_NEW = "大背包：改为新版"
+    STRINGS.NAMES.ROOMCAR_BIGBAG_TO_CLASSIC = "大背包：改为经典"
+    STRINGS.RECIPE_DESC.ROOMCAR_BIGBAG_TO_NEW = "先卸下背包。包内物品会落地，名称与颜色不继承。"
+    STRINGS.RECIPE_DESC.ROOMCAR_BIGBAG_TO_CLASSIC = "先卸下背包。包内物品会落地，名称与颜色不继承。"
+else
+    STRINGS.NAMES.ROOMCAR_BIGBAG_TO_NEW = "Big Bag: Switch to New UI"
+    STRINGS.NAMES.ROOMCAR_BIGBAG_TO_CLASSIC = "Big Bag: Switch to Classic"
+    STRINGS.RECIPE_DESC.ROOMCAR_BIGBAG_TO_NEW = "Unequip first. Contents drop; name and colour reset."
+    STRINGS.RECIPE_DESC.ROOMCAR_BIGBAG_TO_CLASSIC = "Unequip first. Contents drop; name and colour reset."
+end

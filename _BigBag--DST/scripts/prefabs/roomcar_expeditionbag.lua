@@ -1,10 +1,10 @@
 local data = require("expedition_data")
 local assets = {
-    Asset("ANIM","anim/backpack.zip"), Asset("ANIM","anim/swap_bigbag.zip"),
-    Asset("ATLAS","images/inventoryimages/bigbag.xml"), Asset("IMAGE","images/inventoryimages/bigbag.tex"),
+    Asset("ANIM","anim/backpack.zip"), Asset("ANIM","anim/swap_roomcar_expeditionbag_gray.zip"),
+    Asset("ATLAS","images/inventoryimages/roomcar_expeditionbag_gray.xml"), Asset("IMAGE","images/inventoryimages/roomcar_expeditionbag_gray.tex"),
 }
 local function SetColor(inst, index)
-    if type(index) ~= "number" or data.colors[index] == nil then index=2 end
+    if type(index) ~= "number" or data.colors[index] == nil then index=1 end
     inst.roomcar_bagcolor:set(index)
     local c=data.colors[index].rgb
     inst.AnimState:SetMultColour(c[1],c[2],c[3],1)
@@ -15,13 +15,14 @@ local function SetColor(inst, index)
 end
 local function close(inst) inst.components.container:Close() end
 local function equip(inst, owner)
-    owner.AnimState:OverrideSymbol("swap_body","swap_bigbag","swap_body")
+    owner.AnimState:OverrideSymbol("swap_body","swap_roomcar_expeditionbag_gray","swap_body")
     SetColor(inst,inst.roomcar_bagcolor:value())
     inst.components.container:Open(owner)
     owner:PushEvent("refreshcrafting")
 end
 local function unequip(inst, owner)
     owner.AnimState:SetSymbolMultColour("swap_body",1,1,1,1)
+    owner.AnimState:SetSymbolMultColour("backpack",1,1,1,1)
     owner.AnimState:ClearOverrideSymbol("swap_body")
     owner.AnimState:ClearOverrideSymbol("backpack")
     close(inst)
@@ -36,9 +37,9 @@ local function fn()
     inst.entity:AddNetwork()
     MakeInventoryPhysics(inst)
     inst.AnimState:SetBank("backpack1")
-    inst.AnimState:SetBuild("swap_bigbag")
+    inst.AnimState:SetBuild("swap_roomcar_expeditionbag_gray")
     inst.AnimState:PlayAnimation("anim")
-    inst.MiniMapEntity:SetIcon("bigbag.tex")
+    inst.MiniMapEntity:SetIcon("roomcar_expeditionbag_gray.tex")
     inst:AddTag("backpack")
     inst:AddTag("roomcar_expeditionbag")
     inst.foleysound="dontstarve/movement/foley/krampuspack"
@@ -49,9 +50,12 @@ local function fn()
     inst:AddComponent("inspectable")
     inst:AddComponent("named")
     inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.atlasname="images/inventoryimages/bigbag.xml"
-    inst.components.inventoryitem:ChangeImageName("bigbag")
-    inst.components.inventoryitem.cangoincontainer=false
+    inst.components.inventoryitem.atlasname="images/inventoryimages/roomcar_expeditionbag_gray.xml"
+    inst.components.inventoryitem:ChangeImageName("roomcar_expeditionbag_gray")
+    -- Inventory also checks cangoincontainer. Allow spare bags in character
+    -- pockets while the native pocket-only rule prevents container nesting.
+    inst.components.inventoryitem.cangoincontainer=true
+    inst.components.inventoryitem.canonlygoinpocket=true
     inst.components.inventoryitem:SetOnDroppedFn(close)
     inst.components.inventoryitem:SetOnPutInInventoryFn(function(bag)
         if not bag.components.equippable:IsEquipped() then close(bag) end
@@ -66,7 +70,7 @@ local function fn()
     inst.components.container:WidgetSetup(data.PREFAB)
     require("expedition_container").Attach(inst)
     inst.SetBagColor=SetColor
-    SetColor(inst,2)
+    SetColor(inst,1)
     inst.OnSave=function(bag, saved) saved.color=bag.roomcar_bagcolor:value() end
     inst.OnLoad=function(bag, saved) SetColor(bag,saved and saved.color) end
     -- Normal spoilage, fuel and durability; no inherited Big Bag power options.

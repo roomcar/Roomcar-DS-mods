@@ -44,9 +44,8 @@ function M.Update(widget, config)
     if name ~= widget._bigbag_title then
         widget._bigbag_title = name
         local button = widget.bigbag_name
-        -- Keep the rename affordance visible even for a long custom name.
-        button.text:SetTruncatedString(name, 360, nil, true)
-        button:SetText(button.text:GetString() .. (config.LANG == 1 and " [命名]" or " [Rename]"))
+        button.text:SetTruncatedString(name, widget._bigbag_title_width or 360, nil, true)
+        button:SetText(button.text:GetString())
     end
 end
 
@@ -55,6 +54,8 @@ function M.Attach(widget, config)
     widget.bigbag_name = widget:AddChild(TextButton())
     widget.bigbag_name:SetPosition(0, 315)
     widget.bigbag_name:SetTextSize(30)
+    widget.bigbag_name:SetHoverText(config.LANG == 1 and "点击重命名背包" or "Click to rename this bag",
+        {font_size=20,offset_y=40})
     widget.bigbag_name:SetOnClick(function() M.Open(widget, config) end)
     M.Update(widget, config)
 end

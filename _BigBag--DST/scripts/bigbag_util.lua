@@ -66,7 +66,7 @@ function M.GetEquippedBag(inventory)
     if inventory == nil then return end
     local equips = inventory.GetEquips ~= nil and inventory:GetEquips() or inventory.equipslots
     for _, item in pairs(equips or {}) do
-        if item ~= nil and item.prefab == "bigbag" then return item end
+        if item ~= nil and (item.prefab == "bigbag" or item.prefab == "roomcar_bigbag_new") then return item end
     end
 end
 

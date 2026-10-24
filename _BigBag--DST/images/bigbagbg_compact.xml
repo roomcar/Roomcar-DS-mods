@@ -1,0 +1,8 @@
+<Atlas>
+    <Texture filename="bigbagbg.tex" />
+    <Elements>
+        <!-- Crop transparent padding: x=12..584, y=20..576 in the 596px texture.
+             The 572x556 region maps almost uniformly onto the 560x544 panel. -->
+        <Element name="bigbagbg.tex" u1="0.0201342282" u2="0.9798657718" v1="0.0335570470" v2="0.9664429530" />
+    </Elements>
+</Atlas>

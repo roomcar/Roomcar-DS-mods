@@ -28,7 +28,7 @@ end
 function M.CanEdit(player, inst)
     if player == nil or not player:IsValid() or player:HasTag("playerghost") or player:HasTag("busy")
         or type(inst) ~= "table" or type(inst.IsValid) ~= "function" or not inst:IsValid()
-        or (inst.prefab ~= "bigbag" and inst.prefab ~= "roomcar_expeditionbag")
+        or (inst.prefab ~= "bigbag" and inst.prefab ~= "roomcar_bigbag_new" and inst.prefab ~= "roomcar_expeditionbag")
         or inst.components.named == nil or inst.components.inventoryitem == nil
         or inst.components.inventoryitem.owner ~= player
         or inst.components.container == nil or not inst.components.container:IsOpenedBy(player) then

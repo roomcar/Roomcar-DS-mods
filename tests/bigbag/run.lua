@@ -150,4 +150,49 @@ test("unknown recipes cannot receive materials", function()
     builder.CanLearn=function()return false end
     supply.Supply(builder,recipe);eq(counts.cutgrass,0)
 end)
+test("conversion ingredients are never fabricated with crafting supplies enabled",function()
+    clock=20;TUNING.ROOMCAR_BIGBAG.GIVE=true;inventory.equipslots={body=equipped}
+    builder.KnowsRecipe=function()return true end
+    local before=#spawned
+    for _,v in ipairs({{"roomcar_bigbag_to_new","bigbag"},{"roomcar_bigbag_to_classic","roomcar_bigbag_new"}})do
+        local r={name=v[1],ingredients={{type=v[2],amount=1}},character_ingredients={},tech_ingredients={}}
+        assert(not supply.CanSupply(builder,r,inventory))
+        supply.Supply(builder,r);eq(#spawned,before)
+    end
+end)
+
+-- Exercise the unmodified engine ingredient consumer, including its container
+-- path. Engine entities/physics are substitutes; item identity remains real.
+package.loaded.techtree={BONUS_TECH={}}
+local NativeBuilder=require("components/builder")
+test("native crafting drops every contained entity before consuming either variant",function()
+    for _,id in ipairs({"bigbag","roomcar_bigbag_new"})do
+        local source=bag();source.prefab=id;local dropped={};local items={}
+        function source.components.container:DropEverything(pt)
+            -- Record the engine request and delegate each actual entity below.
+            self.requested_point=pt
+            Container.DropEverything(self,pt)
+        end
+        -- Use actual native DropEverything/DropItem; just the physics primitive
+        -- and item inventory hooks are mocked.
+        for i=1,64 do
+            local v=item("cutgrass",i==64 and 9999 or i)
+            function v.components.inventoryitem:OnDropped()dropped[v]=true end
+            v.Transform={SetPosition=function()end}
+            v.Physics={Teleport=function()end,SetVel=function()end}
+            v.entity={SetParent=function()end}
+            function v:ReturnToScene()end
+            function v:GetPosition()return {x=0,y=0,z=0}end
+            source.components.container.slots[i]=v;items[i]=v
+        end
+        local consumer={freebuildmode=false,inst={components={},GetPosition=function()return {x=5,y=0,z=7,Get=function()return 5,0,7 end}end,PushEvent=function()end}}
+        consumer.inst.components.inventory={RemoveItem=function(_,v)assert(v==source);return v end}
+        AllRecipes={}
+        NativeBuilder.RemoveIngredients(consumer,{[id]={[source]=1}},"conversion")
+        assert(source.removed and source.components.container.requested_point.x==5)
+        for i,v in ipairs(items)do assert(not v.removed and dropped[v]);eq(v.components.stackable:StackSize(),i==64 and 9999 or i)end
+        assert(next(source.components.container.slots)==nil)
+    end
+end)
+
 print(string.format("%d tests passed (official Container and Stackable implementations)",passed))

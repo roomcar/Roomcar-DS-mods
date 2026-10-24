@@ -1,8 +1,9 @@
--- LOCAL console, isolated test world with an equipped bigbag side panel.
+-- LOCAL console, isolated test world with an equipped roomcar_bigbag_new side panel.
 -- Exercises the actual dialog callbacks and server RPC, leaving the bag named
 -- "矿石与工具" for a subsequent save/restart check. Does not change contents.
 local player = assert(ThePlayer)
 local bag = assert(player.replica.inventory:GetOverflowContainer()).inst
+assert(bag.prefab == "roomcar_bigbag_new", "equip the New UI bag for this test")
 local widget = assert(player.HUD.controls.containers[bag])
 local function step(delay, fn)
     player:DoTaskInTime(delay, function()
@@ -23,7 +24,7 @@ step(.2, function()
     assert(bag:GetDisplayName() == before)
     edit("", true)
     step(1, function()
-        assert(bag:GetDisplayName() == STRINGS.NAMES.BIGBAG, "blank name did not reset")
+        assert(bag:GetDisplayName() == STRINGS.NAMES.ROOMCAR_BIGBAG_NEW, "blank name did not reset")
         edit("矿石与工具", true)
         step(1, function()
             assert(bag:GetDisplayName() == "矿石与工具", "Chinese name not replicated")

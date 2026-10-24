@@ -1,5 +1,5 @@
 -- Run in the LOCAL client console after joining an isolated test server.
--- Requires GIVE=true, an equipped bigbag with cutgrass in slot 1, twigs in 64.
+-- Requires GIVE=true, an equipped roomcar_bigbag_new with cutgrass in slot 1, twigs in 64.
 assert(ThePlayer ~= nil and not TheWorld.ismastersim, "requires a remote client")
 local player = ThePlayer
 local function later(delay, fn)
@@ -10,7 +10,7 @@ local function later(delay, fn)
 end
 local container = player.replica.inventory:GetOverflowContainer()
 local bag = container.inst
-assert(bag.prefab == "bigbag")
+assert(bag.prefab == "roomcar_bigbag_new", "equip the New UI bag for this test")
 local widget = player.HUD.controls.containers[bag]
 assert(widget ~= nil and #widget.inv == 64)
 assert(player.replica.inventory:Has("twigs", 1, true))
