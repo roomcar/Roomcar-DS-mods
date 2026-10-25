@@ -5,7 +5,8 @@ require "modutil"
 
 local assets=
 {
-    Asset("ANIM", "anim/elfmodhat_wht.zip"),
+    Asset("ANIM", "anim/hat_ruins.zip"),
+    Asset("ANIM", "anim/roomcar_godhat_oracle.zip"),
     Asset("ATLAS", "images/inventoryimages.xml"),
     Asset("ATLAS", "images/inventoryimages/godhat.xml"),
 }
@@ -13,382 +14,162 @@ local assets=
 local prefabs =
 {
     "tornado",
+    "wendy_sanityaura_buff_on_fx", "wendy_sanityaura_buff_off_fx",
+    "battlesong_attach", "battlesong_detach",
 }
 
 -------------------------------------------------------------------------------
 
 local lang = TUNING.ROOMCAR_GODHAT_LANG
 
-local function ChangeV(zoomstep,mindist,maxdist,mindistpitch,maxdistpitch,distancetarget,gains,default)
-
-    local camera = TheCamera
-    zoomstep = zoomstep or camera.zoomstep
-    mindist = mindist or camera.mindist
-    maxdist = maxdist or camera.maxdist
-    mindistpitch = mindistpitch or camera.mindistpitch
-    maxdistpitch = maxdistpitch or camera.maxdistpitch
-    distancetarget = distancetarget or camera.distancetarget
-    
-    camera.zoomstep = zoomstep
-    camera.mindist = mindist
-    camera.maxdist = maxdist
-    camera.mindistpitch = mindistpitch
-    camera.maxdistpitch = maxdistpitch
-    --camera:SetDistance(math.ceil(mindist*2)-.1)
-    camera.distancetarget = distancetarget
-    
-    if default then
-        camera:SetDefault()
-    end
-end
-
-local function getspawnlocation(inst, target)
-    local x1, y1, z1 = inst.Transform:GetWorldPosition()
-    local x2, y2, z2 = target.Transform:GetWorldPosition()
-    return x1 + .15 * (x2 - x1), 0, z1 + .15 * (z2 - z1)
-end
-
-local function spawntornado(staff, target, pos)
-    local tornado = SpawnPrefab("tornado")
-    tornado.WINDSTAFF_CASTER = staff.components.inventoryitem.owner
-    tornado.WINDSTAFF_CASTER_ISPLAYER = tornado.WINDSTAFF_CASTER ~= nil and tornado.WINDSTAFF_CASTER:HasTag("player")
-    tornado.Transform:SetPosition(getspawnlocation(staff, target))
-    tornado.components.knownlocations:RememberLocation("target", target:GetPosition())
-
-    if tornado.WINDSTAFF_CASTER_ISPLAYER then
-        tornado.overridepkname = tornado.WINDSTAFF_CASTER:GetDisplayName()
-        tornado.overridepkpet = true
-    end
-end
-
-local function giveitems(inst, data)
-    if data.owner.components.inventory and data.recipe then
-        for ik, iv in pairs(data.recipe.ingredients) do
-            if not data.owner.components.inventory:Has(iv.type, iv.amount) then
-                for i = 1, iv.amount do
-                    local item = SpawnPrefab(iv.type)
-                    data.owner.components.inventory:GiveItem(item)
-                end
+local function giveitems(owner, data)
+    local inventory = owner.components.inventory
+    local recipe = data ~= nil and data.recipe or nil
+    if inventory == nil or recipe == nil or recipe.ingredients == nil then return end
+    for _, ingredient in ipairs(recipe.ingredients) do
+        local has, count = inventory:Has(ingredient.type, ingredient.amount)
+        if not has then
+            for i = 1, math.max(0, ingredient.amount - (count or 0)) do
+                local item = SpawnPrefab(ingredient.type)
+                if item ~= nil then inventory:GiveItem(item) end
             end
         end
     end
 end
 
 local function PeriodicTaskContent(inst, owner)
-    if (owner.components.health and
-        owner.components.health.currenthealth < owner.components.health.maxhealth )then
-        owner.components.health:SetPercent(1)
-    end
-    if (owner.components.sanity and
-        owner.components.sanity.current < owner.components.sanity.max * 0.85 )then
-        owner.components.sanity:SetPercent(1)
-    end
-    if (owner.components.hunger and
-        owner.components.hunger.current < (owner.components.hunger.max * 0.85) )then
-        owner.components.hunger:SetPercent(1)
-    end
-
-
-    owner.components.moisture:SetPercent(0)
-    owner.components.temperature:SetTemperature(25)
-
-
-    if (TheWorld:HasTag("cave") or TheWorld.state.isnight) then
-        owner.components.playervision:ForceNightVision(true)
-        owner.components.playervision:SetCustomCCTable("images/colour_cubes/purple_moon_cc.tex")
-        if owner.components.talker ~= nil and inst.shouldsayNVon ~= nil and inst.shouldsayNVon then
-            if lang == 1 then
-                owner.components.talker:Say('夜视：开启')
-            else
-                owner.components.talker:Say('Night Vision: On')
-            end
-            inst.shouldsayNVon = false
-            inst.shouldsayNVoff = true
-        end
-    else
-        owner.components.playervision:ForceNightVision(false)
-        owner.components.playervision:SetCustomCCTable(nil)
-        if owner.components.talker ~= nil and inst.shouldsayNVoff ~= nil and inst.shouldsayNVoff then
-            if lang == 1 then
-                owner.components.talker:Say('夜视：关闭')
-            else
-                owner.components.talker:Say('Night Vision: Off')
-            end
-            inst.shouldsayNVon = true
-            inst.shouldsayNVoff = false
+    if not owner:IsValid() or inst._wearer ~= owner then return end
+    if inst.Light ~= nil then inst.Light:SetColour(1, 1, 1) end
+    local c = owner.components
+    if c.health ~= nil and c.health:IsDead() then return end
+    if c.health ~= nil and c.health.currenthealth < c.health.maxhealth then c.health:SetPercent(1) end
+    if c.sanity ~= nil and c.sanity.current < c.sanity.max * .85 then c.sanity:SetPercent(1) end
+    if c.hunger ~= nil and c.hunger.current < c.hunger.max * .85 then c.hunger:SetPercent(1) end
+    if c.moisture ~= nil then c.moisture:SetPercent(0) end
+    if c.temperature ~= nil then c.temperature:SetTemperature(25) end
+    -- Visual night vision is local, but darkness immunity must also exist on the server.
+    if c.grue ~= nil then
+        if TheWorld:HasTag("cave") or TheWorld.state.isnight then
+            c.grue:AddImmunity("roomcar_godhat")
+        else
+            c.grue:RemoveImmunity("roomcar_godhat")
         end
     end
 end
 
-local function onplay(inst, musician, instrument)
-    musician.components.moisture:SetPercent(0)
-    musician.components.temperature:SetTemperature(25)
+local function onplay(inst, musician)
+    if musician.components.moisture ~= nil then musician.components.moisture:SetPercent(0) end
+    if musician.components.temperature ~= nil then musician.components.temperature:SetTemperature(25) end
 end
 
-local function taegetIsGodOrFollower(inst, god)
-    local result = false
-    if inst.components.combat.TargetIs(god) or inst.components.combat.IsRecentTarget(god) then
-        result = true
-    end
-    -- if inst.components.combat.target ~= nil then
-    --     local tgt =  inst.components.combat.target
-    --     if tgt.components.follower ~= nil and tgt.components.follower.leader ~= nil and tgt.components.follower.leader == god then
-    --         result = true
-    --     end
-    -- end
-    return result
-end
-
-local function giveupAttackingGOD(inst, god)
-    if inst.components.combat ~= nil and taegetIsGodOrFollower(inst, god) then
-        inst.components.combat.laststartattacktime = 0
-        inst.components.combat.DropTarget()
-        inst.components.combat.GiveUp()
-        inst.components.combat.StopTrackingTarget(inst.components.combat.target)
-    end
-end
-
-local function onhear(inst, musician, instrument)
-    if inst ~= musician and inst.components.combat ~= nil and inst.components.follower ~= nil and
-        (TheNet:GetPVPEnabled() or not inst:HasTag("player")) and
-        not (inst.components.freezable ~= nil and inst.components.freezable:IsFrozen()) and
-        not (inst.components.pinnable ~= nil and inst.components.pinnable:IsStuck()) then
-        inst.task = inst:DoPeriodicTask(1, giveupAttackingGOD, nil, musician)
-        -- giveupAttackingGOD(inst, musician)
-        inst:RemoveTag("scarytoprey")
-        inst:RemoveTag("monster")
-        inst:RemoveTag("hostile")
-        inst:RemoveTag("hound")
-        if inst.AnimState ~= nil then
-            inst.AnimState:SetMultColour(1, 0.8, 0.2, 1)
-        end
-        if inst.components.talker ~= nil then
-            inst.components.talker:Say('GOD!GOD!GOD!GOD!')
-        end
-        -- if inst.components.sleeper ~= nil then
-        --     inst.components.sleeper:AddSleepiness(10, 40)
-        -- elseif inst.components.grogginess ~= nil then
-        --     inst.components.grogginess:AddGrogginess(10, 40)
-        -- else
-        --     inst:PushEvent("knockedout")
-        -- end
-        if inst.components.follower ~= nil and musician.components.leader ~= nil then
-            musician:PushEvent("makefriend")
-            musician.components.leader:AddFollower(inst)
-            if inst.components.follower.maxfollowtime ~= nil and not (inst.components.combat.TargetIs(musician) or inst.components.combat.IsRecentTarget(musician)) then
-                inst.components.follower.maxfollowtime = inst.components.follower.maxfollowtime * 10
-            else
-                inst.components.follower.maxfollowtime = TUNING.PIG_LOYALTY_MAXTIME * 10
-            end
-        end
-    end
+local function onhear(inst, musician)
+    local c = inst.components
+    if inst == musician or inst.prefab == "spider_god" or inst:HasTag("spider_god")
+        or inst:HasTag("player") or inst:HasTag("epic")
+        or c.combat == nil or c.follower == nil or c.follower.neverexpire
+        or musician.components.leader == nil
+        or (c.health ~= nil and c.health:IsDead())
+        or (c.follower.leader ~= nil and c.follower.leader ~= musician)
+        or (c.follower.cached_player_leader_userid ~= nil
+            and c.follower.cached_player_leader_userid ~= musician.userid)
+        or (c.rider ~= nil and c.rider:IsBeingRidden())
+        or (c.freezable ~= nil and c.freezable:IsFrozen())
+        or (c.pinnable ~= nil and c.pinnable:IsStuck()) then return end
+    local wasenemy = c.combat:TargetIs(musician) or c.combat:IsRecentTarget(musician)
+    musician.components.leader:AddFollower(inst)
+    if c.follower.leader ~= musician then return end
+    musician:PushEvent("makefriend")
+    if c.oracle_recruitment == nil then inst:AddComponent("oracle_recruitment") end
+    local fresh = c.oracle_recruitment.state == nil
+    c.oracle_recruitment:Recruit(musician, wasenemy)
+    if fresh then require("oracleeffects").Recruited(inst) end
+    if c.talker ~= nil then c.talker:Say(require("oracle_strings").Text("遵从神谕！", "Heed the oracle!")) end
 end
 
 local function OnBlocked(owner)
-    owner.SoundEmitter:PlaySound("dontstarve/wilson/hit_nightarmour")
+    if owner.SoundEmitter ~= nil then owner.SoundEmitter:PlaySound("dontstarve/wilson/hit_nightarmour") end
 end
 
-local function OnAttacked(inst, data)
-    print("OnAttacked")
-    inst.components.combat:ShareTarget(data.attacker, 60, function(dude)
-        return dude.components.combat ~= nil
-            and dude.components.follower ~= nil
-            and not dude.components.health:IsDead()
-            -- and dude.components.follower.leader == inst.components.follower.leader
+local function OnAttacked(owner, data)
+    if owner.components.combat == nil or data == nil or data.attacker == nil then return end
+    owner.components.combat:ShareTarget(data.attacker, 60, function(dude)
+        return dude.components.combat ~= nil and dude.components.health ~= nil
+            and not dude.components.health:IsDead() and dude.components.follower ~= nil
+            and dude.components.follower.leader == owner
     end, 10)
 end
 
 local function onequip(inst, owner)
-
-    ---------- ---------- ---------- ----------
-
-    if TheWorld ~= nil and TheWorld:HasTag("cave") then
-        ChangeV(6, 10, 180, 25, 90, 80, nil, false)    --cave
-    else
-        ChangeV(6, 10, 180, 40, 60, 80, nil, false)    --forest
-    end
-    if lang == 1 then
-        owner.components.talker:Say('我看得更远了！')
-    else
-        owner.components.talker:Say('I can see much farther now!')
-    end
-
-    -- owner.components.playervision:ForceNightVision(true)
-    -- -- owner.components.playervision:SetCustomCCTable("images/colour_cubes/purple_moon_cc.tex")
-    -- owner.components.playervision:SetCustomCCTable("images/colour_cubes/spring_day_cc.tex")
-
-    ---------- ---------- ---------- ----------
-
-    if TUNING.ROOMCAR_GODHAT_LIGHT then
+    if inst._wearer == owner then return end
+    inst._wearer = owner
+    if inst._equipped ~= nil then inst._equipped:set(true) end
+    if inst.Light ~= nil then
+        inst.Light:SetColour(1, 1, 1)
         inst.Light:Enable(true)
     end
-
-    if TUNING.ROOMCAR_GODHAT_GIVE then
-        owner:ListenForEvent("cantbuild", giveitems)
-    end
-
-    ---------- ---------- ---------- ----------
-
-    owner.AnimState:OverrideSymbol("swap_hat", "elfmodhat_wht", "swap_hat")
+    if TUNING.ROOMCAR_GODHAT_GIVE then owner:ListenForEvent("cantbuild", giveitems) end
+    owner.AnimState:OverrideSymbol("swap_hat", "roomcar_godhat_oracle", "swap_hat")
     owner.AnimState:Show("HAT")
-    -- owner.AnimState:Show("HAT_HAIR")
-    -- owner.AnimState:Hide("HAIR_NOHAT")
-    -- owner.AnimState:Hide("HAIR")
-
-    ---------- ---------- ---------- ----------
-
+    owner.AnimState:Hide("HAIR_HAT")
+    owner.AnimState:Show("HAIR_NOHAT")
+    owner.AnimState:Show("HAIR")
+    owner.AnimState:Show("HEAD")
+    owner.AnimState:Hide("HEAD_HAT")
+    owner.AnimState:Hide("HEAD_HAT_NOHELM")
+    owner.AnimState:Hide("HEAD_HAT_HELM")
+    require("oracleeffects").Equip(owner, true)
     PeriodicTaskContent(inst, owner)
     inst.task = inst:DoPeriodicTask(1, PeriodicTaskContent, nil, owner)
-
-    ---------- ---------- ---------- ----------
-
-    owner.components.moisture:SetPercent(0)
-    owner.components.temperature:SetTemperature(25)
-
-    ---------- ---------- ---------- ----------
-
-    inst:ListenForEvent("blocked", OnBlocked, owner)
+    owner:ListenForEvent("blocked", OnBlocked)
     owner:ListenForEvent("attacked", OnAttacked)
-
-    ---------- ---------- ---------- ----------
-
-    if owner.components.combat.damagemultiplier ~= nil then
-        owner.components.combat.damagemultiplier = owner.components.combat.damagemultiplier + 10000
-    end
-    if owner.components.combat.attackrange ~= nil then
-        owner.components.combat.attackrange = owner.components.combat.attackrange + 40
-    end
-    if owner.components.combat.hitrange ~= nil then
-        owner.components.combat.hitrange = owner.components.combat.hitrange + 40
-    end
-
-    ---------- ---------- ---------- ----------
-
-    -- if inst.components.fueled ~= nil then
-    --     inst.components.fueled:StartConsuming()
-    -- end
-
-    ---------- ---------- ---------- ----------
-
-    -- owner:PushEvent("stopfreezing")
-    -- owner:PushEvent("stopoverheating")
-
-    ---------- ---------- ---------- ----------
-
-end
-
-local function onunequip(inst, owner)
-
-    ---------- ---------- ---------- ----------
-
-    if TheWorld ~= nil and TheWorld:HasTag("cave") then
-        ChangeV(4, 15, 35, 25, 40, 25, nil, false)    --cave
-    else
-        ChangeV(4, 15, 50, 30, 60, 30, nil, false)    --forest
-    end
-    owner.components.talker:Say("Ops.")
-
-    -- owner.components.playervision:ForceNightVision(false)
-    -- owner.components.playervision:SetCustomCCTable(nil)
-
-    ---------- ---------- ---------- ----------
-
-    if TUNING.ROOMCAR_GODHAT_LIGHT then
-        inst.Light:Enable(false)
-    end
-
-    if TUNING.ROOMCAR_GODHAT_GIVE then
-        owner:RemoveEventCallback("cantbuild", giveitems)
-    end
-
-    ---------- ---------- ---------- ----------
-
-    owner.AnimState:ClearOverrideSymbol("swap_hat")
-    owner.AnimState:Hide("HAT")
-    -- owner.AnimState:Hide("HAT_HAIR")
-    -- owner.AnimState:Show("HAIR_NOHAT")
-    -- owner.AnimState:Show("HAIR")
-
-    ---------- ---------- ---------- ----------
-
-    if inst.task ~= nil then
-        inst.task:Cancel()
-        inst.task = nil
-    end
-
-    if TUNING.ROOMCAR_GODHAT_PUNISH then
-        owner.components.hunger:DoDelta(- owner.components.hunger.max * 0.8)
-        owner.components.sanity:DoDelta(- owner.components.sanity.max * 0.8)
-        owner.components.health:DoDelta(- owner.components.health.maxhealth * 0.5)
-    end
-
-    ---------- ---------- ---------- ----------
-
-    -- owner.components.builder:GiveAllRecipes()
-
-    -- local materials = owner.components.builder:GetIngredients("critter_dragonling_builder")
-
-    -- owner.components.inventory:GetItemByName(materials,2)
-
-    -- owner.components.builder:MakeRecipe("critter_dragonling_builder", nil, nil, "dragonling_wyvern_builder", nil)
-
-    -- owner.components.builder:UnlockRecipesForTech("ORPHANAGE")
-
-    -- owner.components.builder:AddRecipe("critter_dragonling_builder")
-    -- owner.components.builder:AddRecipe("critter_glomling_builder")
-    -- owner.components.builder:AddRecipe("critter_kitten_builder")
-    -- owner.components.builder:AddRecipe("critter_puppy_builder")
-    -- owner.components.builder:AddRecipe("critter_lamb_builder")
-
-    -- owner.components.builder:UnlockRecipe("critter_dragonling_builder")
-    -- owner.components.builder:UnlockRecipe("critter_glomling_builder")
-    -- owner.components.builder:UnlockRecipe("critter_kitten_builder")
-    -- owner.components.builder:UnlockRecipe("critter_puppy_builder")
-    -- owner.components.builder:UnlockRecipe("critter_lamb_builder")
-
-    ---------- ---------- ---------- ----------
-
-    inst:RemoveEventCallback("blocked", OnBlocked, owner)
-    owner:RemoveEventCallback("attacked", OnAttacked)
-
-    if (TheWorld:HasTag("cave") or TheWorld.state.isnight) then
-        owner.components.playervision:ForceNightVision(false)
-        owner.components.playervision:SetCustomCCTable(nil)
-        if owner.components.talker ~= nil and inst.shouldsayNVoff ~= nil and inst.shouldsayNVoff then
-            if lang == 1 then
-                owner.components.talker:Say('夜视：丧失')
-            else
-                owner.components.talker:Say('Night Vision: Lost')
+    local combat = owner.components.combat
+    inst._combatbonuses = {}
+    if combat ~= nil then
+        for key, delta in pairs({ damagemultiplier = 10000, attackrange = 40, hitrange = 40 }) do
+            if combat[key] ~= nil then
+                combat[key] = combat[key] + delta
+                inst._combatbonuses[key] = delta
             end
-            inst.shouldsayNVon = true
-            inst.shouldsayNVoff = false
         end
     end
+end
 
-    ---------- ---------- ---------- ----------
-
-    if owner.components.combat.damagemultiplier ~= nil then
-        owner.components.combat.damagemultiplier = owner.components.combat.damagemultiplier - 10000
+local function onunequip(inst, owner, removing)
+    if inst._wearer ~= owner then return end
+    inst._wearer = nil
+    if not removing then require("oracleeffects").Equip(owner, false) end
+    if inst._equipped ~= nil then inst._equipped:set(false) end
+    if inst.Light ~= nil then inst.Light:Enable(false) end
+    owner:RemoveEventCallback("cantbuild", giveitems)
+    owner:RemoveEventCallback("blocked", OnBlocked)
+    owner:RemoveEventCallback("attacked", OnAttacked)
+    if inst.task ~= nil then inst.task:Cancel(); inst.task = nil end
+    owner.AnimState:ClearOverrideSymbol("swap_hat")
+    owner.AnimState:Hide("HAT")
+    local c = owner.components
+    if c.grue ~= nil then c.grue:RemoveImmunity("roomcar_godhat") end
+    if c.combat ~= nil then
+        for key, delta in pairs(inst._combatbonuses or {}) do
+            if c.combat[key] ~= nil then c.combat[key] = c.combat[key] - delta end
+        end
     end
-    if owner.components.combat.attackrange ~= nil then
-        owner.components.combat.attackrange = owner.components.combat.attackrange - 40
+    inst._combatbonuses = nil
+    -- SetTemperature changes the value once; SetTemp would permanently lock it.
+    if c.temperature ~= nil then c.temperature:SetTemperature(25) end
+    -- Clean up first: the health penalty can kill the wearer and trigger unequip again.
+    if not removing and TUNING.ROOMCAR_GODHAT_PUNISH
+        and (c.health == nil or not c.health:IsDead()) then
+        if c.hunger ~= nil then c.hunger:DoDelta(-c.hunger.max * .8) end
+        if c.sanity ~= nil then c.sanity:DoDelta(-c.sanity.max * .8) end
+        if c.health ~= nil then c.health:DoDelta(-c.health.maxhealth * .5) end
     end
-    if owner.components.combat.hitrange ~= nil then
-        owner.components.combat.hitrange = owner.components.combat.hitrange - 40
+end
+
+local function OnEquippedDirty(inst)
+    if inst.Light ~= nil then
+        inst.Light:SetColour(1, 1, 1)
+        inst.Light:Enable(inst._equipped:value())
     end
-
-    ---------- ---------- ---------- ----------
-
-    -- if inst.components.fueled ~= nil then
-    --     inst.components.fueled:StopConsuming()
-    -- end
-
-    ---------- ---------- ---------- ----------
-
-    owner.components.temperature:SetTemp(25)
-
-    ---------- ---------- ---------- ----------
-
 end
 
 local function fn()
@@ -402,13 +183,14 @@ local function fn()
 
     MakeInventoryPhysics(inst)
 
-    inst.AnimState:SetBank("elfmodhat_wht")
-    inst.AnimState:SetBuild("elfmodhat_wht")
-    inst.AnimState:PlayAnimation("idle")
+    inst.AnimState:SetBank("ruinshat")
+    inst.AnimState:SetBuild("roomcar_godhat_oracle")
+    inst.AnimState:PlayAnimation("anim")
 
     inst:AddTag("flute")
 
     inst:AddTag("hat")
+    inst:AddTag("open_top_hat")
     inst:AddTag("umbrella")
     inst:AddTag("waterproofer") --waterproofer (from waterproofer component) added to pristine state for optimization
     -- inst:AddTag("nightvision")
@@ -417,6 +199,17 @@ local function fn()
     inst:AddTag("prototyper")
 
     inst.MiniMapEntity:SetIcon("godhat.tex")
+
+    if TUNING.ROOMCAR_GODHAT_LIGHT then
+        inst.entity:AddLight()
+        inst.Light:SetRadius(20)
+        inst.Light:SetFalloff(1)
+        inst.Light:SetIntensity(.99)
+        inst.Light:SetColour(1, 1, 1)
+        inst.Light:Enable(false)
+    end
+    inst._equipped = net_bool(inst.GUID, "godhat.equipped", "godhatequippeddirty")
+    inst:ListenForEvent("godhatequippeddirty", OnEquippedDirty)
 
     inst.entity:SetPristine()
 
@@ -463,14 +256,11 @@ local function fn()
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
 
-    if TUNING.ROOMCAR_GODHAT_LIGHT then
-        local light = inst.entity:AddLight()
-        inst.Light:Enable(true)
-        inst.Light:SetRadius(20)
-        inst.Light:SetFalloff(1)
-        inst.Light:SetIntensity(0.99)
-        inst.Light:SetColour(255/255,255/255,255/255)
-    end
+    inst:ListenForEvent("onremove", function()
+        if inst._wearer ~= nil and inst._wearer:IsValid() then
+            onunequip(inst, inst._wearer, true)
+        end
+    end)
 
     inst:AddComponent("sanityaura")
     inst.components.sanityaura.aura = 100
@@ -485,21 +275,6 @@ end
 
 --local STRINGS=GLOBAL.STRINGS
 
-STRINGS.NAMES.GODHAT                                     = "GOD's Hat"
-STRINGS.RECIPE_DESC.GODHAT                               = "GOD's Hat."
+require("oracle_strings").Apply()
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.GODHAT               = "This is GOD's Hat!"
-STRINGS.CHARACTERS.WX78.DESCRIBE.GODHAT                  = "=-!-=- GOD S HAT -=-!-="
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.GODHAT                = "~~ Nice hat from GOD, I LOVE IT! ~~"
---STRINGS.CHARACTERS.WILLOW.DESCRIBE.GODHAT                = ""
---STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GODHAT              = ""
---STRINGS.CHARACTERS.WENDY.DESCRIBE.GODHAT                 = ""
---STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GODHAT          = ""
---STRINGS.CHARACTERS.WOODIE.DESCRIBE.GODHAT                = ""
---STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GODHAT               = ""
---STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GODHAT            = ""
-
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-
-return Prefab( "common/inventory/godhat", fn, assets)
+return Prefab("godhat", fn, assets, prefabs)

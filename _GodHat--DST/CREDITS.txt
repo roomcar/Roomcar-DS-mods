@@ -1,0 +1,8 @@
+Oracle Series / 神谕系列
+Author: Roomcar
+
+The accompanying LICENSE is retained for the code.
+Original Don't Starve Together animation, sound and UI resources are referenced from the installed game. Copyright Klei Entertainment.
+The container background is adapted from Roomcar's Big Bag series.
+Circlet, staff, sentinel and promotional artwork were produced for this Oracle Series project. Promotional illustrations are not in-game screenshots.
+The old unused elfmodhat_wht.zip is excluded from this release package.

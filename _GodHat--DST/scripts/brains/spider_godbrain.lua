@@ -1,3 +1,5 @@
+require "behaviours/follow"
+require "behaviours/faceentity"
 require "behaviours/chaseandattack"
 require "behaviours/runaway"
 require "behaviours/wander"
