@@ -43,3 +43,12 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
+
+!_GodHat--DST/anim/roomcar_godhat_oracle.zip
+!_GodHat--DST/anim/roomcar_oracle_scepter.zip
+!_GodHat--DST/anim/roomcar_oracle_sentinel.zip
+
+# Local art builds and Python caches
+/output/mod-art/
+**/__pycache__/
+*.py[cod]

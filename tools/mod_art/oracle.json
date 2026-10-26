@@ -1,0 +1,26 @@
+{
+  "frame": "game-frame-white.png",
+  "backplate": "game-backplate-purple.png",
+  "frame_rgb": [125, 80, 193],
+  "black_threshold": 40,
+  "gradient": {
+    "center": [0.5, 0.5],
+    "radius": 0.55,
+    "center_rgb": [240, 228, 255],
+    "edge_rgb": [171, 112, 220]
+  },
+  "layers": [
+    {"file": "oracle-staff.png", "size": [262, 865], "position": [860, 194]},
+    {"file": "oracle-circlet.png", "size": [730, 388], "position": [155, 458]}
+  ],
+  "game_frame_measurement": {
+    "reference_size": [128, 128],
+    "outer_black_to_material_px": {"left": 5, "right": 5, "top": 6, "bottom": 5},
+    "measured_at_512px": {"left": 20.01, "right": 20.01, "top": 24.09, "bottom": 20.01}
+  },
+  "workshop_frame_measurement": {
+    "size": [512, 512], "outer_black_px": 5, "coloured_band_px": 3, "inner_black_px": 2,
+    "content_box_exclusive": [10, 10, 502, 502],
+    "corners": "Retain original raster antialiasing; do not replace with zero-radius rectangles."
+  }
+}
