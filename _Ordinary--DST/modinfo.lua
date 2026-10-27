@@ -1,0 +1,12 @@
+name = "普通系列"
+author = "Roomcar"
+version = "0.2.1"
+description = "从普通的东西开始。\n破帽基、破帽网、破帽子与普通头环：没有特殊能力的日常头饰。"
+api_version = 10
+dst_compatible = true
+all_clients_require_mod = true
+client_only_mod = false
+server_filter_tags = {"roomcar", "ordinary"}
+icon_atlas = "modicon.xml"
+icon = "modicon.tex"
+configuration_options = {}

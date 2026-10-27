@@ -1,0 +1,17 @@
+[
+  {
+    "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together\\data\\anim\\player_idles.zip::anim.bin",
+    "changed_indices": 1188,
+    "only_index_bytes_changed": true
+  },
+  {
+    "source": "work\\hairfront-order-patched\\player_basic.bin",
+    "changed_indices": 288,
+    "only_index_bytes_changed": true
+  },
+  {
+    "source": "work\\hairfront-order-patched\\player_attacks.bin",
+    "changed_indices": 348,
+    "only_index_bytes_changed": true
+  }
+]

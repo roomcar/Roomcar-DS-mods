@@ -1,0 +1,2785 @@
+{
+  "tail_reference_matrices": {
+    "0": [
+      [
+        1.0,
+        -2.51620610198372e-13,
+        -43.349998474121094
+      ],
+      [
+        2.6873009026373573e-12,
+        1.0,
+        -177.35000610351562
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "1": [
+      [
+        1.0,
+        -2.649761920298088e-13,
+        47.849998474121094
+      ],
+      [
+        -4.04533394629536e-12,
+        1.0,
+        -165.10000610351562
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "2": [
+      [
+        0.988739013671875,
+        0.16500850021839142,
+        -29.049999237060547
+      ],
+      [
+        -0.17944340407848358,
+        0.9252777099609375,
+        -152.4499969482422
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "layer_order_records": [
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 16,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 17,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 18,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 19,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 20,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 21,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 22,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 23,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 24,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 25,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 26,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 27,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 28,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 29,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 30,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 31,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 32,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 33,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 34,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 35,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 36,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 37,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 38,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 39,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 40,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 41,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 42,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 43,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 44,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 45,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 46,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 47,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 48,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 49,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 50,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 51,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 52,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 53,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 54,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 55,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 56,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 57,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 58,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 59,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 60,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 61,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 62,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 63,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 64,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "idle_loop",
+      "frame": 65,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "run_loop",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 16,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 17,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 8,
+      "animation": "atk",
+      "frame": 18,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 16,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 17,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 18,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 19,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 20,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 21,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 22,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 23,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 24,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 25,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 26,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 27,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 28,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 29,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 30,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 31,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 32,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 33,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 34,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 35,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 36,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 37,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 38,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 39,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 40,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 41,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 42,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 43,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 44,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 45,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 46,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 47,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 48,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 49,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 50,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 51,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 52,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 53,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 54,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 55,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 56,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 57,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 58,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 59,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 60,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 61,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 62,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 63,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 64,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "idle_loop",
+      "frame": 65,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "run_loop",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 16,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 17,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 5,
+      "animation": "atk",
+      "frame": 18,
+      "tail_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 16,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 17,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 18,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 19,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 20,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 21,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 22,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 23,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 24,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 25,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 26,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 27,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 28,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 29,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 30,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 31,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 32,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 33,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 34,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 35,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 36,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 37,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 38,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 39,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 40,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 41,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 42,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 43,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 44,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 45,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 46,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 47,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 48,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 49,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 50,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 51,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 52,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 53,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 54,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 55,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 56,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 57,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 58,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 59,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 60,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 61,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 62,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 63,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 64,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "idle_loop",
+      "frame": 65,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "run_loop",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 0,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 1,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 2,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 3,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 4,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 5,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 6,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 7,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 8,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 9,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 10,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 11,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 12,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 13,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 14,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 15,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 16,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 17,
+      "tail_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "facing": 2,
+      "animation": "atk",
+      "frame": 18,
+      "tail_indices": [
+        1,
+        0
+      ]
+    }
+  ],
+  "method": "Reuse native source 0/1 front/back, source2 near side, source1 far side; preserve original tail matrices and z-order. Existing face/hairfront depth fix remains in offline previews."
+}

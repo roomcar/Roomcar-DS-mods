@@ -1,0 +1,11 @@
+{
+  "source": "work/hairfront-audit/animations.json",
+  "native_animation_zips": 249,
+  "original_hairfront_indices": [
+    0,
+    1,
+    3,
+    28
+  ],
+  "new_shock_only_index": 4
+}

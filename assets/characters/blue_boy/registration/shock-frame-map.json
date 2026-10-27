@@ -1,0 +1,114 @@
+[
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 1,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 3,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 5,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 7,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 9,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 11,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 13,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_shock",
+    "animation": "shock",
+    "frame": 15,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 1,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 3,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 5,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 7,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 9,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 11,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 13,
+    "old": 0,
+    "new": 4
+  },
+  {
+    "source": "player_mount_shock",
+    "animation": "shock",
+    "frame": 15,
+    "old": 0,
+    "new": 4
+  }
+]

@@ -1,0 +1,9 @@
+Ordinary Series / 普通系列
+Author: Roomcar
+Approved hat artwork: generated and selected in the 2026-10-26 design session.
+The two approved layers are reused without further image generation.
+Complete hat: solid below, mesh above.
+Runtime code follows the installed Don't Starve Together standard hat equipment lifecycle.
+Don't Starve Together and its engine belong to Klei Entertainment.
+
+Plain Circlet artwork: approved redraw v4, 2026-10-26; built-in image generation with whole-view registration adjustments.

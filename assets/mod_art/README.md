@@ -1,10 +1,12 @@
+> 2026-10-28：以下源图现存于同目录`icon_layers.zip`，无损WebP，解码RGBA与原PNG完全一致。
+
 # 可复用图标素材
 
-- `game-frame-white.png`：最终采用的白／灰材质边框，保留黑色线条；中间与外部透明，1254×1254。
-- `game-backplate-purple.png`：获准的亮中心紫色底板；其透明通道也用于重新生成其他颜色的底板。
-- `oracle-circlet.png`、`oracle-staff.png`：最终独立透明装备图层。
-- `native-portrait-bg.png`：128×128原版图标模板参考。来源为已安装DST的 `data/databundles/images.zip` → `images/ui.xml` → `portrait_bg.tex`，供校验比例与明暗关系；原版资源版权归Klei Entertainment。
-- `workshop-frame-purple.png`：从Roomcar既有工坊封面提取、保留纹理与圆角抗锯齿的紫色边框，512×512；不是游戏内厚边框。
+- `game-frame-white.webp`：最终采用的白／灰材质边框，保留黑色线条；中间与外部透明，1254×1254。
+- `game-backplate-purple.webp`：获准的亮中心紫色底板；其透明通道也用于重新生成其他颜色的底板。
+- `oracle-circlet.webp`、`oracle-staff.webp`：最终独立透明装备图层。
+- `native-portrait-bg.webp`：128×128原版图标模板参考。来源为已安装DST的 `data/databundles/images.zip` → `images/ui.xml` → `portrait_bg.tex`，供校验比例与明暗关系；原版资源版权归Klei Entertainment。
+- `workshop-frame-purple.webp`：从Roomcar既有工坊封面提取、保留纹理与圆角抗锯齿的紫色边框，512×512；不是游戏内厚边框。
 
 处理入口及使用说明见 `tools/mod_art/README.md`。颜色、布局和测量记录集中在 `tools/mod_art/oracle.json`。插画与白框由本项目的图像生成流程制作；工坊边框来自Roomcar自己的旧封面。原始导出与完整制作记录保留在发布资料目录，不复制到仓库。
 

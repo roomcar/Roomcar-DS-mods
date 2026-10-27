@@ -1,0 +1,65 @@
+{
+  "source": "Approved tattered-hat layers and 2026-10-26 approved redrawn circlet v4; native poses retained.",
+  "layer_order": [
+    "solid",
+    "mesh"
+  ],
+  "cell_pixels": 724,
+  "native_crop": [
+    350,
+    650,
+    1050,
+    1350
+  ],
+  "native_pixels_per_unit": 2,
+  "native_origin": [
+    682,
+    1538
+  ],
+  "poses": {
+    "front": {
+      "frame": 0,
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.0,
+        -120.0999984741211,
+        -4.777777671813965
+      ]
+    },
+    "side": {
+      "frame": 1,
+      "matrix": [
+        1.0,
+        9.547443131224798e-13,
+        -9.547443131224798e-13,
+        1.0,
+        13.0,
+        -120.69999694824219,
+        -4.777777671813965
+      ]
+    },
+    "back": {
+      "frame": 2,
+      "matrix": [
+        -0.9978790283203125,
+        0.0613403283059597,
+        0.0613403283059597,
+        0.9978790283203125,
+        -2.950000047683716,
+        -123.8499984741211,
+        -3.095238208770752
+      ]
+    }
+  },
+  "circlet_source": {
+    "file": "circlet.webp",
+    "sha256": "bd86c60da7b156bd5aba657c5161891a3c54dc2659e475a0f05158ab1806702f",
+    "shape_reference": "Actual OPEN11 70% mean-alpha support, smoothed; whole-view scale and translation only.",
+    "archive": "hat_layers.zip",
+    "original_png_sha256": "5da48c911749327abd21bdd2cd647ea02dd31daa4c371a6958ddf1decbe1d822",
+    "rgba_sha256": "b159ff7251ff173ff4b3c7a0cba4a3e808b3b438803560fb0055ee66515eaf40"
+  }
+}

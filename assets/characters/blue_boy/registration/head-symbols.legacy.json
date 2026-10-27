@@ -1,0 +1,1081 @@
+{
+  "user_source": "C:\\Users\\Bush\\Downloads\\哎(6).svg",
+  "user_source_sha256": "abe9b57d47985f32546f46f4672f313146f1f4e8518ec075268365c57a05f1d6",
+  "original_paths_byte_identical": true,
+  "changes": "New independent front/side hairfront plus editable fixed front under-fringe bridge; user v6 head path geometry and previous v1 face SVGs retained.",
+  "native_mapping": {
+    "canvas": [
+      1352,
+      1550
+    ],
+    "origin": [
+      682,
+      1538
+    ],
+    "pixels_per_native_unit": 2,
+    "uniform_scale": 0.9,
+    "user_neck_anchors": {
+      "front": [
+        188.593,
+        358.5
+      ],
+      "side": [
+        812.593,
+        356.5
+      ],
+      "back": [
+        1378.59,
+        349.5
+      ]
+    },
+    "native_reference_anchor_pixels": {
+      "front": [
+        686.0,
+        1297.8000030517578
+      ],
+      "side": [
+        708.0,
+        1296.6000061035156
+      ],
+      "back": [
+        676.0999999046326,
+        1290.3000030517578
+      ]
+    },
+    "panel_translation": {
+      "front": [
+        516.2663,
+        975.1500030517577
+      ],
+      "side": [
+        -23.33370000000002,
+        975.7500061035156
+      ],
+      "back": [
+        -564.6310000953674,
+        975.7500030517579
+      ]
+    },
+    "method": "One shared scalar; each user neck anchor maps exactly to its native headbase pivot in idle_loop f0. No per-pose offsets."
+  },
+  "front_face_translation_from_v6": [
+    13.09299999999999,
+    0
+  ],
+  "front_eye_midpoint_source": [
+    188.593,
+    223.5
+  ],
+  "expression_assets": [
+    {
+      "index": 0,
+      "duration": 1,
+      "label": "常态",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-0.svg"
+    },
+    {
+      "index": 1,
+      "duration": 1,
+      "label": "眨眼·合拢",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-1.svg"
+    },
+    {
+      "index": 2,
+      "duration": 1,
+      "label": "眨眼·闭合",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-2.svg"
+    },
+    {
+      "index": 3,
+      "duration": 1,
+      "label": "眨眼·恢复",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-3.svg"
+    },
+    {
+      "index": 4,
+      "duration": 1,
+      "label": "侧面常态",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-4.svg"
+    },
+    {
+      "index": 5,
+      "duration": 1,
+      "label": "侧面眨眼·合拢",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-5.svg"
+    },
+    {
+      "index": 6,
+      "duration": 1,
+      "label": "侧面眨眼·闭合",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-6.svg"
+    },
+    {
+      "index": 7,
+      "duration": 1,
+      "label": "侧面眨眼·恢复",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-7.svg"
+    },
+    {
+      "index": 8,
+      "duration": 1,
+      "label": "说话·合口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-8.svg"
+    },
+    {
+      "index": 9,
+      "duration": 1,
+      "label": "说话·小开口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-9.svg"
+    },
+    {
+      "index": 10,
+      "duration": 1,
+      "label": "说话·大开口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-10.svg"
+    },
+    {
+      "index": 11,
+      "duration": 1,
+      "label": "睡眠／闭目",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-11.svg"
+    },
+    {
+      "index": 12,
+      "duration": 1,
+      "label": "惊吓／倒下前",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-12.svg"
+    },
+    {
+      "index": 13,
+      "duration": 1,
+      "label": "死亡·叉眼",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-13.svg"
+    },
+    {
+      "index": 14,
+      "duration": 1,
+      "label": "电击·骨相",
+      "direction": "front",
+      "headbase_index": 3,
+      "face_svg": "svg/face-14.svg"
+    },
+    {
+      "index": 15,
+      "duration": 1,
+      "label": "开心／笑",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-15.svg"
+    },
+    {
+      "index": 16,
+      "duration": 1,
+      "label": "难过·张口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-16.svg"
+    },
+    {
+      "index": 17,
+      "duration": 1,
+      "label": "难过·闭眼",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-17.svg"
+    },
+    {
+      "index": 18,
+      "duration": 1,
+      "label": "飞吻／嘟嘴",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-18.svg"
+    },
+    {
+      "index": 19,
+      "duration": 1,
+      "label": "失落／沉思",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-19.svg"
+    },
+    {
+      "index": 20,
+      "duration": 1,
+      "label": "困倦·张口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-20.svg"
+    },
+    {
+      "index": 21,
+      "duration": 1,
+      "label": "愤怒·咬牙",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-21.svg"
+    },
+    {
+      "index": 22,
+      "duration": 1,
+      "label": "困倦·合口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-22.svg"
+    },
+    {
+      "index": 23,
+      "duration": 1,
+      "label": "哈欠",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-23.svg"
+    },
+    {
+      "index": 24,
+      "duration": 1,
+      "label": "哭泣·睁眼",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-24.svg"
+    },
+    {
+      "index": 25,
+      "duration": 1,
+      "label": "盛怒·咬牙",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-25.svg"
+    },
+    {
+      "index": 26,
+      "duration": 1,
+      "label": "咬牙·中口型",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-26.svg"
+    },
+    {
+      "index": 27,
+      "duration": 1,
+      "label": "咬牙·收口",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-27.svg"
+    },
+    {
+      "index": 28,
+      "duration": 1,
+      "label": "疑惑／耸肩",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-28.svg"
+    },
+    {
+      "index": 29,
+      "duration": 1,
+      "label": "哭泣·挤眼",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-29.svg"
+    },
+    {
+      "index": 30,
+      "duration": 1,
+      "label": "不满／拒绝",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-30.svg"
+    },
+    {
+      "index": 31,
+      "duration": 1,
+      "label": "眩晕／被悬挂",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-31.svg"
+    },
+    {
+      "index": 32,
+      "duration": 1,
+      "label": "用力／惊叫",
+      "direction": "front",
+      "headbase_index": 0,
+      "face_svg": "svg/face-32.svg"
+    },
+    {
+      "index": 33,
+      "duration": 7,
+      "label": "侧面保留槽 33–39",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-33.svg"
+    },
+    {
+      "index": 40,
+      "duration": 1,
+      "label": "侧面说话·小开口",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-40.svg"
+    },
+    {
+      "index": 41,
+      "duration": 1,
+      "label": "侧面说话·大开口",
+      "direction": "side",
+      "headbase_index": 1,
+      "face_svg": "svg/face-41.svg"
+    }
+  ],
+  "expression_count_used": 35,
+  "reserved_range": [
+    33,
+    39
+  ],
+  "cheeks": {
+    "indices": [
+      0,
+      1
+    ],
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 80,
+      "h": 70
+    },
+    "registration": "Native cheek symbol matrix without per-frame adjustment. SVG viewBox is in native symbol units."
+  },
+  "artwork": "Hand-authored SVG only; user v6 normal head paths unchanged; side has no added nose.",
+  "preview_alignment": {
+    "native_canvas": [
+      1352,
+      1550
+    ],
+    "common_crop": [
+      480,
+      960,
+      880,
+      1380
+    ],
+    "scale": 0.7,
+    "per_expression_fit": false
+  },
+  "hair_design": {
+    "palette": {
+      "base": "#335579",
+      "shadow": "#233d59",
+      "highlight": "#4c7298"
+    },
+    "user_constraints": [
+      "Independent hairfront diagonal fringe covering one eye",
+      "Corresponding side-view swept fringe",
+      "Keep fluffy cap and no mullet"
+    ],
+    "layers": "Independent hairfront front/side plus existing fluffy cap. A short fixed front root bridge is integrated into headbase/headbase_hat. Back/shock hairfront remain empty.",
+    "facial_svgs_byte_identical_except": [
+      25,
+      26
+    ],
+    "angry_face_variants": {
+      "indices": [
+        25,
+        26
+      ],
+      "change": "Complete face translated +75 in original face-source y; facial proportions unchanged. Compensates native emoteXL_angry face rise; original bald sources preserved."
+    },
+    "fringe_eye_clearance_verified": false,
+    "preview_crop": [
+      440,
+      900,
+      920,
+      1430
+    ],
+    "per_view_fit": false
+  },
+  "hairfront_design": {
+    "symbol": "hairfront",
+    "layer": "hairfront",
+    "indices": {
+      "0": "front-hairfront.svg",
+      "1": "side-hairfront.svg",
+      "2": "back-hairfront.svg",
+      "3": "front-hairfront-3.svg"
+    },
+    "root": "Deep overlapping root supported by a short fixed editable lock; retains independent native motion.",
+    "reference_pose": "player_idles / idle_loop f0; 8 front, 5 side",
+    "transform": "M_current_hairfront @ inverse(M_reference_hairfront), never headbase matrix",
+    "faces_unchanged": true,
+    "cap_change": "A separate editable short under-fringe lock bridges the low-bounce root; original base paths unchanged. Side/back base unchanged.",
+    "game_installed": false
+  },
+  "native_expression_check": {
+    "scale": 1.25,
+    "canvas": [
+      800,
+      800
+    ],
+    "origin": [
+      400,
+      660
+    ],
+    "head_source_selected_by": "Head symbol index, not animation facing; supports front/side transitions within a single animation.",
+    "body": "Original Walter reference body",
+    "pose_count": 35,
+    "samples": [
+      {
+        "face_index": 0,
+        "source": "player_idles",
+        "animation": "idle_loop",
+        "facing": 8,
+        "frame": 0,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 1,
+        "source": "player_idles",
+        "animation": "idle_loop",
+        "facing": 8,
+        "frame": 32,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 2,
+        "source": "player_idles",
+        "animation": "idle_loop",
+        "facing": 8,
+        "frame": 33,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 3,
+        "source": "player_actions_uniqueitem",
+        "animation": "bedroll_wakeup",
+        "facing": 255,
+        "frame": 5,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 4,
+        "source": "player_idles",
+        "animation": "idle_loop",
+        "facing": 5,
+        "frame": 0,
+        "head_indices": [
+          1
+        ]
+      },
+      {
+        "face_index": 5,
+        "source": "player_actions_blowdart",
+        "animation": "dart",
+        "facing": 5,
+        "frame": 9,
+        "head_indices": [
+          1
+        ]
+      },
+      {
+        "face_index": 6,
+        "source": "player_actions",
+        "animation": "hit",
+        "facing": 5,
+        "frame": 0,
+        "head_indices": [
+          1
+        ]
+      },
+      {
+        "face_index": 7,
+        "source": "player_encumbered",
+        "animation": "heavy_idle",
+        "facing": 5,
+        "frame": 0,
+        "head_indices": [
+          1
+        ]
+      },
+      {
+        "face_index": 8,
+        "source": "player_acting",
+        "animation": "acting_1",
+        "facing": 255,
+        "frame": 10,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 9,
+        "source": "player_actions",
+        "animation": "dial_loop",
+        "facing": 255,
+        "frame": 1,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 10,
+        "source": "player_actions",
+        "animation": "dial_loop",
+        "facing": 255,
+        "frame": 3,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 11,
+        "source": "player_actions",
+        "animation": "sleep",
+        "facing": 255,
+        "frame": 0,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 12,
+        "source": "player_actions",
+        "animation": "wakeup",
+        "facing": 255,
+        "frame": 6,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 13,
+        "source": "player_actions",
+        "animation": "death",
+        "facing": 255,
+        "frame": 15,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 14,
+        "source": "player_shock",
+        "animation": "shock",
+        "facing": 255,
+        "frame": 1,
+        "head_indices": [
+          0,
+          3
+        ]
+      },
+      {
+        "face_index": 15,
+        "source": "player_emote_extra",
+        "animation": "emote_laugh",
+        "facing": 255,
+        "frame": 7,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 16,
+        "source": "player_emotes",
+        "animation": "emote_sad",
+        "facing": 255,
+        "frame": 2,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 17,
+        "source": "player_emotes",
+        "animation": "emote_sad",
+        "facing": 255,
+        "frame": 40,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 18,
+        "source": "player_emotesxl",
+        "animation": "emoteXL_kiss",
+        "facing": 255,
+        "frame": 35,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 19,
+        "source": "player_emotes_sit",
+        "animation": "emote_loop_sit3",
+        "facing": 255,
+        "frame": 0,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 20,
+        "source": "player_emotes",
+        "animation": "emote_sleepy",
+        "facing": 255,
+        "frame": 8,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 21,
+        "source": "player_emotes",
+        "animation": "emote_angry",
+        "facing": 255,
+        "frame": 3,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 22,
+        "source": "player_emotes",
+        "animation": "emote_sad",
+        "facing": 255,
+        "frame": 29,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 23,
+        "source": "player_emotes",
+        "animation": "emote_yawn",
+        "facing": 255,
+        "frame": 17,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 24,
+        "source": "player_emotesxl",
+        "animation": "emoteXL_sad",
+        "facing": 255,
+        "frame": 1,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 25,
+        "source": "player_emotesxl",
+        "animation": "emoteXL_angry",
+        "facing": 255,
+        "frame": 9,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 26,
+        "source": "player_emotesxl",
+        "animation": "emoteXL_angry",
+        "facing": 255,
+        "frame": 7,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 27,
+        "source": "player_actions_eat",
+        "animation": "refuseeat",
+        "facing": 255,
+        "frame": 5,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 28,
+        "source": "player_emote_extra",
+        "animation": "emote_shrug",
+        "facing": 255,
+        "frame": 5,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 29,
+        "source": "player_emotesxl",
+        "animation": "emoteXL_sad",
+        "facing": 255,
+        "frame": 13,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 30,
+        "source": "player_actions_eat",
+        "animation": "refuseeat",
+        "facing": 255,
+        "frame": 1,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 31,
+        "source": "player_suspended",
+        "animation": "suspended",
+        "facing": 255,
+        "frame": 0,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 32,
+        "source": "player_actions_uniqueitem",
+        "animation": "hornblow",
+        "facing": 255,
+        "frame": 0,
+        "head_indices": [
+          0
+        ]
+      },
+      {
+        "face_index": 40,
+        "source": "player_channelcast_basic",
+        "animation": "channelcast_idle_dial_loop",
+        "facing": 5,
+        "frame": 4,
+        "head_indices": [
+          1
+        ]
+      },
+      {
+        "face_index": 41,
+        "source": "player_channelcast_basic",
+        "animation": "channelcast_idle_dial_loop",
+        "facing": 5,
+        "frame": 0,
+        "head_indices": [
+          1
+        ]
+      }
+    ],
+    "equipment_cases": 12,
+    "per_frame_fit": false,
+    "game_installed": false,
+    "cheek_samples": [
+      {
+        "source": "player_actions_eat",
+        "animation": "eat",
+        "facing": 255,
+        "frame": 0
+      },
+      {
+        "source": "player_actions_eat",
+        "animation": "eat",
+        "facing": 255,
+        "frame": 16
+      },
+      {
+        "source": "player_actions_eat",
+        "animation": "eat",
+        "facing": 255,
+        "frame": 32
+      },
+      {
+        "source": "player_actions_eat",
+        "animation": "eat",
+        "facing": 255,
+        "frame": 49
+      },
+      {
+        "source": "player_actions_eat",
+        "animation": "eat",
+        "facing": 255,
+        "frame": 65
+      },
+      {
+        "source": "player_actions_blowdart",
+        "animation": "dart",
+        "facing": 5,
+        "frame": 2
+      },
+      {
+        "source": "player_actions_blowdart",
+        "animation": "dart",
+        "facing": 5,
+        "frame": 4
+      },
+      {
+        "source": "player_actions_blowdart",
+        "animation": "dart",
+        "facing": 5,
+        "frame": 5
+      },
+      {
+        "source": "player_actions_blowdart",
+        "animation": "dart",
+        "facing": 5,
+        "frame": 6
+      },
+      {
+        "source": "player_actions_blowdart",
+        "animation": "dart",
+        "facing": 5,
+        "frame": 8
+      }
+    ],
+    "layer_order": "Patched offline ANIM copy; native 2D matrices unchanged"
+  },
+  "hairfront_native_check": {
+    "motion_series": [
+      {
+        "source": "player_basic",
+        "animation": "run_loop",
+        "facing": 8,
+        "frame_count": 16,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_encumbered",
+        "animation": "heavy_walk",
+        "facing": 8,
+        "frame_count": 51,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          7,
+          14,
+          21,
+          29,
+          36,
+          43,
+          50
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_groggy",
+        "animation": "idle_walk",
+        "facing": 8,
+        "frame_count": 24,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          3,
+          7,
+          10,
+          13,
+          16,
+          20,
+          23
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_idles",
+        "animation": "idle_loop",
+        "facing": 8,
+        "frame_count": 66,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          9,
+          19,
+          28,
+          37,
+          46,
+          56,
+          65
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_attacks",
+        "animation": "atk",
+        "facing": 8,
+        "frame_count": 19,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          3,
+          5,
+          8,
+          10,
+          13,
+          15,
+          18
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_basic",
+        "animation": "run_loop",
+        "facing": 5,
+        "frame_count": 16,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_encumbered",
+        "animation": "heavy_walk",
+        "facing": 5,
+        "frame_count": 51,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          7,
+          14,
+          21,
+          29,
+          36,
+          43,
+          50
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_groggy",
+        "animation": "idle_walk",
+        "facing": 5,
+        "frame_count": 24,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          3,
+          7,
+          10,
+          13,
+          16,
+          20,
+          23
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_idles",
+        "animation": "idle_loop",
+        "facing": 5,
+        "frame_count": 66,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          9,
+          19,
+          28,
+          37,
+          46,
+          56,
+          65
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      },
+      {
+        "source": "player_attacks",
+        "animation": "atk",
+        "facing": 5,
+        "frame_count": 19,
+        "rendered_all_frames": true,
+        "contact_sheet_frames": [
+          0,
+          3,
+          5,
+          8,
+          10,
+          13,
+          15,
+          18
+        ],
+        "layer_order": "patched; original 2D motion preserved"
+      }
+    ],
+    "native_2d_matrices": true,
+    "depth": "Conditional face/hairfront order patch loaded from actual generated ANIM files; not vanilla layer order",
+    "per_frame_fit": false,
+    "reference_symbol": "hairfront",
+    "motion_measurements": "hairfront-原生浮动记录.json",
+    "visible_with_test_hats": true,
+    "game_installed": false,
+    "integration_status": "Offline conditional draw-order patch verified; not installed or validated in the live game."
+  }
+}

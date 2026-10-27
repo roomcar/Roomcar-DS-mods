@@ -1,0 +1,4434 @@
+{
+  "schema_version": 1,
+  "encoding": "WebP lossless; quality=100; method=6; exact=True",
+  "max_zip_bytes": 32000000,
+  "packages": [
+    {
+      "id": "head",
+      "path": "assets/characters/blue_boy/art/head/source.zip",
+      "bytes": 490325,
+      "sha256": "f718822390cfa021033d8b16d00168dbf2b29011613d766753c4698c825de819",
+      "members": 128
+    },
+    {
+      "id": "body",
+      "path": "assets/characters/blue_boy/art/body/source.zip",
+      "bytes": 734447,
+      "sha256": "969c99b6e032b6fac63e2a6d3a559f4566e1e40b57ad6fa4f25832780912b8fd",
+      "members": 214
+    },
+    {
+      "id": "ordinary",
+      "path": "assets/ordinary_series/hat_layers.zip",
+      "bytes": 783878,
+      "sha256": "8bbc24e98fd66053e4bed12cd5554ca083bdb94a0a299d0d593ff36688f19a15",
+      "members": 3
+    },
+    {
+      "id": "mod-art",
+      "path": "assets/mod_art/icon_layers.zip",
+      "bytes": 696472,
+      "sha256": "d3b7121ddd84ef2d196f8e1598d2cf501ee9e7decbb4e9f231fbda0ce4a21ae3",
+      "members": 6
+    }
+  ],
+  "images": [
+    {
+      "original_path": "_BigBag--DS/bigbagicon.png",
+      "original_sha256": "1a8313bcaed8466dafd4ce660491c84b100d4c38096ca17f0a504c4fe9d4fe9f",
+      "original_bytes": 20895,
+      "storage": {
+        "path": "_BigBag--DS/bigbagicon.webp"
+      },
+      "sha256": "b7c51b7e72b5db55c36f20d881417afa0e11becaa84b6f03993ea1feaf63bfad",
+      "bytes": 14600,
+      "size": [
+        128,
+        128
+      ],
+      "rgba_sha256": "56b403d13bb4327db142999429fdec99c7c11b2a36014d3ccf93cffeec9330e0",
+      "pixels_exact": true,
+      "icc_sha256": "2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e",
+      "original_png_metadata": {
+        "dpi": [
+          95.9866,
+          95.9866
+        ],
+        "chromaticity": [
+          0.31269,
+          0.32899,
+          0.63999,
+          0.33001,
+          0.3,
+          0.6,
+          0.15,
+          0.05999
+        ]
+      }
+    },
+    {
+      "original_path": "_BigBag--DST/bigbagicon.png",
+      "original_sha256": "1a8313bcaed8466dafd4ce660491c84b100d4c38096ca17f0a504c4fe9d4fe9f",
+      "original_bytes": 20895,
+      "storage": {
+        "path": "_BigBag--DST/bigbagicon.webp"
+      },
+      "sha256": "b7c51b7e72b5db55c36f20d881417afa0e11becaa84b6f03993ea1feaf63bfad",
+      "bytes": 14600,
+      "size": [
+        128,
+        128
+      ],
+      "rgba_sha256": "56b403d13bb4327db142999429fdec99c7c11b2a36014d3ccf93cffeec9330e0",
+      "pixels_exact": true,
+      "icc_sha256": "2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e",
+      "original_png_metadata": {
+        "dpi": [
+          95.9866,
+          95.9866
+        ],
+        "chromaticity": [
+          0.31269,
+          0.32899,
+          0.63999,
+          0.33001,
+          0.3,
+          0.6,
+          0.15,
+          0.05999
+        ]
+      }
+    },
+    {
+      "original_path": "_BigBag--DST/SteamWorkshop/mod_publish_preview.png",
+      "original_sha256": "a1e93abbe052188e7ba8432b9fe7036559eac9041599a25b6429f360b0ffdb62",
+      "original_bytes": 294971,
+      "storage": {
+        "path": "_BigBag--DST/SteamWorkshop/mod_publish_preview.webp"
+      },
+      "sha256": "a90b6a8256ed28c4c6e676d8adcf735390c456e63de46bb149cb265e5cea7f35",
+      "bytes": 159318,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "a2bf6090b81eb21a502ffd19f5166be3092f868b838b15857657576558aff77a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "srgb": 0
+      }
+    },
+    {
+      "original_path": "_GodHat--DST/godhaticon.png",
+      "original_sha256": "ae8d0094b61f8918012e6812c0e0b47f9526fede42b4f103d11724cced9e2e45",
+      "original_bytes": 209704,
+      "storage": {
+        "path": "_GodHat--DST/godhaticon.webp"
+      },
+      "sha256": "8160361b7c6505bd31b4116c1c7a035ec16d72c751abd85f9fc159769ef801b1",
+      "bytes": 118768,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "4b9203bb6e501ac6050ef1d65e95f36252f1284a3598f73fb85862ac7a46bc52",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "_Ordinary--DST/modicon.png",
+      "original_sha256": "4ed2657ff531489ae3224e05d8cbec85840c68ba0719684c80c049623c5f7eb4",
+      "original_bytes": 192949,
+      "storage": {
+        "path": "_Ordinary--DST/modicon.webp"
+      },
+      "sha256": "b75d4923a744879fef4bb2db414856c33181f212d2b0f9d9af9c398f2f470799",
+      "bytes": 107334,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "aec103d3c9c2da21519eb1d73cbe4a677a83964c5e778d0613318b7f19b74817",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-0-back.png",
+      "original_sha256": "f088c0e409796aee075887a75ff56278f33909355014e87ce2335018a5462fa5",
+      "original_bytes": 6866,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-0-back.webp"
+      },
+      "sha256": "7ba6fd8640bb94762be698d94ab72762ee1de68359cbf59ef1f3e39cdc2829cd",
+      "bytes": 4528,
+      "size": [
+        150,
+        260
+      ],
+      "rgba_sha256": "2f5e2154653c148be057b5e080033d81a2d71ab42294eb0987dd2910643bf4f1",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-0-front.png",
+      "original_sha256": "19db42cc47401b8c5d2d1e2ffa3400650f2787aa19ee5c92ad3b872e78b865a3",
+      "original_bytes": 7232,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-0-front.webp"
+      },
+      "sha256": "a8227fc4b0cf05079887f40b4aa4746d60dbb19a6662091d3b3690ea405b98b7",
+      "bytes": 4682,
+      "size": [
+        150,
+        260
+      ],
+      "rgba_sha256": "0da741089f13e67a6206833d4791e590ad06ad145c2012ebb30079945b34ac4c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-0-inner.png",
+      "original_sha256": "9e65b85127f5de221cc95ec26481638f68e7d9037e157dabac09fa04dcd9af7a",
+      "original_bytes": 6498,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-0-inner.webp"
+      },
+      "sha256": "d5b19676815e75c5832802ed39a7a033519ece8937d9cae92097f43b3e9c3c38",
+      "bytes": 3990,
+      "size": [
+        150,
+        260
+      ],
+      "rgba_sha256": "4dbaddfdf1510e53d531c995589c886dbe01961ef53fc2a1bac062efd739a95a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-0-outer.png",
+      "original_sha256": "fbcea20179b23955fe00b5b8f45841468d56b5a52c63de6c164917bb67b15a3e",
+      "original_bytes": 6521,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-0-outer.webp"
+      },
+      "sha256": "a52813334ccbdb5d861f7af79c128229e4e190ee8c8dce52a453af32deb771fb",
+      "bytes": 4180,
+      "size": [
+        150,
+        260
+      ],
+      "rgba_sha256": "70648f21afc869c5a709d8a72389d5234c6e0c71a6740c8b79a6ba5229b57a6e",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-1-back.png",
+      "original_sha256": "fd84f1b977bcb77c531d37473fa096507d851db61bfe66faade10f86674c8b4a",
+      "original_bytes": 9140,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-1-back.webp"
+      },
+      "sha256": "9fc17d49f2b566474825cdbdbf72fc2615e0f579329ab643f3a03dfa38b23fee",
+      "bytes": 5358,
+      "size": [
+        160,
+        345
+      ],
+      "rgba_sha256": "a0feedc64a9a7719cca2d398df326675eb5ca4b467bab1b7e010cf00557aa2ec",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-1-front.png",
+      "original_sha256": "bc6428b6802bce3c6ce6706d06afdd6583972e6eec764e8e0bd6fbaae1165623",
+      "original_bytes": 9669,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-1-front.webp"
+      },
+      "sha256": "af126ff39bba3f888b90eef1fed74fdfc66f826fb69c1fbe39ff92740ac932b6",
+      "bytes": 5498,
+      "size": [
+        160,
+        345
+      ],
+      "rgba_sha256": "3b4b6bf2b0bb040216db7bba6358a8e407cb55f8085d473405b10952343fdf1f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-1-inner.png",
+      "original_sha256": "e39ce54dc7505150f492be2cdeae0c2b171c0d45086935a3bdce05de875990b6",
+      "original_bytes": 8305,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-1-inner.webp"
+      },
+      "sha256": "6df5c4a7f7a3287a5001ec04ee7d02440914b02e34955b133ad42d20ddf8605b",
+      "bytes": 4526,
+      "size": [
+        160,
+        345
+      ],
+      "rgba_sha256": "465d4c31e077d0eb9c5c2ed869373cada7070baa18f1d2ff414387acbcebbe69",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-1-outer.png",
+      "original_sha256": "671b54a45097dcf8c0c21c05e3c8179c9f6f60730533cb4ae82c40a1e584e3be",
+      "original_bytes": 8357,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-1-outer.webp"
+      },
+      "sha256": "ae2901c6f3d81f3ff55944d8d9f34c4edf18fb8580df5637b6aba69a2b8243c6",
+      "bytes": 4652,
+      "size": [
+        160,
+        345
+      ],
+      "rgba_sha256": "9e2de49b679d98c06bd49d43291438eef36f70db5a071611de3b1f3a9a574cce",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-2-back.png",
+      "original_sha256": "ec9553ab96eb82bdf4660c7fdff8e83a34b97d5849475e22bfad409ab346125e",
+      "original_bytes": 8062,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-2-back.webp"
+      },
+      "sha256": "ac75d9f2d7267cb3fedc8fc67cb7de06b6ca467aca4a423ab5c67b66247cd9e9",
+      "bytes": 5580,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "a23db50c8e6cc6c21fad7be1b4739f924b64aef811523c048f48b93e8fc6c602",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-2-front.png",
+      "original_sha256": "519b60cc4c5498894adb80c0114f274236a23c1f25c6305b043b7b3ce99c2266",
+      "original_bytes": 8289,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-2-front.webp"
+      },
+      "sha256": "bd2431c38a4f6a3f3e8ae1b6526a96c227a1579715474e784555fc4db3b1fdb6",
+      "bytes": 5740,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "46cf1795bbebcfd23382086c795aa83d9de9144b0d9c086b02e58a10aff43a86",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-2-inner.png",
+      "original_sha256": "031bce22c1f6e297927428570cc361ff1a8cde45c59019ceae54935821aa23bd",
+      "original_bytes": 8107,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-2-inner.webp"
+      },
+      "sha256": "c1cd4f66cf1710e6cefca9d5e85b6ca9f77117a8da542257964411fa2402472e",
+      "bytes": 5544,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "4cd6bdc879d79be6470f4c4b453e17eb233d9141c17bb6173db5a61679203352",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-2-outer.png",
+      "original_sha256": "cf50cda99ac09ac5db96c82fb54f4e3ceac33d0a38b5046a034a702a8891621d",
+      "original_bytes": 8139,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-2-outer.webp"
+      },
+      "sha256": "ce63439714b24dd978fe2870c89c2c49c8b64f362b48a34b5e47664183f870dc",
+      "bytes": 5632,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "c0862a40fd6aac3e2f56670f17c705d282d8737b9fb53275839856ada19f3fc4",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-5-back.png",
+      "original_sha256": "18bd0955bc8da769179443369f760a7bda1351f0d5f8cbbd39c3ad4e60c2f23f",
+      "original_bytes": 7554,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-5-back.webp"
+      },
+      "sha256": "997fa61627705de4a4cffbf939ce4668a217c54a90c814cff2f6f8a87ba8c71f",
+      "bytes": 4114,
+      "size": [
+        140,
+        290
+      ],
+      "rgba_sha256": "9f4f54ffca5b08d49daf0db55a4e95dcb33faf8f972d66937c5900ff0fe8d0f5",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-5-front.png",
+      "original_sha256": "17714a6a462b284e5af5c11383b46ea1149cd91da6f45e2ae358969c3fac693d",
+      "original_bytes": 8035,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-5-front.webp"
+      },
+      "sha256": "1f1d2ead751fb311fd555f3612f2937baf8370a59238419680f696e940431305",
+      "bytes": 4280,
+      "size": [
+        140,
+        290
+      ],
+      "rgba_sha256": "d6bb7eb7867389919bc3aa55e63c2c5a75de25218c437f5c85fef4f9e7f8731d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-5-inner.png",
+      "original_sha256": "c2dac340843d65747f5c5346d696234e09dfc5e7668372ba84e04cf343b35b7b",
+      "original_bytes": 5926,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-5-inner.webp"
+      },
+      "sha256": "49a7d0df91f9e2764ef44b3f10568443181586f7e6505c16fa98952ea8d5cc24",
+      "bytes": 3252,
+      "size": [
+        140,
+        290
+      ],
+      "rgba_sha256": "e5e904189f4be4744f07fc089a5be125dc3727e5679a91cd797e272f12e2f17e",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-5-outer.png",
+      "original_sha256": "232197d642b76c3b5cf6412057410b966eccca0f69661febdf46c45bbd9efc8a",
+      "original_bytes": 5970,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-5-outer.webp"
+      },
+      "sha256": "c87bc400591e9a2c25e665fbd2ef88d11d9316eacbf67bc88bc41866c5d6760e",
+      "bytes": 3328,
+      "size": [
+        140,
+        290
+      ],
+      "rgba_sha256": "8e1fc51d0761476d514bc7d7d32b55c88c18b519f83eeb2b616dd93207782d72",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-6-back.png",
+      "original_sha256": "ec9553ab96eb82bdf4660c7fdff8e83a34b97d5849475e22bfad409ab346125e",
+      "original_bytes": 8062,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-6-back.webp"
+      },
+      "sha256": "ac75d9f2d7267cb3fedc8fc67cb7de06b6ca467aca4a423ab5c67b66247cd9e9",
+      "bytes": 5580,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "a23db50c8e6cc6c21fad7be1b4739f924b64aef811523c048f48b93e8fc6c602",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-6-front.png",
+      "original_sha256": "519b60cc4c5498894adb80c0114f274236a23c1f25c6305b043b7b3ce99c2266",
+      "original_bytes": 8289,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-6-front.webp"
+      },
+      "sha256": "bd2431c38a4f6a3f3e8ae1b6526a96c227a1579715474e784555fc4db3b1fdb6",
+      "bytes": 5740,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "46cf1795bbebcfd23382086c795aa83d9de9144b0d9c086b02e58a10aff43a86",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-6-inner.png",
+      "original_sha256": "031bce22c1f6e297927428570cc361ff1a8cde45c59019ceae54935821aa23bd",
+      "original_bytes": 8107,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-6-inner.webp"
+      },
+      "sha256": "c1cd4f66cf1710e6cefca9d5e85b6ca9f77117a8da542257964411fa2402472e",
+      "bytes": 5544,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "4cd6bdc879d79be6470f4c4b453e17eb233d9141c17bb6173db5a61679203352",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_lower-6-outer.png",
+      "original_sha256": "cf50cda99ac09ac5db96c82fb54f4e3ceac33d0a38b5046a034a702a8891621d",
+      "original_bytes": 8139,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_lower-6-outer.webp"
+      },
+      "sha256": "ce63439714b24dd978fe2870c89c2c49c8b64f362b48a34b5e47664183f870dc",
+      "bytes": 5632,
+      "size": [
+        330,
+        205
+      ],
+      "rgba_sha256": "c0862a40fd6aac3e2f56670f17c705d282d8737b9fb53275839856ada19f3fc4",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-0-back.png",
+      "original_sha256": "6770d8d08f1c5c5efe923ed23c15b452f5e789bedacac0c6007ecbff8c38988b",
+      "original_bytes": 13099,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-0-back.webp"
+      },
+      "sha256": "c00d54eea7ca05ab384fcd3d8b849b8bd43fc61d785184ccb07e23a47a2e6fb5",
+      "bytes": 7388,
+      "size": [
+        230,
+        330
+      ],
+      "rgba_sha256": "590cdf494dad416845d73981fbd2bab1adeb7e7fa38242eaab63b7000ca8b94c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-0-front.png",
+      "original_sha256": "d545bb565d3138c9107faa864bd0ec16a3042c59f0e03d4fe1ce82e042f282ee",
+      "original_bytes": 13883,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-0-front.webp"
+      },
+      "sha256": "6eafd7205c8c27ed88ac820770643f6ce71b8844ac61f7f3d265bde32791079f",
+      "bytes": 7732,
+      "size": [
+        230,
+        330
+      ],
+      "rgba_sha256": "08dd9b37f519ac8a0a02f98c7a7eedd869adaf152fac8e3d669e81f8f6fffed3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-0-inner.png",
+      "original_sha256": "ad3f836b4c6efb12ab57592c4b16febb0cebfe0d60270c3d9e1c50f61b1d3e40",
+      "original_bytes": 12650,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-0-inner.webp"
+      },
+      "sha256": "456f428ac77daa178886de44998c03b92f7bc3630188d6dac39529e4a4cbb57c",
+      "bytes": 6778,
+      "size": [
+        230,
+        330
+      ],
+      "rgba_sha256": "47734cb5f1fe5e8e262df94b220c11ad83a8f6199decb0932b669765c64cfa89",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-0-outer.png",
+      "original_sha256": "2d8ae04ce7980a4409ad2d0fa21e7e674619f21ec01505833baeac439ba130a1",
+      "original_bytes": 14788,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-0-outer.webp"
+      },
+      "sha256": "3dc6a8703e855c11f8a5e396645a3cb32a2d0e2fd54f8808414f27482277fda7",
+      "bytes": 8568,
+      "size": [
+        230,
+        330
+      ],
+      "rgba_sha256": "a1b4e395794877467ce8fa5b9e8537f0ec93e4736e20ba3b0e39cb8f06f3069a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-1-back.png",
+      "original_sha256": "ee337f843e3a37ff2b1ae7b46c35d083c75334f4955c73b4e5b6c84bd1368205",
+      "original_bytes": 13535,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-1-back.webp"
+      },
+      "sha256": "4715e345602cf32b7565d8d8cc28b520e4b0278403608be0b49935bd478c3d28",
+      "bytes": 7718,
+      "size": [
+        255,
+        330
+      ],
+      "rgba_sha256": "69fe744e38a5382e597b9ce170bf943509dc9114dd6e5f426c05e3cfdf5ebc30",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-1-front.png",
+      "original_sha256": "c3d4d9a0e911e3db69448ca543441d505471bb07242511f63c21667b205e4382",
+      "original_bytes": 14321,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-1-front.webp"
+      },
+      "sha256": "542e9be2e277b93de301208716cec015725892e56aa4a0c5b733a5dab4078171",
+      "bytes": 8012,
+      "size": [
+        255,
+        330
+      ],
+      "rgba_sha256": "6efbbf5390c664a38806fc10614fa4500427d5375f5f6c2279e37404ca2ede4e",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-1-inner.png",
+      "original_sha256": "b8bde7acbf1e4d6107132e7cd37a0cea528d4f7ede63b0c2cdea162c6b9fa0e0",
+      "original_bytes": 13057,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-1-inner.webp"
+      },
+      "sha256": "0193abc18d70b80d570633a07d965af731f24aae285ce0d40e682fc57a2e1efa",
+      "bytes": 7226,
+      "size": [
+        255,
+        330
+      ],
+      "rgba_sha256": "6157ce184dbc1bcc0d9db40b0c15bee6e1367687a255b7ea8304d5c2f9d10037",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-1-outer.png",
+      "original_sha256": "7163b395d8ffbcedde537306314608a43200ff90c168c81777f18d58caedead1",
+      "original_bytes": 15405,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-1-outer.webp"
+      },
+      "sha256": "895c3e23396efb4256a6946915c7e24abae7b70b540939b635d1116db8117b57",
+      "bytes": 9180,
+      "size": [
+        255,
+        330
+      ],
+      "rgba_sha256": "049f3c0349380079f6aa3aadc431f1a8b0dae2864d69638ec5b840471b003435",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-2-back.png",
+      "original_sha256": "dceebcbe02d0ab55a199b8fe30a983da28c88c0b0818804e480082608e877ccf",
+      "original_bytes": 12674,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-2-back.webp"
+      },
+      "sha256": "117ecfb4f61508dbc1959d1e8e80eec73b895268f4b94b0dee4450d67633753e",
+      "bytes": 7338,
+      "size": [
+        235,
+        330
+      ],
+      "rgba_sha256": "83acf12cf62791e2815411a2ee516dc59217b22a7dce870bcae434183448cd1c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-2-front.png",
+      "original_sha256": "2daf7abd865ecc052d94eadce2504817470e8086c87c08b218d8619aa967a8fe",
+      "original_bytes": 13407,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-2-front.webp"
+      },
+      "sha256": "6b56797f832edf7b0c669c7b309d4f388db03218bf6fe0fab89a7cf834a2905f",
+      "bytes": 7486,
+      "size": [
+        235,
+        330
+      ],
+      "rgba_sha256": "2980ef6a7897ed0d4c36cb5e702425bae4a570518d0b55388ed62d4704fe0fca",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-2-inner.png",
+      "original_sha256": "6d939b726a4f68e8498e0d178f1b17beac610694229bf95a4d638ebcd1951822",
+      "original_bytes": 12540,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-2-inner.webp"
+      },
+      "sha256": "312030ae61e69ae45de656eeebfa33914828c4adf0c46b8ee90a85c445ee6225",
+      "bytes": 7012,
+      "size": [
+        235,
+        330
+      ],
+      "rgba_sha256": "4eca0af99358949283fd09f1c0f249da1a6ef0b28a9db9872384a2d95c8eeb94",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-2-outer.png",
+      "original_sha256": "bf7aba3f821b6e2d23955f63d9c5f44594f6582d4af5a580a82cce6bad013faa",
+      "original_bytes": 14586,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-2-outer.webp"
+      },
+      "sha256": "00948ca0c0b48bd6fa10d4686f6361bbd2d87ef7034e8afd182f04b6ec147c12",
+      "bytes": 8864,
+      "size": [
+        235,
+        330
+      ],
+      "rgba_sha256": "2cdb709c15fe9179df7def14b3c34db9dd4cb22b09e8a7a3f1d73824f3525fc1",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-3-back.png",
+      "original_sha256": "81f82030eaf5787946f2fbb46f8dc767e16405b1425b90249e45974f1c63c106",
+      "original_bytes": 14801,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-3-back.webp"
+      },
+      "sha256": "2f24a4460b81f64bc17993b71f4f116c1a08cc1bbf19291bf71688153e814e3d",
+      "bytes": 8236,
+      "size": [
+        260,
+        360
+      ],
+      "rgba_sha256": "414be01fa8bba08cf48197be99d714ab384bfc60f5d8bdb352c622c0ae93d1b9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-3-front.png",
+      "original_sha256": "a685babbf795a13c35b209db9ba6bddce6900e6b21f88e1ff684140e4aa0d0ec",
+      "original_bytes": 15663,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-3-front.webp"
+      },
+      "sha256": "2c6cd313bde715800bf81301870218df1a749456079ad020164151cb1e94472e",
+      "bytes": 8590,
+      "size": [
+        260,
+        360
+      ],
+      "rgba_sha256": "6a928e451876166eec0d8e4a5015fec011ad973f4bd2da41486b86cf78770e81",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-3-inner.png",
+      "original_sha256": "9709f43a4984c19a988553b8376c615f2fab0883f6f811593d858c347ef0d7a6",
+      "original_bytes": 14563,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-3-inner.webp"
+      },
+      "sha256": "bb11ea51e1105f864af89b91172aba19c2ce6e7e92090a826128b9a5d6bfa1a6",
+      "bytes": 7842,
+      "size": [
+        260,
+        360
+      ],
+      "rgba_sha256": "a86881777dcf34337ba784db1ae93c2da6c6198935748edb9963a22bf6ea43db",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-3-outer.png",
+      "original_sha256": "eb98eb54e29750d7b13f17e085d5668187ed67d0c1c79320d323b7c08827df38",
+      "original_bytes": 16920,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-3-outer.webp"
+      },
+      "sha256": "cbd0a70f365213c606ffbff3d28d9478ce3ac4de5b3f06ec4e0fc6b0216cef1f",
+      "bytes": 10004,
+      "size": [
+        260,
+        360
+      ],
+      "rgba_sha256": "5e9cb73b9be1c06eaac2d2d9c107e726f520eb2398830e69e3f208523ecbd2e3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-4-back.png",
+      "original_sha256": "3adcc3e942a21e26b2e163e307d2ddd6c1aaa40ab80218756a87ddce9cdd7ede",
+      "original_bytes": 8796,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-4-back.webp"
+      },
+      "sha256": "ec86b302675b156c5b7fb828773fc2a96129086d6a45d59864cee4331bdc9c4f",
+      "bytes": 5760,
+      "size": [
+        220,
+        225
+      ],
+      "rgba_sha256": "768fb1b926a1aeecf89a6fe23f834123c03491e9dee4bae2ea7c246dd3a9d297",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-4-front.png",
+      "original_sha256": "2a73f75dfe3727e02aac530bb3d060a5588b89365072cd97c4474a814fc6ac79",
+      "original_bytes": 9223,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-4-front.webp"
+      },
+      "sha256": "1ec03e8172d13c4c60365f4077c9fcb3cf89535c85b4a15786c6e7caa6b7f25d",
+      "bytes": 5944,
+      "size": [
+        220,
+        225
+      ],
+      "rgba_sha256": "74fe54930a2c8e423ee4276a826de9483aedbf587f131c8a0c8ee5f283358d0b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-4-inner.png",
+      "original_sha256": "2ad40b877b0c2c90462ef47544d2551cabe93b06feef4dda7a7425be8f028ff3",
+      "original_bytes": 8624,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-4-inner.webp"
+      },
+      "sha256": "5b3e7d88259c8cc18e40229058f95e38692de776fb8c49790180d7e380b9e7ce",
+      "bytes": 5358,
+      "size": [
+        220,
+        225
+      ],
+      "rgba_sha256": "a6539d797a284fbda74a44ed150c7116c8d8d623119a1df109452c3eeba5aa46",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/arm_upper-4-outer.png",
+      "original_sha256": "968a5f536f4319e3d16b0e88a4bb60e25898f712d0acafe788863a96ba2b2284",
+      "original_bytes": 10010,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/arm_upper-4-outer.webp"
+      },
+      "sha256": "d82e04e703e296424a42550e72f064d972cd9168d32ec95df479a2a025fe77cb",
+      "bytes": 6674,
+      "size": [
+        220,
+        225
+      ],
+      "rgba_sha256": "16011abdded242bb44fe53ccba634d7556f55436b39d0e890a8d9411631c88af",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-0.png",
+      "original_sha256": "0a853abbd831f1eab23e4797780611535ce516b7ee76357b5a76ff0feff38b53",
+      "original_bytes": 5932,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-0.webp"
+      },
+      "sha256": "dc5d28597c7765fdb61970060f9a6725fb16910e5386e4c915e12ec159d867fe",
+      "bytes": 4050,
+      "size": [
+        230,
+        175
+      ],
+      "rgba_sha256": "79122c5c3e943ab390465a16356bb484e143567501e7e3c72e84330840fe12b3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-1.png",
+      "original_sha256": "cbb01a66955065c0cb576defda5630ef4fed33ca02ee433af3cc87841211a574",
+      "original_bytes": 4946,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-1.webp"
+      },
+      "sha256": "59459acf35b26291db77d49477cee0526bdddfd8c79119dbfbf3f1129715c798",
+      "bytes": 3316,
+      "size": [
+        230,
+        185
+      ],
+      "rgba_sha256": "e6f685d3742014defa9b0cc7e0684b2fb953fd21759fd3273287563bcbf80f81",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-2.png",
+      "original_sha256": "8250b3b3008295ff19a2cd657288db57220564599510dba0f7731288a22c6cd8",
+      "original_bytes": 5190,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-2.webp"
+      },
+      "sha256": "04c8ba855d8fa7de4bb8958cc9abd88f1d3c53271e04bcf1228f08589146c624",
+      "bytes": 3398,
+      "size": [
+        240,
+        170
+      ],
+      "rgba_sha256": "3411f9dd53bf127f22771e4eeed565f8476058dda6eacc1d14d92d407a20814d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-3.png",
+      "original_sha256": "5d93e9a65fac1fd8221f94cce8d756ebf0ef328b6b649757dad260d48305832e",
+      "original_bytes": 5879,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-3.webp"
+      },
+      "sha256": "943de263ca0b609ff9202a45bf8cc9b9670e3e170c5b81719fb483fb93de7fb4",
+      "bytes": 3656,
+      "size": [
+        220,
+        220
+      ],
+      "rgba_sha256": "a811ad3468ec583e07d158dadfa4bbd7e61c2b2c45475afbd7c6793be16a3191",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-4.png",
+      "original_sha256": "534963b51b281554f23d64dee3687374a2cfaa4f46c3fb1ba47fc4e7c25bd15d",
+      "original_bytes": 6291,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-4.webp"
+      },
+      "sha256": "0ef14de43dbd022a5bb1e379b652baeb475b0b06617dce615c4691a19de2c1a9",
+      "bytes": 4310,
+      "size": [
+        210,
+        215
+      ],
+      "rgba_sha256": "c093b394726128e751e6edb3cb189f14611fd6f970c9724a0e9a30335c962ce3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-5.png",
+      "original_sha256": "e311440bdfdd4535f878fc5a83f53c948ccb97ca9207d4c0a0f6e8d101997e97",
+      "original_bytes": 5303,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-5.webp"
+      },
+      "sha256": "af50f8f9762b1dbe1d0fa5ef7f391b4497681b412608e2f99591b9d44c158356",
+      "bytes": 3618,
+      "size": [
+        240,
+        170
+      ],
+      "rgba_sha256": "583c79ebed2e0cd378269f05b059754e1c99bc0388b66f220b2a4cd7e78fea15",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/foot-6.png",
+      "original_sha256": "d4d3efb17a9054879d799bd06ad105bbf24c50037bd62558e9781c29b014d573",
+      "original_bytes": 5594,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/foot-6.webp"
+      },
+      "sha256": "3c681fad7ba73112974fe235dfbd376c804ce8e1602de32d140ab6f8a194780f",
+      "bytes": 3562,
+      "size": [
+        225,
+        190
+      ],
+      "rgba_sha256": "68ab3bac32cc2c66082a02e3c79db6c93d224b8e0311d146beca06727c1c0107",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/hand-0.png",
+      "original_sha256": "34c7dbea8f18768565b05603a69c2f34e5ee73bbd7385d9eb89e18f888ff6956",
+      "original_bytes": 7208,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/hand-0.webp"
+      },
+      "sha256": "dec9af963ef91c866f1b1f9d6c4ca6048dd6aebd79000c9c7eabaecf706cd7dd",
+      "bytes": 4574,
+      "size": [
+        245,
+        250
+      ],
+      "rgba_sha256": "b2db5a88c3329fe7a93a225fa5b253b90f557a3ace0d8ef419d42bec58a8e53b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/hand-1.png",
+      "original_sha256": "b6497b5e509ed4447208c9f621d1488c519f00fe56669e04214c05de867585af",
+      "original_bytes": 11862,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/hand-1.webp"
+      },
+      "sha256": "e0d279e07462a600cbec6acba7230b05049643880192760a81aaa8d8d4e668ba",
+      "bytes": 6706,
+      "size": [
+        320,
+        280
+      ],
+      "rgba_sha256": "897df43309aa020b8e8dd0436ed005d4f4eefa3330118a9f7e5aa0c8cc8852db",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/hand-2.png",
+      "original_sha256": "8425beabe2109cab3c6bf6f65b9da1a8eae015e73276bf0ee03a656713a5dcc0",
+      "original_bytes": 6095,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/hand-2.webp"
+      },
+      "sha256": "918eda11014de2fbc1b2cab8fc71c4b5f85889dcb92dae5a379bb840b87d63d8",
+      "bytes": 4000,
+      "size": [
+        270,
+        230
+      ],
+      "rgba_sha256": "4e6fa8989c549193a3c5dde768b1560a5f0e9874755a6b33220fd8968195f535",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/hand-3.png",
+      "original_sha256": "f1991da002c18723963cf5065f7288d184cd71218e1c556bff45880388e6956d",
+      "original_bytes": 8243,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/hand-3.webp"
+      },
+      "sha256": "25b555447e0d57426aa6286db12de6d4e3a27b07a6f944402426f87aad7499a4",
+      "bytes": 5068,
+      "size": [
+        260,
+        230
+      ],
+      "rgba_sha256": "30c09541f38e258f5543ea90e3ed8b1c59a2b22fd91e71b2bc5f49dbd93e2e96",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/hand-4.png",
+      "original_sha256": "819da6fae22994557b99f7ea92d96ee369141da2d52fee094dc57f0bef8913e8",
+      "original_bytes": 11002,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/hand-4.webp"
+      },
+      "sha256": "9bec01a03c774617053bdad78a036203023dfdddbc311de44ca9324db6037530",
+      "bytes": 6284,
+      "size": [
+        355,
+        305
+      ],
+      "rgba_sha256": "d95986b8b50a950feaabe6df5cccd5f58dfa6fbc6d6c1a1592c4102b69941e16",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/hand-5.png",
+      "original_sha256": "29bb0e01ab3b5ba187af30fd98f47f151b53a3ebb0462c04bd9ef8b1a9521786",
+      "original_bytes": 8513,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/hand-5.webp"
+      },
+      "sha256": "7c9c1266e7e92cc72170fe36e965f41c7e5ee0a5af201a329e19de2522a6de1e",
+      "bytes": 5134,
+      "size": [
+        280,
+        220
+      ],
+      "rgba_sha256": "0cb20a857ae3cd98acd8f5cced1ebef1377724a31c2968ecb3a346d293adc0e9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-0-back.png",
+      "original_sha256": "4ab01ce96297e0b548eb5fda44c686099d374cd9d0bd16531a5d8a1b9bf0e9b1",
+      "original_bytes": 9289,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-0-back.webp"
+      },
+      "sha256": "c591f77b719cf6079b1f8fe7c074f569db8bef29c58e99a4c63ea0a940b4fd1d",
+      "bytes": 5346,
+      "size": [
+        165,
+        315
+      ],
+      "rgba_sha256": "078176bce5a44a1514a7b7290e355de6bba382d112a1bdabe5a83c101a9d880b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-0-front.png",
+      "original_sha256": "693b2335a8f9475742681ad4ec39a476c95c023db28169789b5816e15efbb784",
+      "original_bytes": 9880,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-0-front.webp"
+      },
+      "sha256": "7f9aa046c4482ce5266af7cffae08e38007665d498ec7754626dc2869f6c35d5",
+      "bytes": 5588,
+      "size": [
+        165,
+        315
+      ],
+      "rgba_sha256": "ca724b4edc468c6b1e098c7dc23d64317b4a42a391ad90fadfce7c29ca370ec8",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-0-inner.png",
+      "original_sha256": "0b2e94b2de482faecaf7a8edeb81075da24f23be9f0c7e186e85009396f1f00d",
+      "original_bytes": 8951,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-0-inner.webp"
+      },
+      "sha256": "0756236e9cb10e9577667c54cc3e5f252d0f974e6f87d227da909592e029a55e",
+      "bytes": 5024,
+      "size": [
+        165,
+        315
+      ],
+      "rgba_sha256": "29f4ce64834f88b780781f7bec8677b58047959fb2762d93b4b00f2df42fc92d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-0-outer.png",
+      "original_sha256": "df23a315583aefd5c5543e550697d3427d86795dfb7012b96f0a8e6e2324e23c",
+      "original_bytes": 8994,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-0-outer.webp"
+      },
+      "sha256": "56f76c72efe6a03032a9e51f4c035e69abcc08f30647536c5826e104a14b306e",
+      "bytes": 5230,
+      "size": [
+        165,
+        315
+      ],
+      "rgba_sha256": "ed11fd79e6c6649406135a47511e25ce10982383fa226f0030ce8ac20fcbe7a8",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-1-back.png",
+      "original_sha256": "0b6dbcd92675622da36cb9fcdb9119463aa389fea5905aceb455b028336cbd00",
+      "original_bytes": 9708,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-1-back.webp"
+      },
+      "sha256": "b21ced6b2dcdd867330f0e683f56f18a6c20251d05c634fbb63573da85549649",
+      "bytes": 5474,
+      "size": [
+        175,
+        320
+      ],
+      "rgba_sha256": "6c2ff56ac3bc3a3b14e3a93c328ccdb21b99bd22a1e55d9a7a2eec72f94dc133",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-1-front.png",
+      "original_sha256": "aa800415d370f0432f66cfb9765aa57f53bf294dbd5b2cc3a05f01a6f5068f46",
+      "original_bytes": 10335,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-1-front.webp"
+      },
+      "sha256": "e95381f303c42d7b85477884d9aeab02d1e86ef4c42eba94c659b36fe7eef91c",
+      "bytes": 5596,
+      "size": [
+        175,
+        320
+      ],
+      "rgba_sha256": "627047aa2f35c5a7cd6faaf8235de6ebb0dc37fd2f78b89b15880e60b4692e2c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-1-inner.png",
+      "original_sha256": "7596e14500a29adf7063996628b40f1ac1c94dd6e78752dc973a452fbd237bcd",
+      "original_bytes": 9938,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-1-inner.webp"
+      },
+      "sha256": "ca59990435ec39eed87368312b1b17cf8b5d3092e21ce11d32057a957ec1d71e",
+      "bytes": 5074,
+      "size": [
+        175,
+        320
+      ],
+      "rgba_sha256": "b5789c0ed2128dd6014a8f0eed0dad27b039e4f385505c902e81d4300da6e1ba",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-1-outer.png",
+      "original_sha256": "b14b80da4fd777660e8a5b42a584a7729881166bf69ebd4648461e1a0a4cb605",
+      "original_bytes": 9935,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-1-outer.webp"
+      },
+      "sha256": "46efd4ce904335bbf842684685562811b5eba0b65960eeb59085c6036e472776",
+      "bytes": 5098,
+      "size": [
+        175,
+        320
+      ],
+      "rgba_sha256": "6750024ad25d5eb810299f69b923a10a2e2a99a29b6ad2a426b74ae96404f791",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-2-back.png",
+      "original_sha256": "0e81a16a18ebad32dea4c79e9840b7923eae47cbd982b8b706e1c19c7e40e1bd",
+      "original_bytes": 7553,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-2-back.webp"
+      },
+      "sha256": "3c1f582d59edce44c6ffde81cd54137ce27bd61e644121f6f2c5c9f7779d88f9",
+      "bytes": 4110,
+      "size": [
+        170,
+        300
+      ],
+      "rgba_sha256": "4bbf305258b4f43fd43fa90b58bc9d3cb090d160c6062d0b5804db2473f00e09",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-2-front.png",
+      "original_sha256": "726489c583cfcd695406a92fd0661a4f79b44fca5301a17ae9dbb5c4051c1b68",
+      "original_bytes": 8054,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-2-front.webp"
+      },
+      "sha256": "b426c77c396dab3a6e8ea6ec6af070061e86819926d8d98aa287f85f93420d7e",
+      "bytes": 4274,
+      "size": [
+        170,
+        300
+      ],
+      "rgba_sha256": "038e403d559cc8803d4664de5f2e5653be164c67774dbd2f9779bd06ac465638",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-2-inner.png",
+      "original_sha256": "089d7a34e39f03e7bc01fa857ce13598599d23f9675180987726f0d098fb85d7",
+      "original_bytes": 8402,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-2-inner.webp"
+      },
+      "sha256": "9406e9337634f30e078c6790cea369009e63b0886f50445fb011703a241a427a",
+      "bytes": 4094,
+      "size": [
+        170,
+        300
+      ],
+      "rgba_sha256": "19ce1bc27eab3403fa1bdf936e6e55379d52e60fb5b8c82e809e97cd8891c672",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-2-outer.png",
+      "original_sha256": "7a4bb900b1429c04af94249d81b915ba8ea4c10c4cdb6dd033934c38b5740b09",
+      "original_bytes": 8408,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-2-outer.webp"
+      },
+      "sha256": "f9fda541b885e164c8288b3ac46cfa3780cbaf02efabfc7b060f8b665b1e07db",
+      "bytes": 4190,
+      "size": [
+        170,
+        300
+      ],
+      "rgba_sha256": "90d4e0094db3a7424c98848dcd27cda2623d6bac885444f32de2342a8b3ad91c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-3-back.png",
+      "original_sha256": "cd632516f0d995cf1b283708e53010f26df351f6dcb17a3b15ddac7d8bbeef43",
+      "original_bytes": 10729,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-3-back.webp"
+      },
+      "sha256": "3421bacd3c6c0785b4a531d828d7a850ca31aa9889e3d84e02202667e726ea27",
+      "bytes": 5366,
+      "size": [
+        170,
+        350
+      ],
+      "rgba_sha256": "65811aba04adab38c27a757b90d66206b85eff159134e5c94626edaf70071008",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-3-front.png",
+      "original_sha256": "28bffaf1507df4e141aa8e4146652ba65311404b5246a0abb7371136f0247666",
+      "original_bytes": 11429,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-3-front.webp"
+      },
+      "sha256": "860b1039d6bc8ae16e289c24c003e11ccbdfad45ab891bbb2815fe4c02f25e0e",
+      "bytes": 5620,
+      "size": [
+        170,
+        350
+      ],
+      "rgba_sha256": "75f5b628315d65b5b09dbdacc5d082677f40fc6d8ec730ff52fa6409dc7a668f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-3-inner.png",
+      "original_sha256": "fd08d6888d7900372f7dbbaad84e3d05b6cfdcee49ea79ef6561e2cad358b036",
+      "original_bytes": 10403,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-3-inner.webp"
+      },
+      "sha256": "6594a8ec7f456d7fe9c5687f1e59a3eb4d9fd1c89cc717b53ba531dd2102842f",
+      "bytes": 4958,
+      "size": [
+        170,
+        350
+      ],
+      "rgba_sha256": "03a5f7eb1695ddfbab120ec9533bacf8cf3afe122625aa97de6cdb1048a00717",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-3-outer.png",
+      "original_sha256": "bf33b13dc655ad5c33a8a9085bbe38b31ee3b5918c16fc757bd7a9df500c9dfd",
+      "original_bytes": 10477,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-3-outer.webp"
+      },
+      "sha256": "148aa2ef842e291dd901142ec2a92610017e7999fd8c3180955a89c87dc09548",
+      "bytes": 5128,
+      "size": [
+        170,
+        350
+      ],
+      "rgba_sha256": "a35fc8811cc29a39f594729b455a93624f20c0d8dcdcc1bcf0c18b95032829db",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-4-back.png",
+      "original_sha256": "102ed39bdc28845fffd9910d99a9ab7395fd2029a4d419f72955e8fd6a6729f5",
+      "original_bytes": 7036,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-4-back.webp"
+      },
+      "sha256": "1d2c00a3e5819f87e5a2d23f1e7da34328d3cb27cb06f19b4d1b6149061d6e21",
+      "bytes": 4432,
+      "size": [
+        260,
+        250
+      ],
+      "rgba_sha256": "95c52f78bab7e3553b3fe3da53d55b2f56bfe6bf09b14ca5d8e624708877f593",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-4-front.png",
+      "original_sha256": "2af3a6ca0adc4934937ea2bbdb6414fb6ea30b24d5e943ec386e0e38c86ed0ff",
+      "original_bytes": 7289,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-4-front.webp"
+      },
+      "sha256": "0a70a6dc1944244f1ed9e978e4dc0db9d8b7f339f09058d09c90b19258270ec0",
+      "bytes": 4584,
+      "size": [
+        260,
+        250
+      ],
+      "rgba_sha256": "5cbee2cb5a4d3e3762a1e1a76812619f478ef10abd67dee2e8f82f9ba4ab641d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-4-inner.png",
+      "original_sha256": "ee92b517fe30f9b62320882dc3676bab5e58767e0e5d60b4934151f15b5b143f",
+      "original_bytes": 7708,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-4-inner.webp"
+      },
+      "sha256": "5ed972bf3c3237414095bc76efd870d1d8139a460a261357692f4498e029c0d2",
+      "bytes": 4710,
+      "size": [
+        260,
+        250
+      ],
+      "rgba_sha256": "fa1af80f5540357087cbc814d88c87329dc40a2b8f9b5c015633d3ff996db529",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-4-outer.png",
+      "original_sha256": "ec621a66d3e44c76b0aa08bae42d7b895222ddfebeea72a5c3a83c381903e3b4",
+      "original_bytes": 7685,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-4-outer.webp"
+      },
+      "sha256": "e2f5db5b48dceb5cabbdf644341509a9fc1d50b7bbddb920516a6c28c4927ce7",
+      "bytes": 4770,
+      "size": [
+        260,
+        250
+      ],
+      "rgba_sha256": "a1023b0ea8ae518efe9b8f57e45e8523f948384edcd8c2fa9a09ee5dc69be18f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-5-back.png",
+      "original_sha256": "fd4245575d7848298592eabce81a5c39ca80d4a6937e05988947e6d7579a828c",
+      "original_bytes": 10036,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-5-back.webp"
+      },
+      "sha256": "2048adac891f636cccd1d0b2ab201ece19dc1336bff0e5519f20fc437d3cbb22",
+      "bytes": 5034,
+      "size": [
+        160,
+        335
+      ],
+      "rgba_sha256": "982163e5318ffaf1d9a24aa00bbe1e3e42df13c885301e1eca0d5b34b212c2bd",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-5-front.png",
+      "original_sha256": "52246ebf9c6620faf560e27cf630d1228e773e09c6dc8099003d246b064b481c",
+      "original_bytes": 10696,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-5-front.webp"
+      },
+      "sha256": "4033a11033c12a018868aace3afe91bbf182e70b4bf67529b7ce54c1f7bff944",
+      "bytes": 5234,
+      "size": [
+        160,
+        335
+      ],
+      "rgba_sha256": "291cfc64bb8352175e2939a9b55f5e7076f44fc4c1603e772fb855131a887dec",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-5-inner.png",
+      "original_sha256": "f7f86c42a2d4c74e449ea41b2fb3fc3cccea6db12a7573a9c55ecfd973fc7aa0",
+      "original_bytes": 9618,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-5-inner.webp"
+      },
+      "sha256": "551dd6e509b695de67fb52d4a64227a9f1a858830400b36dcb0a574637cbe68c",
+      "bytes": 4450,
+      "size": [
+        160,
+        335
+      ],
+      "rgba_sha256": "bf8315879d82a93fef11d6ca7a3d05e6bc877464d8a023d7cabc469a322bbe1f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-5-outer.png",
+      "original_sha256": "9fa68d875fd0ee77063d7348605e9dc56311bc44fce09c898adde7008596ffe9",
+      "original_bytes": 9691,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-5-outer.webp"
+      },
+      "sha256": "94a7f25ec30ed0ad703980621f60a32308cddbbfb1b6673a3604cfae288437d6",
+      "bytes": 4554,
+      "size": [
+        160,
+        335
+      ],
+      "rgba_sha256": "586665060c8e8abcd8ae1fafc88d82eb3be855cdefc42ec0fb06d3a44d4c97c3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-6-back.png",
+      "original_sha256": "1006739da1a6519fe817b9685c408f54a387c1acf38bdba541e5343521256ea2",
+      "original_bytes": 9475,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-6-back.webp"
+      },
+      "sha256": "82ef8ff8ff50fff7951084b4beebd7b0f096d046cb4f2d2cac34d014e8148ef7",
+      "bytes": 6286,
+      "size": [
+        265,
+        280
+      ],
+      "rgba_sha256": "e8a0ae57d91938d3e3abd3e2cab18b7796db2e01b73d755547ca3dd5f031c8b4",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-6-front.png",
+      "original_sha256": "8058754629d62e598513cdd9859c6f0bd103ea38ea1e6e206825eee7c213b288",
+      "original_bytes": 9672,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-6-front.webp"
+      },
+      "sha256": "d77169b59650d8bdd391cc001aedfeb2ca117f228d7315fd00be0b54a4afb196",
+      "bytes": 6336,
+      "size": [
+        265,
+        280
+      ],
+      "rgba_sha256": "5fe518f113cf8f66e0f17a1b8a85e5aa1753fef5a04014cce16db77193b5faeb",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-6-inner.png",
+      "original_sha256": "bc3163cc06f73c4116c9f2a061976ddbede001f6d96a825c54dbdfb0cee93fb1",
+      "original_bytes": 9357,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-6-inner.webp"
+      },
+      "sha256": "4323d02534852197646e37f7daef4445ce36344215a7d0fdd35e87197f843554",
+      "bytes": 5984,
+      "size": [
+        265,
+        280
+      ],
+      "rgba_sha256": "c49b824b53dca1d5e273443c4deda632dbe9f508aea2bcf16af5e33aa83081d3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-6-outer.png",
+      "original_sha256": "dd21b96ec985d622be73cff3e4ae5e2291a9b3e3649602e7af7e8a028b0cb9fe",
+      "original_bytes": 9311,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-6-outer.webp"
+      },
+      "sha256": "a67a807a384edb2f83cec02db6d5849f7b14fc46b690357eb9cf680fb67ee426",
+      "bytes": 6086,
+      "size": [
+        265,
+        280
+      ],
+      "rgba_sha256": "c8e510a3928085d48b356a7f17ff913b693f4788e6f567b9770a1d296cde6324",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-7-back.png",
+      "original_sha256": "309f6ba88dd8d1d44583572387866023344a0089a300420f7a5fc9fea61d6fd2",
+      "original_bytes": 9881,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-7-back.webp"
+      },
+      "sha256": "10b6deebca1d31c192787a9bcc45300b1d8829963d94d944dcde1969def54204",
+      "bytes": 6780,
+      "size": [
+        220,
+        265
+      ],
+      "rgba_sha256": "5133e9ab2c1cfc60d4807b90031876a68d04c6b35e7164726d5a8a33ad588f84",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-7-front.png",
+      "original_sha256": "f16fcccb2a838ff1646e92b3de3b3c2c02e94c1c4632192305e77f9014006c93",
+      "original_bytes": 10107,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-7-front.webp"
+      },
+      "sha256": "41d72a34cb459243413a1c751ca5ab02fc7d7ef00498c935cc6e41866055ff4a",
+      "bytes": 6942,
+      "size": [
+        220,
+        265
+      ],
+      "rgba_sha256": "b8b44051ba70600c07d323e25274d85aae37c92610b3974471297110a2a0bb1f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-7-inner.png",
+      "original_sha256": "4e4dfc46da30a88507c9ad249ce7f31c4fdd354f235df8560e9e0709d492fcdf",
+      "original_bytes": 9843,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-7-inner.webp"
+      },
+      "sha256": "863f56e71a98bbec376669bee9e3da9deaab6704ae0e7db11af93644275016fd",
+      "bytes": 6422,
+      "size": [
+        220,
+        265
+      ],
+      "rgba_sha256": "6dd31d83fde760b076750bdb9027b5fde0ff24c87db1367072d21557f9c861f8",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-7-outer.png",
+      "original_sha256": "8dd42a07e34b6da84802d8b132e79ab0d3c893edbc33236affba0c2163382c67",
+      "original_bytes": 9888,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-7-outer.webp"
+      },
+      "sha256": "d3cd5c3a576929053f11a1ad0e9a8aefada096c4f3d444d8f57f0adb092d35cf",
+      "bytes": 6558,
+      "size": [
+        220,
+        265
+      ],
+      "rgba_sha256": "c4dbdd5f53e0b44ff3857af40014342390fe7d7ed62daac3f936742e25aa3291",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-8-back.png",
+      "original_sha256": "0f474cef6df08ee84a30213f59473fca3a3abd9e98cc84edc22fd2ed79c01986",
+      "original_bytes": 10619,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-8-back.webp"
+      },
+      "sha256": "a354ba3fd2efaa97500743c81b867119f76817b7d731effac21a396e4f381b28",
+      "bytes": 6726,
+      "size": [
+        185,
+        320
+      ],
+      "rgba_sha256": "4c7e4da5510fe6bf482d83ef3776d6e8dd742e7314d871a6a8a13bbc5e4caeb5",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-8-front.png",
+      "original_sha256": "702800f37f77814558cabb664a1aec2a22cd3397cb2a3657ee4c7cea7ee4a6e5",
+      "original_bytes": 11178,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-8-front.webp"
+      },
+      "sha256": "97531fc8e780335862f6103617b98a004f8c3c4e9f8bd3f27b68e53bab67cf65",
+      "bytes": 7032,
+      "size": [
+        185,
+        320
+      ],
+      "rgba_sha256": "42a5fb44cd04356580f119af61aae0df3dbe43a2c51fdd6d86416c87a4511ae6",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-8-inner.png",
+      "original_sha256": "48f66ee823b8ff3b6236ed4ee32ea0bcde22ccb0533dbedfd886178a17468b4b",
+      "original_bytes": 9299,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-8-inner.webp"
+      },
+      "sha256": "8f907fd60371ee93d2669c45d8350ea727e253fbe9436286aca0883bd257b463",
+      "bytes": 5788,
+      "size": [
+        185,
+        320
+      ],
+      "rgba_sha256": "736390646275f2cabdb7824259362b59007150f7f679737896cfec074d19a5f1",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/leg-8-outer.png",
+      "original_sha256": "b0fabff0893028b9ae7192aef6dbebf6ba6dc18bfc3aacb5b7dfeacbe6e5e0ee",
+      "original_bytes": 9305,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/leg-8-outer.webp"
+      },
+      "sha256": "72589d79edd108ecaa04e14f7cc1c2bda4cb97494adb12c6d7f9e67520a2e133",
+      "bytes": 5926,
+      "size": [
+        185,
+        320
+      ],
+      "rgba_sha256": "551b7192335d157bea091ec267ff04a82de7c3bf88f1fdd54e403d35a7c66b4f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-0.png",
+      "original_sha256": "07f2ace63cb0eb080ead33549aca2d9ccc13b3488df3d5634607f9025f35a6ec",
+      "original_bytes": 24451,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-0.webp"
+      },
+      "sha256": "67d2aa16b27a66ec8ec4ce1ab14365eb3144217f5b5c84406c1df231c42258c9",
+      "bytes": 12782,
+      "size": [
+        385,
+        430
+      ],
+      "rgba_sha256": "29a773f6cba1f8da973219b639d9b269be7d8bcb5564893dd3d1bf992f76de37",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-1.png",
+      "original_sha256": "a53a5c4bdc37e07884a0d3f5670f94148b866d2cf7cdbadbbcd03390a4b0fce9",
+      "original_bytes": 26829,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-1.webp"
+      },
+      "sha256": "10420bed69a092f46fca61eddf50cb24788baaf5908132e831f750c939ee9277",
+      "bytes": 14240,
+      "size": [
+        430,
+        430
+      ],
+      "rgba_sha256": "1d163e31fbfd31b7311492e63bcc5950dbbb517bfd494c9b394250dfd720d311",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-2.png",
+      "original_sha256": "b347a5d3c5ccdf5e05f22bf5a130e8c344304744a9e70e49737c0c08716210df",
+      "original_bytes": 25794,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-2.webp"
+      },
+      "sha256": "cae25c13ed8fb195e6c2fc76bb23cf50befc39a807dc646be5aaf5084f94e2f5",
+      "bytes": 15198,
+      "size": [
+        425,
+        425
+      ],
+      "rgba_sha256": "95c9bd778460432e71ec86859f4d50d3064dfdf2ed377120c925cf9c32d1df5c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-3.png",
+      "original_sha256": "cc954d53a1f05901e5deb5fff9c803dddfce45ca40f0c4a9b07da59bae23b85b",
+      "original_bytes": 23408,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-3.webp"
+      },
+      "sha256": "388c1ef87b2cc1cee47ac9b5f8bdbf6edf67852dcc3c3eb9786fd96dc34cbcba",
+      "bytes": 12122,
+      "size": [
+        395,
+        425
+      ],
+      "rgba_sha256": "736f2424f657692ac88e3644dd14f3456364e35afbe5231f283487d1330e4f2e",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-4.png",
+      "original_sha256": "90637e783a5f591f6ec9f26f7293175fd586afa85cf741e97ee65a2f4bd63dee",
+      "original_bytes": 23970,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-4.webp"
+      },
+      "sha256": "ab91822c24d53b3d3fabeba3afff277d7a715f798c0e5f324ab6d465592e57c8",
+      "bytes": 12926,
+      "size": [
+        445,
+        420
+      ],
+      "rgba_sha256": "ddfe434549d07a49c868e70c672ae3f8c5eb8d71318cda45ada29c2e77c3aa32",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-5.png",
+      "original_sha256": "a8e11f9b4f1c125a1ef704f8b5b4d21c4566be7490a27a8e57b71e50698c0b19",
+      "original_bytes": 23420,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-5.webp"
+      },
+      "sha256": "ddc9dd95d45e41469e2192e9b7d325637edcbaeda561c4885e5ee9d319b7bff4",
+      "bytes": 11926,
+      "size": [
+        455,
+        435
+      ],
+      "rgba_sha256": "4ccc11ddff542dc648cd74018491dc0b782f8e98e636e8fd89fc34f5291b73af",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-6.png",
+      "original_sha256": "7f1a5482e06323f52700e1d76b0cbc49be9e327d959dc5f045146c32940ca52e",
+      "original_bytes": 18850,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-6.webp"
+      },
+      "sha256": "75638e1013d36432f5090a65015d9dbe01003b74e37c68a0a30d45edbf763d8a",
+      "bytes": 9304,
+      "size": [
+        385,
+        420
+      ],
+      "rgba_sha256": "9060baca6dbd0d3fd1146d7fe998163c922201a032cd45d160de88fcecde1beb",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-7.png",
+      "original_sha256": "256c575e80411fb96769a4b6812be263c65ad0da7ceaeb699c7e07f6c48009ab",
+      "original_bytes": 21696,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-7.webp"
+      },
+      "sha256": "e819f1781cfdfc45f3da147f44d7f8a0f5d2bb30f9cec8acafc9768d5cbb87c4",
+      "bytes": 11710,
+      "size": [
+        435,
+        410
+      ],
+      "rgba_sha256": "2b1103bcb09d22f372dba4d95ba173680b7107fbc51b81db29c134612a3d9b4f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso-8.png",
+      "original_sha256": "0b06948b23d1405494a9fafe276e3f5267634bac3938960c674397a5de85ae4f",
+      "original_bytes": 21429,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso-8.webp"
+      },
+      "sha256": "d49510a1b912507999cb1e91fb1cf3b7e1f7595c966079b9f00ea03ac7cf2ac9",
+      "bytes": 10764,
+      "size": [
+        415,
+        415
+      ],
+      "rgba_sha256": "89970f5ff8945b62087917920facef11fe3b09593bc4480e2a7e7e772623f6c6",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-0.png",
+      "original_sha256": "2734a44da3410727469254a9fc812d0978c82bb6370c191876be4637f1ae4cb5",
+      "original_bytes": 8837,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-0.webp"
+      },
+      "sha256": "060d89e514530ab096e5a6ff8fadca0ab3737a152db4e5bae9d4a9a7591c843b",
+      "bytes": 5004,
+      "size": [
+        385,
+        230
+      ],
+      "rgba_sha256": "43be5d3691da6c50124e920c46dbc1c7cc72476f8bb5c7af2c7ae3cb437db97f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-1.png",
+      "original_sha256": "b393270becddba98b3c6ec86cffe2ace95c2e6b5e6a3b14657fd6a8eca4c24f6",
+      "original_bytes": 9261,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-1.webp"
+      },
+      "sha256": "efd3358b24f42cc5d87d1d38932f30a78a433fc786d1d6ba5ddf94728f1f0b3e",
+      "bytes": 5514,
+      "size": [
+        380,
+        235
+      ],
+      "rgba_sha256": "6041673113ffe8a5b1cf40fe8c309fe57d95195e83d2406ec3a7f247f23ff8d9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-2.png",
+      "original_sha256": "bd5b68e85baf555f071bce9c42e1cfaac4a6ff75d5a6e1b0b38d9f24e72e09ee",
+      "original_bytes": 9325,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-2.webp"
+      },
+      "sha256": "64ce7d60fcc04598c9b3b9beeb14c632ccdd81c040f5348610efc58e3351910d",
+      "bytes": 5444,
+      "size": [
+        380,
+        235
+      ],
+      "rgba_sha256": "37684009ab64b009ed6b3b88c2864997c18b00ebfd8d89570ade231804033b34",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-3.png",
+      "original_sha256": "5c09fcf191d44cbeeddfbc791a1c93d3b33ccf433781e9953444bb1b4c7f8b2d",
+      "original_bytes": 7801,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-3.webp"
+      },
+      "sha256": "a2aeff1d95743a12644600dd5192d19248f3bb820eb836046e6d8b34c4993bd3",
+      "bytes": 4238,
+      "size": [
+        380,
+        245
+      ],
+      "rgba_sha256": "2297e064f54bd7e090efb7f0f17c5520e65ed33663e4501aa3f04a643ca9c7b3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-4.png",
+      "original_sha256": "4ac84cd41afb64adb5e1caa1683067f0e932a9eb19496b1f2a98586db751b284",
+      "original_bytes": 8037,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-4.webp"
+      },
+      "sha256": "2167047a5afa62cac626c4605f2148c112a2aa86275994a9b30965bee01affde",
+      "bytes": 4208,
+      "size": [
+        370,
+        255
+      ],
+      "rgba_sha256": "16b21681e82bd7ef0e65c6cfa828f9ff115632fd24bd5a20dae0462760c75883",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-5.png",
+      "original_sha256": "8fbc6d43cac3cdc86889433d979e24462b48614ba2d40b2c850464a65afff408",
+      "original_bytes": 7738,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-5.webp"
+      },
+      "sha256": "79c9229fc08fa959e75c46275a5d6533aa312ed6dd16cf1579336b3b70359ae1",
+      "bytes": 4294,
+      "size": [
+        370,
+        265
+      ],
+      "rgba_sha256": "5beff2c68c71712e13abfbf88a25147f5b5258baf6080458f43dfd6e7bd0fd05",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-6.png",
+      "original_sha256": "68288197237807a63982e1e9ba32f0edd06fe4c41d78aa7db17172b38b5063ec",
+      "original_bytes": 9672,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-6.webp"
+      },
+      "sha256": "432e3194ad69d9b222777aaf525ae1d81692ce4117bed5df074de4cdbdb97a52",
+      "bytes": 5532,
+      "size": [
+        385,
+        225
+      ],
+      "rgba_sha256": "8d9f34099f176b8fbc88aa74713d54550508040936a2c2af1a0d890581b4b81b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-7.png",
+      "original_sha256": "e7a576cdf75c605065a6844af04ea7b666f9e52165ec759c325d36500af97dc7",
+      "original_bytes": 9817,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-7.webp"
+      },
+      "sha256": "6b4eff545f832345c404a8c3b9c27d15dbd90689cfa77a8d97ddcb4d6396a469",
+      "bytes": 5734,
+      "size": [
+        365,
+        240
+      ],
+      "rgba_sha256": "940a40b0f462173eb6828277528c564a2f52652e9d4c0735a667d6ce8d34f956",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/body/png/torso_pelvis-8.png",
+      "original_sha256": "377c49b191d1babbc24fc55b848a5f0ea6d448834288bd5b9dffe07bd8ccc234",
+      "original_bytes": 10170,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/body/source.zip",
+        "member": "webp/torso_pelvis-8.webp"
+      },
+      "sha256": "0eede19bc299ad05ab25a8ec23bc388bcde54e0f05419946fba2840522eb482f",
+      "bytes": 5868,
+      "size": [
+        380,
+        245
+      ],
+      "rgba_sha256": "bad9e4c23a439774b95e05ada766ffc8c2220a10485453c2184893c3fcb254ad",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/back-hair.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/back-hair.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/back-hair_hat.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/back-hair_hat.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/back-hairfront.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/back-hairfront.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/back-headbase.png",
+      "original_sha256": "f386cb84c93b8e0b5e10a724c929ddb1aecd19c8fb73690222d87fba38a2566e",
+      "original_bytes": 60181,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/back-headbase.webp"
+      },
+      "sha256": "dabaa8671915f59d22105558c46bbe50be97d8e0149624393b70fff81e072df0",
+      "bytes": 30530,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "2058a1684dfef9518f1936b99e7dec4af20e081969a5e70acf89c6f8a20cf3c7",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/back-headbase_hat.png",
+      "original_sha256": "750931d43b987be671bbbd26a8f7d4fc3f5359a58cf86db4bcc852d8fd4a29e6",
+      "original_bytes": 47642,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/back-headbase_hat.webp"
+      },
+      "sha256": "07c6582c606bd5372e91b4e032397e83bc47f702b46c340f7fe3ed8483a8dece",
+      "bytes": 23012,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "79272213fce08da48b2fca5ff7b29466382de3fd1006b1f32caf565d0f5ed292",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/cheeks-0.png",
+      "original_sha256": "b036415093fe7926c260e632fbe487b7c1691cfb1afb143b2377364179210d76",
+      "original_bytes": 5971,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/cheeks-0.webp"
+      },
+      "sha256": "89a140f227b1ccb5a3963ee772977d9b58c3826698bd8c7cdde3906926a773b2",
+      "bytes": 3316,
+      "size": [
+        320,
+        280
+      ],
+      "rgba_sha256": "55ae7c2bd23293bae880b2b3a44075ee0ff94ce3c2395ed564b7880da4d578b0",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/cheeks-1.png",
+      "original_sha256": "0f3788f7f4322dc25da153a7ec1d9fa38b65bfac2340468e1f4402122d55a03e",
+      "original_bytes": 6164,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/cheeks-1.webp"
+      },
+      "sha256": "e5ac4d2e066b84f7a300d53e9110add9df4bc13c1c64313025571b9ba6a10f56",
+      "bytes": 3268,
+      "size": [
+        320,
+        280
+      ],
+      "rgba_sha256": "0a54ad239ce21c3f4e057f99455c92d7237b3c131d3f4f4e2dd39e5e75e10ad0",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-0.png",
+      "original_sha256": "ca4df4a6c210892a16e5a6f15d8971d5b6a048ad8b832fc8e0b4a9174e9b831d",
+      "original_bytes": 17312,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-0.webp"
+      },
+      "sha256": "97ec4f13b3da63c442b2d1937f9dd5f2e10020a4ad715436ad91d258ca1544b3",
+      "bytes": 6630,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "1e2e883f149eb8a69b26a70448f40ac7b4403019c1ae83fff0abf4d329666cc8",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-1.png",
+      "original_sha256": "9a6d2257c14b19ac811178674ab47e5669561fbc7c5d58eacc7a8c16f3f10529",
+      "original_bytes": 13394,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-1.webp"
+      },
+      "sha256": "2b93bba7c89f8038ef740be8bfd5aedc984f83095ab66c2f7b8e57bb601883ba",
+      "bytes": 4250,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "9e61db2c376797d4dfbedcb536a5e415885d1efe231b8e8b8fe159c2d904e130",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-10.png",
+      "original_sha256": "e92db01431fbe6306d3fc253b89dcb4a313d18f457d51c89d02e22dc31b5c805",
+      "original_bytes": 18755,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-10.webp"
+      },
+      "sha256": "e9aef9d10579da9d22adc2fe711b9cac7dd60a7648b8c10b74a1cdb16009871e",
+      "bytes": 7516,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "480ee29d98dfca721199627d62721ffc80c1c6ae6c4fd7c3e6ba5b253c58a2ed",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-11.png",
+      "original_sha256": "7269b3b83270f30d18a776cf1c169f302331a4f5e6c4929d747973a970ce108a",
+      "original_bytes": 11347,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-11.webp"
+      },
+      "sha256": "57ffb0c2ada0a291e633d8ffaf495fdad287193c9e56b88b724bff603639c035",
+      "bytes": 2578,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "7f65070d901d930a1781e6978d6401255d71e546b4936c1224d2d143babeb985",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-12.png",
+      "original_sha256": "5e0f54588995e7ab15c9206449285d1ef6229e4a2848287963b742db601110fa",
+      "original_bytes": 15797,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-12.webp"
+      },
+      "sha256": "1d0789f213d1c13a1a7dbf9ed52ae1b6cd557d3e23587310370245c027f56960",
+      "bytes": 5586,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "7f97ec674c13fc734ebc76f290c8d453ae85b26230a74908304b261773967dfc",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-13.png",
+      "original_sha256": "d124aaea7e2837cf4c7841947a2716560772b1d9e88a787da4aa6bd135dbb864",
+      "original_bytes": 13319,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-13.webp"
+      },
+      "sha256": "eb225f6e3c49e3950452c131bd618cf1160c1c55a4d15a40974e112a3411ea8a",
+      "bytes": 3606,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "913232889d984fc1e577950f808be14eadfb9c76d3c07af2f976759b383f0be8",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-14.png",
+      "original_sha256": "02ae9a13749c4f68cd59cd4de74be9156f25bd8caec8d23c6d45199f3606e76d",
+      "original_bytes": 14684,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-14.webp"
+      },
+      "sha256": "bbd37034e1bbab1ad0f51fdb9799e282866df89b86ce80f4b9a87a2c9595a216",
+      "bytes": 4684,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "5e3310a9c24692d812dad26c53cf8e52c8639af983bfa393f7a5b4a05cf34fd7",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-15.png",
+      "original_sha256": "10578e6dc8f45fbb8ec11d3c3f3b0ff915ad5790917155906955b9923b64b5e4",
+      "original_bytes": 18737,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-15.webp"
+      },
+      "sha256": "b87573b6ad0adc0c9c4bd6673d6a63d4ebdd569cf80aee18b895a5e33a3e668b",
+      "bytes": 7550,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "b1a7a620f0f69b07ac564e5aeda272edf9cdfb29921cf15f3203051e9e1b678a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-16.png",
+      "original_sha256": "6a76926985dda49be21086a1b4a0b833d069a6e7aeff5ae64c9a46d41af58ee5",
+      "original_bytes": 18682,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-16.webp"
+      },
+      "sha256": "713b869a6637530e834d5b30655e675051612d09e0425abd20a31512e9a31b30",
+      "bytes": 7456,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "61af0a80d1c796896de799b9371a3bfbb1437800645bccdfa31a2becc2fcf630",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-17.png",
+      "original_sha256": "47baa68d4e042b7ad8db9d1ea1fa9209636ed7e381ce5afcef743778d3d046fb",
+      "original_bytes": 11868,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-17.webp"
+      },
+      "sha256": "c643d31c42d91bc7f27c979abb8ee877429fdf817485dbc9226c3ef42c896189",
+      "bytes": 2910,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "32ee2fd807a7338ea2f5ce4eb243299caf8cb612ed1bb19ff7e680b1d1cdd341",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-18.png",
+      "original_sha256": "b67ee968877294012d5819fabbd6a2016c89f6f366e13a8bc36f5057a6af9845",
+      "original_bytes": 11618,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-18.webp"
+      },
+      "sha256": "55c0bf95905b4ffd907f4f433d7dc5ea3f4d653bc91bb81b6cc6c6a9d1893a8b",
+      "bytes": 2760,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "7e4c0f913d26401908d0628df33ee92ba9456b94dac85e9f51f13ba1c8a5ff04",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-19.png",
+      "original_sha256": "09c595b72b7d23bfaa743a884cf198115bd1b65472f1a61afd2e7c3ec888ce41",
+      "original_bytes": 17179,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-19.webp"
+      },
+      "sha256": "ad2725cdb65fc0aecfbf7f982fdd2984b46e9238803153a9f8ef301e7120740f",
+      "bytes": 6534,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "809a0bec76c211e5560646958ac4ba3932ead92d5e4c475eb5b507b482ab03ae",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-2.png",
+      "original_sha256": "3b52b8972a3fcda62cdb097f7c91d08c2478083d2b48a98f25388c446e6e99da",
+      "original_bytes": 11387,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-2.webp"
+      },
+      "sha256": "4e436b8bbb77fa1edc6acd5e65da519126ca7d3d219a519d3f989b66e46a1000",
+      "bytes": 2642,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "c63c644ee3d32a88259d80df0175e66ad3bab21abe484231f2b140926ef078e0",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-20.png",
+      "original_sha256": "295509a2c2a61a2e51e07d6142a49163956bf96db08f503947b3c2662031d1e0",
+      "original_bytes": 13619,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-20.webp"
+      },
+      "sha256": "6a8dac77f39d7586880fc8c4127e3ad58be0ce2f5c95ec9a2a049a478a923a5b",
+      "bytes": 4310,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "de4bd1503a82b9216ac16a6a95e3eabb47abb82c137bf9bc25583467e235a567",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-21.png",
+      "original_sha256": "f83a392ad20944d4b2a1fe9f1c7e293a1f375a96ca70574af04aff1101efd5de",
+      "original_bytes": 15975,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-21.webp"
+      },
+      "sha256": "a0b2070786bdc89bd5a62eb39a1d6ddfe4a4324cede0f85b9cba4a5330420446",
+      "bytes": 5754,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "a1911b81c51b0dfd48c9e42e8290f0721d53123a1d0959a81318612986b82174",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-22.png",
+      "original_sha256": "11737c64204b38adfe68c240ff10c855a69ea83b1dd25efe3570594a31bdbb35",
+      "original_bytes": 13346,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-22.webp"
+      },
+      "sha256": "91ab8ee5177cacd6bbf4abaa0d7c9a1edf529ec773c00e389370742d98826719",
+      "bytes": 4188,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "2e7d1b5a2108f84223cbecb79fdb4073a9c3e4ed3757b17350fa63dc0178de4e",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-23.png",
+      "original_sha256": "5be901b640eac6d820002db533087f2cff6cecf115915c849a5ab11b2a47e200",
+      "original_bytes": 15043,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-23.webp"
+      },
+      "sha256": "f048ef671b2730431a4f54636135df909f2e2ff7aab820b310fa37a5e13d50f2",
+      "bytes": 4668,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "9e1d4b3c1511875e13376f5bfa900331b581991350e45fa30ca960a83d2b27ea",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-24.png",
+      "original_sha256": "84a6bf4f5ea44f6c3bf8306b6c0dbeb6b7e0f067688506037a1b63aa68537025",
+      "original_bytes": 18984,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-24.webp"
+      },
+      "sha256": "eed98dc169ad9d8fea93a892beefa3a730d08512f5f2adbc378790330d641016",
+      "bytes": 7666,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "ef01f08a68b88203a37cf899b50e10e424782b03f85ec8d5eb5921ac8a22cf0b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-25.png",
+      "original_sha256": "7df62ddc057557860ae89f055dd63c754ab8ed8d1c4ca30eec418927336dd59e",
+      "original_bytes": 14255,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-25.webp"
+      },
+      "sha256": "33be7b4950aedc323fa2813e555689b88cd180fde2b36bd12e855fb9b88fd3e8",
+      "bytes": 4188,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "52d416c23e163523ca3e188eea346fc80de1650755baa89a889eed50e6b3d49a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-26.png",
+      "original_sha256": "f99df1d56fb30059f4f4ff7c872675145980c205f3626f84d4e0b58fa0ce5fae",
+      "original_bytes": 13644,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-26.webp"
+      },
+      "sha256": "92e706eb82900e013a9b558700a7ec53f378ae76aa12a91a464354d764789672",
+      "bytes": 3922,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "985fb31e589cd9a1c23465ca5c0adf24de02907a10431b8c2fa2fd145eaa9616",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-27.png",
+      "original_sha256": "81b9e588c2bc27d30455fe7539198426bfbb35c14799f81be078e0528c0ffcac",
+      "original_bytes": 13072,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-27.webp"
+      },
+      "sha256": "ad881d4c960d8460cd670dac220d735d7fb97cb54f35cf08a313b4125e769c00",
+      "bytes": 3590,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "e3e199859a3a0c3a4650ffc419aa729d3549cc879774863bac3845dc2cc07b4f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-28.png",
+      "original_sha256": "a3e58d62a89c5179884d88af272f0278c7a05adb9e67d527bfcf252a3e413005",
+      "original_bytes": 17002,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-28.webp"
+      },
+      "sha256": "d1d612a2915fa50d239bc5083f3c3dc1b7d600fa56ba993af3a9d49559af3441",
+      "bytes": 6476,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "02728697172bb31bc74ccca53142070dadfbc3afb7a5d96e6d07629d019120c6",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-29.png",
+      "original_sha256": "65b0f497243911a7633130cce8e446fed063713607e311332533c7369761787a",
+      "original_bytes": 13385,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-29.webp"
+      },
+      "sha256": "0df8fc5c6725396a5641298fb4b7e0de0919172ac6cae8a30240d4830425d221",
+      "bytes": 3868,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "edd130e21fed37030dab1513be3582c1255a3b66defb6e56ffbd23bc23b454a7",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-3.png",
+      "original_sha256": "1ca0b31dd3a5a9d7c808b8da7507ca94a89f04ae094181e5c82fcb28b0f56b15",
+      "original_bytes": 14583,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-3.webp"
+      },
+      "sha256": "3abfc22574b33a06a24c3270b287622b140c0b690177b479fb824b1d5aa152d4",
+      "bytes": 4930,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "ad92da524eb77c08e773eee0ab6ef3be2397ac3534a91596ee6ed639700d4a1d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-30.png",
+      "original_sha256": "33128d9dfdb01f1d89c8c0959654bffdb88e218a2a4b7fbc47cbe52192c94444",
+      "original_bytes": 17542,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-30.webp"
+      },
+      "sha256": "4fd65b4623ff7f125a7296bb8594875598a518cfdcaeea91d5a537cc59f01551",
+      "bytes": 6758,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "a711c07f6f33d82d62ff430b768c14dbda42cbd8b1a29e0b609ab7696378cba4",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-31.png",
+      "original_sha256": "78a67ef1702867a1e1c96565cb7f23adebca1b794ae7bd833224b2bafc934a10",
+      "original_bytes": 17081,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-31.webp"
+      },
+      "sha256": "bc59c85b590048a3eb6e0d4875abff59978270e7bf466418334902b2c06c88d2",
+      "bytes": 6312,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "fbe4b82b78d0b992aa5ea0ccb2319d4a50096f0ab1faf888c16ad49cb569845c",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-32.png",
+      "original_sha256": "9a3907abe424da6c2095c342d9a919f43fb1c097e25070636104d6f72f397edc",
+      "original_bytes": 13852,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-32.webp"
+      },
+      "sha256": "cc8297339637096fb6852c84c03c69bbf75aac3988b3bc7b2423073f46f96b03",
+      "bytes": 4078,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "bf3dd6a6ff1c05fd8ea97ab6eb950cebeaa73bdb1ffcd5027df6172a86a34b92",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-33.png",
+      "original_sha256": "63aafbd7ca3629088ef78338d346bb3c21a369ff4304b7cb27bf2f5acf3982be",
+      "original_bytes": 12698,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-33.webp"
+      },
+      "sha256": "0d4cc564efc9bd125d6e41af2db0991f0caac91c564dcdac4bf245920845bf96",
+      "bytes": 3716,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "b8fae9742fb01ff9d0ec8eda2443c0a81df38e137bd6dcf6ed5a4a221a1088d1",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-4.png",
+      "original_sha256": "63aafbd7ca3629088ef78338d346bb3c21a369ff4304b7cb27bf2f5acf3982be",
+      "original_bytes": 12698,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-4.webp"
+      },
+      "sha256": "0d4cc564efc9bd125d6e41af2db0991f0caac91c564dcdac4bf245920845bf96",
+      "bytes": 3716,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "b8fae9742fb01ff9d0ec8eda2443c0a81df38e137bd6dcf6ed5a4a221a1088d1",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-40.png",
+      "original_sha256": "2aa0886905d96292677cc67f4a036ac1bd25d97acb13745f800931b88b789db7",
+      "original_bytes": 13512,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-40.webp"
+      },
+      "sha256": "99b71b96356acbe573ae041636178143549090ed3888e068aeb5619329c7c866",
+      "bytes": 4216,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "29409a81235660b895b70782a1aea858761cc7e9ddf6a0656c24171b489a31e4",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-41.png",
+      "original_sha256": "ffb0544c76854ed2620cf2788fcacf2ebe3132df7809f08b9641cf5a8df94232",
+      "original_bytes": 13819,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-41.webp"
+      },
+      "sha256": "80be5cc34c9c00dfd8686d8c9f83cd16ffcbe16b1ca165ea29c7ab7e56f3f9ab",
+      "bytes": 4356,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "1fde1f32b3d035508fdce894a2101e583eaf56f7d2433f4fe070e8035d80865d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-5.png",
+      "original_sha256": "b140770da9009e74d17e9144576debd4fc4778b6d1e68fe2e875ff6711d94bb4",
+      "original_bytes": 10717,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-5.webp"
+      },
+      "sha256": "d08467dbdadf6206b59527ecb5a2f12d6f21e5cf098059306eb518d69768785f",
+      "bytes": 2448,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "67d0357fcbb53f2527dc9d5909e32b99814ed44295c5f937b6d9ee48a7bc055d",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-6.png",
+      "original_sha256": "63ec002b0fbac62e454f004947efbfed4a90ee5426339fc5b14d5c4627fe066c",
+      "original_bytes": 9797,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-6.webp"
+      },
+      "sha256": "6472112f3168b7a6e20ab338211d822bbefd87d72f215334ed6d51d7978426ab",
+      "bytes": 1698,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "5347e1f5c3654c03895e197081ed8d83d35eb0db3607ee5196479c06c4b87075",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-7.png",
+      "original_sha256": "871cc01775c1cf89ab8e7333b6cee5473daa5b6e4f2abcebf7cf51d0faa63fff",
+      "original_bytes": 11269,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-7.webp"
+      },
+      "sha256": "4a614487c62a267ae25b38670566298a1c9e70e7fe17322c5865630bd27203ab",
+      "bytes": 2770,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "d16e83d11cb47af2d2d84879108f530120015ac147bba5a2b934cff3ec221e39",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-8.png",
+      "original_sha256": "ea3ff5ac4b962107a6e3d42a4deae16e0742bee0ad8834afe9d0384a1b13b0be",
+      "original_bytes": 16879,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-8.webp"
+      },
+      "sha256": "f2daca5c4ae47437315c5f761804096d72c50261cf5a60d890fb5d29e93b2839",
+      "bytes": 6362,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "7ddbf3138a9a4bd7d826a1a9d4f81b024677c2b4248bf7b6d1750af2d91cf08a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/face-9.png",
+      "original_sha256": "e9fc7f98a6e1305a0038c0f7b7d7892aa6fbceca0a7812575d45e3c7e2875657",
+      "original_bytes": 18429,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/face-9.webp"
+      },
+      "sha256": "9fd3cd4f0c65e1387f5e084ff0cf05b3f76256a0e86c6098fbff09bfd7c6359e",
+      "bytes": 7338,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "566251b99db736112a596004e674ed404e5f7cbe71b4540989a4903f6807786f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-hair-3.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-hair-3.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-hair.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-hair.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-hair_hat.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-hair_hat.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-hairfront-3.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-hairfront-3.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-hairfront-4.png",
+      "original_sha256": "74a9d39ef24f3e408c9fc6556c6475a9c912b49527e07781d5aa18be7af79a7e",
+      "original_bytes": 20351,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-hairfront-4.webp"
+      },
+      "sha256": "aeec95a0002fbe0217e8eb7a50815f730af5faaa6e66cde4010f846175d64744",
+      "bytes": 7050,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "0d6e38e7c90931878c7f60049182d78b1e37a39f3ac3ec147fda646d9e9f61f9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-hairfront.png",
+      "original_sha256": "e4f725a4cc6b55b53618eec1036f2da7f0ed481b5a5e4924aa8565fc56c309b8",
+      "original_bytes": 26246,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-hairfront.webp"
+      },
+      "sha256": "54a2225938bb726109dc3a184bde330390b9dbdf0eb4045a2b15140dd2ff1d5b",
+      "bytes": 11448,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "3e672c70ef483c8838b78036b3373301746f08ee1e52a96a73eabdd521598d29",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-headbase-3.png",
+      "original_sha256": "a9bc6a2944c01b099e0cf0755725ce4212a049ddf37aa74c25a84dbbccad652e",
+      "original_bytes": 46710,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-headbase-3.webp"
+      },
+      "sha256": "c1bb233d899ccfd21a501b477b748d5bdb31c96ebb02e319e1e95410414e388a",
+      "bytes": 18412,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "28dafd8d53ddd32e3cc6e7f4c0d663814c9842e2e3abd7fc9596a334f7b355d6",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-headbase.png",
+      "original_sha256": "6e4167be5e467e1f4fdb5e45e994ee3b150b3878138245491aa5bb9ebd9ef877",
+      "original_bytes": 63406,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-headbase.webp"
+      },
+      "sha256": "9fb37129f472c1ac851d65140273a365ec6fa0e4f3c93c81e44681ac94ac9c0e",
+      "bytes": 32816,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "44b7133a7adc8a135e377974c420c6ddc7093b55a27ab8c1c110ff7ea776a374",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-headbase_hat-3.png",
+      "original_sha256": "5ffb1ba64acf8d699f2999c3d005705b9a47de876f186d744133441d902e223e",
+      "original_bytes": 41591,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-headbase_hat-3.webp"
+      },
+      "sha256": "1e2fd89860d22a10e691ea6e23380f8130e48588c6c8a7fa90fad06f77c033cc",
+      "bytes": 16088,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "078e6277e6ff85b8af25052d442251a010e2cb2085de7edc577f5874879187fb",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/front-headbase_hat.png",
+      "original_sha256": "e88fb9523cb8e623a0717116a30459b28c11e1783eab645098bbdbc81a2df61d",
+      "original_bytes": 51052,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/front-headbase_hat.webp"
+      },
+      "sha256": "9336e8a98d4a678e68300929319e570f598967b64761af8c852d84b702ce92e6",
+      "bytes": 25724,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "253365701e85a76967e1b474192fb86993a3183d2bce19df035c897954b74d9b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/hairpigtails-0.png",
+      "original_sha256": "1cd051276f2adf6fd382a9e84e35bbd23c285adfbf781d32433144d1e5481e0e",
+      "original_bytes": 29487,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/hairpigtails-0.webp"
+      },
+      "sha256": "d04c9f47a2c1047d2784e9bee99ecd1f61a7f1b3aa78967e0f2b3c3628e82a73",
+      "bytes": 12292,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "89c0dd43cdb4e388c2a935de162dd85ec7cf6ec378874693640ace693845ebca",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/hairpigtails-1.png",
+      "original_sha256": "c16c9f695a33f63150484400ab703c82b610ae9eab3797856f7f51a5bcadba34",
+      "original_bytes": 27021,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/hairpigtails-1.webp"
+      },
+      "sha256": "ff49740257813e2ae5293b6845c84f99da2c9e28dd75b45fbd1271eed8de764d",
+      "bytes": 11214,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "903098bd5f13a4c49426f16c9b3bdc8830be090e17d197546fe2dda07f3781cd",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/hairpigtails-2.png",
+      "original_sha256": "3d0cd3cca9e7b17f38d7f373c6ceff1a2c580b55ae438046980bac32b56b1a63",
+      "original_bytes": 25261,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/hairpigtails-2.webp"
+      },
+      "sha256": "553e15d6e99e6938b79262509f2529af11d8421c4fe67103e6a4b4a24977d782",
+      "bytes": 10480,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "690947884a543fc311a95a9609581ec0f2fa4ad33ace44680f89b0ffd75f272b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/hairpigtails-3.png",
+      "original_sha256": "d95841ae7a0c75a1ad2452349225bb4da9c77a093f3abff33025c2234f85adab",
+      "original_bytes": 24583,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/hairpigtails-3.webp"
+      },
+      "sha256": "8deacdbd73d54f5368624537f5beb1b7baa34f416cc7bce785e69e8012c36e38",
+      "bytes": 8698,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "afce55ba337bd7896d4f05d1f1a726c24d6d0d60e2299ed1155922ace95c53a2",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/hairpigtails-4.png",
+      "original_sha256": "a1b162b3ead662cd3038092a39392962927b1f8348ada032b422c3c63d6e2264",
+      "original_bytes": 23467,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/hairpigtails-4.webp"
+      },
+      "sha256": "995d25eb7010d5070e8827efbd7068562ff349ccabd1f8ea2610461b2d1a6cd4",
+      "bytes": 8016,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "024ba2a5a0875398dbb40174b84350db71f25256fcec3b02b9020db3626cb61f",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/hairpigtails-5.png",
+      "original_sha256": "01d7fd789f5a923354a702c7df79128ccca1c1124bfa3cba37dbe979cb148a13",
+      "original_bytes": 21123,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/hairpigtails-5.webp"
+      },
+      "sha256": "48da1513cf545495c388b6ea40d2d6ec7fdacad66eefdb1ab5afc865d73f8c10",
+      "bytes": 7160,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "5e04ebb1d2d58f4e5b015dd12f78291003800f98539746fec918cd41262888e6",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/side-hair.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/side-hair.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/side-hair_hat.png",
+      "original_sha256": "05abb8abfce8290f1448ad9a4b2333e7fac4066cf867130a4254f4d455cd7a74",
+      "original_bytes": 8238,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/side-hair_hat.webp"
+      },
+      "sha256": "ffe6ab23715068a1e93b99d94662f70375a6c52c193fe2abc4cc9cc2759e12bb",
+      "bytes": 126,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "65d180c9ac089625b3c2f431ace960f3c86a4ad870bf82d304acb0ada6344ac9",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/side-hairfront.png",
+      "original_sha256": "bf056c3e2a616acc54bc62557fecf1a8e395cabaf7e4a50317003bcca31efd83",
+      "original_bytes": 18888,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/side-hairfront.webp"
+      },
+      "sha256": "96b7a728a04820c2b65966b7b0141d3754c357c227ff54a36f300df61bb4e395",
+      "bytes": 7002,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "6b2acf4f648326290aa3da45a5fa5d0d822e65b6fef8b28072555ea71c0d9027",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/side-headbase.png",
+      "original_sha256": "236c81d56b8ca70e17b054078285255edba086fa8d9f686a2f177b6764c4fb9b",
+      "original_bytes": 55332,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/side-headbase.webp"
+      },
+      "sha256": "2dcdd4e6f9ff66a4c0197a4eabe26074e1a55ca0a8a1777a9f3f358ead396a4c",
+      "bytes": 27904,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "a54723b8e7829b3e4b6a1ca1fadc123ee28c8cdbe035b993621072dbbbf7a56b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/characters/blue_boy/art/head/png/side-headbase_hat.png",
+      "original_sha256": "9a1356d8628d3f72399aa94d2bce7a46b864d5a2b23523d68a3ef25a7a099acf",
+      "original_bytes": 42767,
+      "storage": {
+        "path": "assets/characters/blue_boy/art/head/source.zip",
+        "member": "webp/side-headbase_hat.webp"
+      },
+      "sha256": "dc77aa6446410f60574668844474d112827edaea678d7f85ba9f40ab90e73913",
+      "bytes": 20310,
+      "size": [
+        1352,
+        1550
+      ],
+      "rgba_sha256": "cf6d1fa83a7166877a659173a0a953847f542646fbeee391b9a87f87a636d399",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {
+        "dpi": [
+          72.009,
+          72.009
+        ]
+      }
+    },
+    {
+      "original_path": "assets/mod_art/game-backplate-purple.png",
+      "original_sha256": "172790279192d2db9b78bb9655c64113fc1ac607d87fe9d4e2e81eefae54bb64",
+      "original_bytes": 221665,
+      "storage": {
+        "path": "assets/mod_art/icon_layers.zip",
+        "member": "game-backplate-purple.webp"
+      },
+      "sha256": "39e021fc320716b8c2136d59a81e4977b92819cbd2506220a7b8b77dd6ac5fed",
+      "bytes": 39826,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "2328acd5f6893c5267a63fa02dd0d56b906c0a51bdef5420a3ed11a20090301e",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/mod_art/game-frame-white.png",
+      "original_sha256": "f8ec5cfc2b2566c733e130af2f2c2433a1195780c9a0ea12f5366430a5543810",
+      "original_bytes": 316561,
+      "storage": {
+        "path": "assets/mod_art/icon_layers.zip",
+        "member": "game-frame-white.webp"
+      },
+      "sha256": "eb13801891c77b00e495f39665aa90858d98b68985f1c7a66076a0972c03cfb3",
+      "bytes": 205352,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "337389c4e52ea230d79a5b667754db8d4fac5333d202c669abd60ef4c44274b3",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/mod_art/native-portrait-bg.png",
+      "original_sha256": "e933f24b89d65c486ab6a3118947f75c89a30702f008e6805e82aa3d2ac46317",
+      "original_bytes": 9228,
+      "storage": {
+        "path": "assets/mod_art/icon_layers.zip",
+        "member": "native-portrait-bg.webp"
+      },
+      "sha256": "cb84165eff8d230b6c75d7d222805ab099d601523e505b5f48e42578c5cc5aca",
+      "bytes": 6890,
+      "size": [
+        128,
+        128
+      ],
+      "rgba_sha256": "1fe3c9752a1ce5f6101ac32fac747972057a2b3a365af947c3f8bb3cbb034767",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/mod_art/oracle-circlet.png",
+      "original_sha256": "245e80c9d3f8f9875e7e2c4b80693dc6a1ec4a44a3dd9a22b942f67adba9126e",
+      "original_bytes": 298027,
+      "storage": {
+        "path": "assets/mod_art/icon_layers.zip",
+        "member": "oracle-circlet.webp"
+      },
+      "sha256": "27603ae48e30d35ff515d78cba13eb292deb8141487d687a9522faa526aa359b",
+      "bytes": 189322,
+      "size": [
+        730,
+        388
+      ],
+      "rgba_sha256": "f1a2fabc277dd8f09bc126c5679e8acc275461e9c80e60e3643047bf5a1a179a",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/mod_art/oracle-staff.png",
+      "original_sha256": "77a088ccc74e293845c861c0a607c3f2db6063c579a1ea50d06a799bb808bf7c",
+      "original_bytes": 155612,
+      "storage": {
+        "path": "assets/mod_art/icon_layers.zip",
+        "member": "oracle-staff.webp"
+      },
+      "sha256": "b60de448d1c846539aae9a904d3f199e6b1eda52aa3e7907d0b28c0c0268b959",
+      "bytes": 96832,
+      "size": [
+        262,
+        865
+      ],
+      "rgba_sha256": "8308c638a4d727b4b63dbfb913b08c47526e8ae88ed61979eab858ac7becb97b",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/mod_art/workshop-frame-purple.png",
+      "original_sha256": "74a5d031f9893ec8789c4ac7918a50132e4e41b81a425af8e35d835f5613409e",
+      "original_bytes": 244668,
+      "storage": {
+        "path": "assets/mod_art/icon_layers.zip",
+        "member": "workshop-frame-purple.webp"
+      },
+      "sha256": "f4503da2a9d38685d293f16241bdf0d6432e0fae3c1b79e8deb57c0842dc1151",
+      "bytes": 157338,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "bfc1ff4170b5c9f314f04893037db77de475f7fe35b913fce7c3aedcf93ccbad",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/ordinary_series/circlet.png",
+      "original_sha256": "5da48c911749327abd21bdd2cd647ea02dd31daa4c371a6958ddf1decbe1d822",
+      "original_bytes": 342187,
+      "storage": {
+        "path": "assets/ordinary_series/hat_layers.zip",
+        "member": "circlet.webp"
+      },
+      "sha256": "bd86c60da7b156bd5aba657c5161891a3c54dc2659e475a0f05158ab1806702f",
+      "bytes": 229688,
+      "size": [
+        2172,
+        724
+      ],
+      "rgba_sha256": "b159ff7251ff173ff4b3c7a0cba4a3e808b3b438803560fb0055ee66515eaf40",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/ordinary_series/mesh.png",
+      "original_sha256": "79ad2ea88c64442a65c9b8f90b8789e230e00c69363a68f517120faa9fee9094",
+      "original_bytes": 610308,
+      "storage": {
+        "path": "assets/ordinary_series/hat_layers.zip",
+        "member": "mesh.webp"
+      },
+      "sha256": "3278f33b959b17492c72affdcd54e03fc337071e7d801bfab1b0e395e1b488e0",
+      "bytes": 414938,
+      "size": [
+        2172,
+        724
+      ],
+      "rgba_sha256": "20468f58b1008d0abe097de6b7bcaed2d78d44aee644a92c0eaf734369730582",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    },
+    {
+      "original_path": "assets/ordinary_series/solid.png",
+      "original_sha256": "7acef032141c3fe90dfcd490d3c1f05f776ad9b89e94d10fcec071395a8e1f7c",
+      "original_bytes": 220144,
+      "storage": {
+        "path": "assets/ordinary_series/hat_layers.zip",
+        "member": "solid.webp"
+      },
+      "sha256": "6df2069e6ff1a656566f8c5e1f5746fb33ae0aa1818712247953ba3fa5566247",
+      "bytes": 139368,
+      "size": [
+        2172,
+        724
+      ],
+      "rgba_sha256": "5494753963e920ddf3287cebfc0d3ad01d6690e76665b3e451554cf2de611ca4",
+      "pixels_exact": true,
+      "icc_sha256": null,
+      "original_png_metadata": {}
+    }
+  ]
+}

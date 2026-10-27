@@ -1,0 +1,9 @@
+name = "Ordinary Series isolated selftest"
+author = "Roomcar"
+version = "0.1.0"
+description = "Disposable offline engine test; do not enable in a personal world."
+api_version = 10
+dst_compatible = true
+server_only_mod = true
+all_clients_require_mod = false
+client_only_mod = false

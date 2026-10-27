@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Atlas>
+  <Texture filename="ordinary_hats.tex" />
+  <Elements>
+    <Element name="roomcar_tattered_hat_base.tex" u1="0.0" u2="0.5" v1="0.5" v2="1.0" />
+    <Element name="roomcar_tattered_hat_mesh.tex" u1="0.5" u2="1.0" v1="0.5" v2="1.0" />
+    <Element name="roomcar_tattered_hat.tex" u1="0.0" u2="0.5" v1="0.0" v2="0.5" />
+    <Element name="roomcar_plain_circlet.tex" u1="0.5" u2="1.0" v1="0.0" v2="0.5" />
+  </Elements>
+</Atlas>

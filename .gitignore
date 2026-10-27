@@ -49,6 +49,21 @@ luac.out
 !_GodHat--DST/anim/roomcar_oracle_sentinel.zip
 
 # Local art builds and Python caches
-/output/mod-art/
+/output/
 **/__pycache__/
 *.py[cod]
+
+# Ordinary Series runtime assets and local build output
+!_Ordinary--DST/anim/roomcar_tattered_hat*.zip
+
+!_Ordinary--DST/anim/roomcar_plain_circlet.zip
+
+# Machine-local configuration only; source PNG/WAV/JSON files remain visible
+.env.local
+roomcar.local.json
+
+# Versioned source-image packages (each <= 32,000,000 bytes)
+!assets/mod_art/icon_layers.zip
+!assets/ordinary_series/hat_layers.zip
+!assets/characters/blue_boy/art/head/source.zip
+!assets/characters/blue_boy/art/body/source.zip
